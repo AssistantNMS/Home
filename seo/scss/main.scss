@@ -1,0 +1,25 @@
+@import "variables";
+@import "button";
+@import "hero";
+@import "navbar";
+@import "parallax";
+@import "card";
+@import "base";
+
+html,
+body {
+    height: unset !important;
+    overflow: unset !important;
+    font-family: "Poppins", sans-serif;
+    background-color: $background;
+    color: $text-color;
+
+    .header {
+        background-color: darken($background, 5%);
+        z-index: 2;
+    }
+}
+
+.footer-column {
+    max-width: 33%;
+}

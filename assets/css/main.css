@@ -1,0 +1,328 @@
+.button-primary,
+.button-secondary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 14px 32px;
+  border-radius: 80px;
+  transition: all 350ms ease;
+  line-height: 20px;
+  font-weight: light;
+  text-decoration: none;
+}
+.button-primary:hover,
+.button-secondary:hover {
+  transform: translate(0px, -3px);
+}
+.button-primary img,
+.button-secondary img {
+  max-width: 30px;
+  margin-right: 10px;
+}
+
+.button-primary {
+  background-color: #7986cb;
+  color: #fff;
+}
+.button-primary:hover {
+  background-color: #5465bd;
+  color: #fff;
+}
+
+.button-secondary {
+  background-color: #80cbc4;
+  color: #1f212a;
+}
+.button-secondary:hover {
+  background-color: #5cbcb3;
+  color: #1f212a;
+}
+
+.section.hero {
+  z-index: 1;
+}
+
+#landing-hero {
+  z-index: 1;
+}
+#landing-hero .app-icon {
+  border-radius: 1em;
+}
+#landing-hero h1 {
+  white-space: nowrap;
+}
+#landing-hero .store-links-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding-right: 2em;
+}
+#landing-hero .store-download-button {
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  transition: transform 350ms ease;
+}
+#landing-hero .store-download-button:hover {
+  transform: translate(0px, -5px);
+}
+
+.hero-img-stack {
+  position: relative;
+  text-align: center;
+}
+.hero-img-stack .hero-image,
+.hero-img-stack .hero-image-cm,
+.hero-img-stack .hero-image-qs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-height: 70vh;
+  z-index: 1;
+}
+.hero-img-stack .hero-image-bg {
+  width: 100%;
+  padding: 2em;
+}
+.hero-img-stack .hero-image {
+  transform: translate(-40%, -50%) rotate3d(-1, 4, 5, 347deg) skew(346deg, 11deg) !important;
+  z-index: 2;
+}
+.hero-img-stack .hero-image-cm {
+  transform: translate(-65%, -40%) rotate3d(-1, 4, 5, 347deg) skew(346deg, 11deg) !important;
+  z-index: 3;
+}
+.hero-img-stack .hero-image-qs {
+  transform: translate(-75%, -40%) rotate3d(-1, 4, 5, 347deg) skew(346deg, 11deg) !important;
+  z-index: 4;
+}
+
+.section.socials {
+  padding-top: 100px;
+  background-color: rgba(0, 0, 0, 0.21);
+}
+
+.basic-grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+
+.grid-logos {
+  display: flex;
+  margin-top: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid-logos .badge-wrapper {
+  padding: 20px;
+  transition: transform 350ms ease;
+}
+.grid-logos .badge-wrapper:hover {
+  transform: translate(0px, -0.5em);
+}
+.grid-logos .badge-wrapper img {
+  width: 134px;
+}
+
+.navbar-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+.navbar-logo img {
+  max-width: 50px;
+  margin-right: 0.5em;
+  border-radius: 0.5em;
+}
+
+[class^=parallax-],
+[class*=" parallax-"] {
+  z-index: 1000;
+}
+
+.background-parallax-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation-name: background-parallax-img-anim;
+  animation-duration: 25s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  overflow: hidden;
+  will-change: transform;
+  pointer-events: none;
+}
+.background-parallax-img .content {
+  position: relative;
+  animation-name: background-parallax-content-anim;
+  animation-duration: 50s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  will-change: transform;
+}
+.background-parallax-img .content img {
+  position: absolute;
+  top: 3em;
+  left: 2em;
+  animation-name: background-parallax-img-content-anim;
+  animation-duration: 35s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: 0;
+  will-change: transform;
+}
+
+@keyframes background-parallax-img-anim {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(75px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes background-parallax-content-anim {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes background-parallax-img-content-anim {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(115px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.parallax-pc2 {
+  position: fixed;
+  top: 50vh;
+  left: 100vw;
+  height: 50vh;
+}
+
+.card-feature {
+  color: #2b2f4b;
+}
+.card-feature .left-block-card-feature {
+  -ms-grid-column-align: center;
+  justify-self: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+img,
+br,
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+@media screen and (min-width: 1000px) {
+  .hidden-in-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hidden-in-mobile {
+    display: none !important;
+  }
+}
+
+.mt-2 {
+  margin-top: 2em;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+::selection {
+  background: #2c3670;
+  color: white;
+  /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: #2c3670;
+  color: white;
+  /* Gecko Browsers */
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: #7986cb;
+}
+@media screen and (max-width: 800px) {
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: lightgrey;
+  margin-top: -3px;
+  margin-bottom: -3px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #7986cb;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+}
+
+html,
+body {
+  height: unset !important;
+  overflow: unset !important;
+  font-family: "Poppins", sans-serif;
+  background-color: #2b2f4b;
+  color: #d0d0d0;
+}
+html .header,
+body .header {
+  background-color: #22253b;
+  z-index: 2;
+}
+
+.footer-column {
+  max-width: 33%;
+}
+
+/*# sourceMappingURL=main.css.map */

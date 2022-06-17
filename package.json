@@ -1,0 +1,30 @@
+{
+  "name": "assistantnms.web",
+  "version": "3.0.1",
+  "scripts": {
+    "build": "npm-run-all --sequential data:* template:* sass:*",
+    "dev": "live-server",
+    "data:generateLiveJson": "node seo/node/generateLiveJson.js",
+    "data:generateProjectData": "node seo/node/getGeneratedProjectJson.js",
+    "data:minifyGeneratedFiles": "node seo/node/minifyPublicFiles.js",
+    "template:main": "node seo/node/buildTemplate.js",
+    "sass": "npm-run-all --sequential sass:*",
+    "sass:main": "sass seo/scss/main.scss ./assets/css/main.css",
+    "watch:template": "nodemon -e hbs -x \"npm run template:main\"",
+    "watch:sass": "nodemon -e scss -x \"npm run sass\""
+  },
+  "author": "Kurt Lourens",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "handlebars-webpack-plugin": "^2.2.1",
+    "live-server": "^1.2.1",
+    "minify": "^7.2.2",
+    "move-file": "^2.1.0",
+    "axios": "^0.27.2",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.43.4"
+  }
+}
