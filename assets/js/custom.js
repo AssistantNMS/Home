@@ -6,14 +6,22 @@ window.onload = function () {
 function parallax() {
     var s = skrollr.init();
 
-    var scene1 = document.getElementById('hero-parallax-scene1');
-    var parallaxInstance1 = new Parallax(scene1, {
-        relativeInput: true
-    });
+    heroParallax();
+    featureParallax();
+}
 
-    var scene2 = document.getElementById('hero-parallax-scene2');
-    var parallaxInstance2 = new Parallax(scene2);
+function heroParallax() {
+    var heroParallaxElems = document.getElementsByClassName('hero-parallax');
+    var heroParallaxInstances = [];
+    for (const heroParallaxElem of heroParallaxElems) {
+        heroParallaxInstances.push(new Parallax(heroParallaxElem));
+    }
+}
 
-    var sceneMaster = document.getElementById('hero-parallax-scene3');
-    var parallaxInstanceMaster = new Parallax(sceneMaster);
+function featureParallax() {
+    var featureParallaxElems = document.getElementsByClassName('feature-parallax');
+    var featureParallaxInstances = [];
+    for (const featureParallaxElem of featureParallaxElems) {
+        featureParallaxInstances.push(new Parallax(featureParallaxElem));
+    }
 }

@@ -2662,29 +2662,6 @@ figcaption {
   padding-left: 24px;
 }
 
-.card-feature {
-  margin-bottom: 80px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #d4d5e3;
-  border-radius: 32px;
-  box-shadow: 0 5px 2px 0 rgba(67, 75, 235, 0.04), 0 10px 5px 0 rgba(67, 75, 235, 0.01), 0 16px 10px 0 rgba(67, 75, 235, 0.02), 0 24px 17px 0 rgba(67, 75, 235, 0.04), 0 40px 33px 0 rgba(67, 75, 235, 0.05), 0 90px 60px 0 rgba(67, 75, 235, 0.04);
-}
-
-.card-feature.top {
-  margin-top: 152px;
-  padding-bottom: 0px;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(46%, #6a72fb), color-stop(0, #fff));
-  background-image: linear-gradient(90deg, #6a72fb 46%, #fff 0);
-}
-
-.card-feature.bottom {
-  margin-top: 194px;
-  margin-bottom: 120px;
-  background-image: -webkit-gradient(linear, right top, left top, color-stop(44%, #6a72fb), color-stop(0, #fff));
-  background-image: linear-gradient(270deg, #6a72fb 44%, #fff 0);
-}
-
 .feature-grid {
   max-width: 1080px;
   margin-right: auto;
@@ -3758,23 +3735,6 @@ figcaption {
   background-color: #6a72fb;
 }
 
-.card-feature-v2 {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #d4d5e3;
-  border-radius: 32px;
-  box-shadow: 0 5px 2px 0 rgba(67, 75, 235, 0.04), 0 10px 5px 0 rgba(67, 75, 235, 0.01), 0 16px 10px 0 rgba(67, 75, 235, 0.02), 0 24px 17px 0 rgba(67, 75, 235, 0.04);
-}
-
-.feature-grid-v2 {
-  margin-right: auto;
-  margin-left: auto;
-  grid-row-gap: 0px;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
-}
 
 .card-feature-wrap {
   display: -ms-grid;

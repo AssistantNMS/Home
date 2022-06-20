@@ -1,0 +1,25 @@
+@media screen and (max-width: 1000px) {
+    .basic-grid {
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+
+        .grid-hero-right-block {
+            display: none;
+        }
+    }
+
+    .section.hero {
+        max-width: calc(100vw - 2em);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #landing-hero .store-links-container {
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .section.hero {
+        max-width: calc(100vw - 2em);
+    }
+}

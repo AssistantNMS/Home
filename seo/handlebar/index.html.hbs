@@ -267,15 +267,18 @@
                         <div class="hero-img-stack">
                             <img class="hero-image-bg" src="/assets/img/hero-img.svg" alt="background shadow" />
 
-                            <div id="hero-parallax-scene1" class="hero-image">
-                                <img data-depth="0.05" src="/assets/img/phoneWithApp.png"
+                            <div class="hero-parallax hero-image">
+                                <img data-depth="0.05" src="/assets/img/screenshots/phone-bg.png"
+                                    class="hero-image-bg-offset" alt="phone with app running" />
+                                <img data-depth="0.05" src="/assets/img/screenshots/phoneWithApp.png"
                                     alt="phone with app running" />
                             </div>
-                            <div id="hero-parallax-scene2" class="hero-image-cm">
-                                <img data-depth="0.25" src="/assets/img/cooking.png" alt="community mission panel" />
+                            <div class="hero-parallax hero-image-cm">
+                                <img data-depth="0.25" src="/assets/img/screenshots/cooking.png"
+                                    alt="community mission panel" />
                             </div>
-                            <div id="hero-parallax-scene3" class="hero-image-qs">
-                                <img data-depth="0.5" src="/assets/img/quicksilverReward.png"
+                            <div class="hero-parallax hero-image-qs">
+                                <img data-depth="0.5" src="/assets/img/screenshots/quicksilverReward.png"
                                     alt="community mission panel" />
                             </div>
                         </div>
@@ -287,21 +290,12 @@
             <div class="container-1180px">
                 <h2 class="ta-center">Our Socials</h2>
                 <div class="basic-grid grid-logos mt-2">
-                    <div class="badge-wrapper">
-                        <img src="/assets/img/companies/twitter.png" alt="Twitter" />
-                    </div>
-                    <div class="badge-wrapper">
-                        <img src="/assets/img/companies/discord.svg" alt="Discord Server" />
-                    </div>
-                    <div class="badge-wrapper">
-                        <img src="/assets/img/companies/github.png" alt="Github organisation" />
-                    </div>
-                    <div class="badge-wrapper">
-                        <img src="/assets/img/companies/facebook.svg" alt="Facebook page" />
-                    </div>
-                    <div class="badge-wrapper">
-                        <img src="/assets/img/companies/steam.png" alt="Steam Community group" />
-                    </div>
+                    {{#each socials as |social index|}}
+                    <a href="{{urlref social.url}}" title="{{social.name}}" class="badge-wrapper" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="{{social.imgUrl}}" alt="{{social.name}}" />
+                    </a>
+                    {{/each}}
                 </div>
             </div>
         </section>
@@ -309,117 +303,107 @@
             <div class="container-1180px">
                 <h2 class="ta-center">Features</h2>
                 <div class="container-600px ta-center">
-                    <h3 style="font-weight: 100;">Powerful features to supercharge your productivity</h3>
+                    <h3 style="font-weight: 100;">Powerful features to supercharge your gameplay 🎮</h3>
                 </div>
                 <div class="card-feature top">
                     <div class="basic-grid feature-grid">
                         <div class="right-block-card-feature">
-                            <img src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083290463da79b_seamless-team-collaboration-and-task-assignment.png"
-                                alt="Team Collaboration - App Webflow Template" class="left-image-feature">
+                            <div class="feature-img-stack">
+                                <div class="feature-image alt">
+                                    <img src="/assets/img/screenshots/phone-bg.png" class="feature-image-bg-offset"
+                                        alt="phone with app running" />
+                                    <img src="/assets/img/screenshots/phoneWithStasis.png"
+                                        alt="phone with app running" />
+                                </div>
+                                <div class="feature-image-1 alt">
+                                    <img src="/assets/img/screenshots/phoneWithStasisOverlay.png" alt="app overlay" />
+                                </div>
+                            </div>
                         </div>
                         <div class="left-block-card-feature">
-                            <img src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083243e23da7a5_features-icon-1-apps.svg"
+                            <img src="/assets/img/interconnected.png" alt="interconnected icon">
+                            <div class="margin-bottom-6px">
+                                <h3>Packed with data</h3>
+                            </div>
+                            <p>
+                                Comprehensive amount of data displayed for each item with a links to other items.<br />
+                                See how to craft, refine and cook an item as well as how an item can be used in other
+                                crafting, refining and cooking recipes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-feature bottom">
+                    <div class="basic-grid feature-grid bottom">
+                        <div class="left-block-card-feature bottom">
+                            <img src="/assets/img/live.png" alt="connected icon" />
+                            <div class="margin-bottom-6px">
+                                <h3>View live event statuses</h3>
+                            </div>
+                            <p>
+                                View live in-game events such as the Community Missions, Weekend Missions and
+                                Expeditions all from within the app with live and accurate data.
+                            </p>
+                        </div>
+                        <div class="right-block-card-feature bottom">
+                            <div class="feature-img-stack">
+                                <div class="feature-image">
+                                    <img src="/assets/img/screenshots/phone-bg.png" class="feature-image-bg-offset"
+                                        alt="phone with app running" />
+                                    <img src="/assets/img/screenshots/phoneWithExp.png" alt="phone with app running" />
+                                </div>
+                                <div class="feature-image-1">
+                                    <img src="/assets/img/screenshots/phoneWithExpOverlay.png"
+                                        alt="community mission panel" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-feature top" style="margin-top: 200px">
+                    <div class="basic-grid feature-grid">
+                        <div class="right-block-card-feature">
+                            <div class="feature-img-stack">
+                                <div class="feature-image alt">
+                                    <img src="/assets/img/screenshots/phone-bg.png" class="feature-image-bg-offset"
+                                        alt="phone with app running" />
+                                    <img src="/assets/img/screenshots/phoneWithStasis.png"
+                                        alt="phone with app running" />
+                                </div>
+                                <div class="feature-image-1 alt">
+                                    <img src="/assets/img/screenshots/phoneWithStasisOverlay.png" alt="app overlay" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left-block-card-feature">
+                            <img src="/assets/img/interconnected.png"
                                 alt="Team Collaboration Icon - App Webflow Template">
                             <div class="margin-bottom-6px">
-                                <h3>Seamless team-collaboration &amp; task assignment</h3>
+                                <h3>Packed with data</h3>
                             </div>
-                            <p>Thanks to the built-in team collaboration features, you will always be on the same page
-                                with your teammates.</p>
+                            <p>
+                                Comprehensive amount of data displayed for each item with a links to other items.<br />
+                                See how to craft, refine and cook an item as well as how an item can be used in other
+                                crafting, refining and cooking recipes.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div data-w-id="9a06e6a7-f6a0-5e4e-9703-2aa864ae1ddf" class="card-feature bottom"
-                    style="will-change: opacity, transform; opacity: 0.25; transform: translate3d(0px, 0px, 0px) scale3d(0.8, 0.8, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                    <div class="basic-grid feature-grid bottom">
-                        <div id="w-node-_9a06e6a7-f6a0-5e4e-9703-2aa864ae1de3-ae3da77d"
-                            class="left-block-card-feature bottom"><img
-                                src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083276af3da7a6_features-icon-2-apps.svg"
-                                alt="Built-in Integrations Icon - App Webflow Template">
-                            <div class="margin-bottom-6px">
-                                <h3>Built-in integrations that adapt to your unique workflow</h3>
-                            </div>
-                            <p>With our 15+ native integrations you will be able to connect our app with any app that is
-                                already in your workflow, and you will take your productivity to the next level.</p>
-                        </div>
-                        <div id="w-node-_9a06e6a7-f6a0-5e4e-9703-2aa864ae1de1-ae3da77d"
-                            class="right-block-card-feature bottom"><img
-                                src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/601de21ff5b1450bc59adf55_instegrations-apps-template-webflow.png"
-                                sizes="(max-width: 479px) 79vw, (max-width: 767px) 77vw, (max-width: 991px) 67vw, 617.0028076171875px"
-                                srcset="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/601de21ff5b1450bc59adf55_instegrations-apps-template-webflow-p-500.png 500w, https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/601de21ff5b1450bc59adf55_instegrations-apps-template-webflow-p-800.png 800w, https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/601de21ff5b1450bc59adf55_instegrations-apps-template-webflow.png 1282w"
-                                alt="Built-in Integrations - App Webflow Template" class="right-image-feature"></div>
-                    </div>
-                </div>
-                <h3 data-w-id="a5e5dc9e-2cdd-e5eb-999d-160447eac27c" style="opacity: 1;" class="text-center">And many
-                    more amazing features!</h3>
-                <div class="basic-grid grid-secondary-features">
-                    <div data-w-id="f944489e-598e-9e21-e592-9c8b98f8414d" style="opacity: 1;"><img
-                            src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f08325d803da7a1_secondary-icon-01.svg"
-                            alt="Seamless Sync Icon - App Webflow Template" class="icon-secondary-feature">
-                        <h4 class="title-secondary-feature">Seamless Sync</h4>
-                        <p>Any update on your tasks will be instantly synced through all your devices, no extra work
-                            needed.</p>
-                    </div>
-                    <div data-w-id="edeb566b-c0c4-d822-be55-ed7d71b8fbfc" style="opacity: 1;"><img
-                            src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f08325d9b3da79d_secondary-icon-02.svg"
-                            alt="Smart Tags Icon - App Webflow Template" class="icon-secondary-feature">
-                        <h4 class="title-secondary-feature">Smart Tags</h4>
-                        <p>Smartly categorize your new or current tasks with tags to keep all your work organized.</p>
-                    </div>
-                    <div data-w-id="19edcd1e-4a8e-0b31-8158-380f0752fc57" style="opacity: 1;"><img
-                            src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f0832a2203da7a0_secondary-icon-03.svg"
-                            alt="Notifications Icon - App Webflow Template" class="icon-secondary-feature">
-                        <h4 class="title-secondary-feature">On-point Notifications</h4>
-                        <p>Receive smart notifications about tasks expiring soon, or by any other custom trigger you
-                            need.</p>
-                    </div>
-                    <div data-w-id="38453dc1-fc84-f79d-2a41-395b2b10d6ed" style="opacity: 1;"><img
-                            src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f08320bad3da79f_secondary-icon-04.svg"
-                            alt="Powerful Automation Icon - App Webflow Template" class="icon-secondary-feature">
-                        <h4 class="title-secondary-feature">Powerful Automation</h4>
-                        <p>Don't work over and over again, take advantage of all our automation features to make your
-                            work easier.</p>
-                    </div>
-                    <div data-w-id="a5372966-8611-309f-7e40-ceae0bb47b42" style="opacity: 1;"><img
-                            src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083260e43da79e_secondary-icon-05.svg"
-                            alt="Multiple Views Icon - App Webflow Template" class="icon-secondary-feature">
-                        <h4 class="title-secondary-feature">Multiple Views</h4>
-                        <p>View your tasks in List, Board or Timeline view, depending on what’s better for your project.
-                        </p>
-                    </div>
-                    <div data-w-id="d34aadd2-28a0-e40a-7c93-35d991ddb5d7" style="opacity: 1;"><img
-                            src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083235b33da7a2_secondary-icon-06.svg"
-                            alt="100% Customizable Icon - App Webflow Template" class="icon-secondary-feature">
-                        <h4 class="title-secondary-feature">100% Customizable</h4>
-                        <p>Thanks to our custom fields, you can customize Apps to be perfectly tailored to your needs.
-                        </p>
-                    </div>
-                </div>
-                <div class="flex-vc"><a href="#Download-App" data-w-id="1d5e76eb-8981-250f-34ca-5af3c6313202"
-                        style="opacity: 1;" class="button-primary large w-inline-block"><img
-                            src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083277793da793_download-icon.svg"
-                            alt="Download Icon - Apps Webflow Template" class="mg-right-8px">
-                        <div class="button-text">Download App</div>
-                    </a></div>
+
+                <h3 class="ta-center">And many more amazing features!</h3>
             </div>
         </section>
         <section id="Customers" class="section bg-primary-1">
             <div class="container-1180px">
                 <div class="basic-grid grid-testimonial">
-                    <div id="w-node-_0556131b-5262-376c-6a79-96e4c3c9365f-ae3da77d"
-                        data-w-id="0556131b-5262-376c-6a79-96e4c3c9365f" style="opacity: 1;"
-                        class="grid-testimonial-left-side">
-                        <h2 class="testimonials-title color-white">Don’t just take our word for it!</h2>
-                        <p class="paragraph-large color-grey-light">Thousands of professionals and business are already
-                            enjoying Apps. Hear what some of they are saying!</p>
-                        <div class="mg-top-32px"><a href="#Download-App"
-                                class="button-secondary large w-inline-block"><img
-                                    src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083267253da7a7_primary-color-download-icon.svg"
-                                    alt="Arrow Icon - App Webflow Template" class="mg-right-8px">
-                                <div class="button-text">Download App</div>
-                            </a></div>
+                    <div class="grid-testimonial-left-side">
+                        <h2 class="testimonials-title color-white">Don't just take our word for it!</h2>
+                        <p class="paragraph-large color-grey-light">
+                            Over 100 000 downloads and thousands of reviews! We listen to and read all of your reviews.
+                            The apps could not be in the state that it is without the community that has supported it!
+                        </p>
                     </div>
-                    <div data-w-id="9edda2be-7fc6-894f-8661-b570947ff8b3" style="opacity: 1;"
-                        class="grid-testimonial-right-side">
+                    <div class="grid-testimonial-right-side">
                         <div data-delay="4000" data-animation="slide" class="testimonial-slider w-slider"
                             data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false"
                             data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true"
@@ -852,9 +836,14 @@
             </div>
         </footer>
     </div>
-    <img data-0="transform:rotate(0deg);left:110vw;" data-500="transform:rotate(-25deg);left:85vw;"
-        data-3000="left:85vw;" data-3250="transform:rotate(0deg);left:100vw;" src="./assets/img/planetCrafter2.png"
-        class="parallax-pc2 hidden-in-mobile" alt="image with parallax" />
+    <img data-0="transform:rotate(0deg);left:100vw;" data-500="transform:rotate(-10deg);left:90vw;"
+        data-2000="transform:rotate(-10deg);left:90vw;" data-2500="transform:rotate(0deg);left:100vw;"
+        src="./assets/img/sentinalBlue.png" class="parallax-sentinalBlue hidden-in-mobile" alt="image with parallax" />
+
+    <img data-0="transform:rotate(0deg);left:-30vw;" data-1500="transform:rotate(0deg);left:1vw;"
+        data-3000="transform:rotate(720deg);left:1vw;" data-3500="transform:rotate(600deg);left:-30vw;"
+        data-4000="transform:rotate(600deg);left:-30vw;" src="./assets/img/book.png"
+        class="parallax-book hidden-in-mobile" alt="image with parallax" />
 </body>
 <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script async defer src="https://assistantapps.github.io/WebComponents/build/bundle.js"></script>

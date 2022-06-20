@@ -78,9 +78,16 @@
     }
 }
 
-.parallax-pc2 {
+.parallax-sentinalBlue {
     position: fixed;
-    top: 50vh;
+    top: 60vh;
     left: 100vw;
-    height: 50vh;
+    height: 25vh;
+}
+
+.parallax-book {
+    position: fixed;
+    top: 3em;
+    left: 0;
+    width: 25vh;
 }

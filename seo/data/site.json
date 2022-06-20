@@ -25,6 +25,38 @@
         "webApp": "https://app.nmsassistant.com/",
         "windows": "https://apps.microsoft.com/store/detail/assistant-for-no-mans-sky/9NQLF7XD0LF3"
     },
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/AssistantNMS",
+            "imgUrl": "/assets/img/companies/twitter.png"
+        },
+        {
+            "name": "Discord Server",
+            "url": "https://assistantapps.com/discord",
+            "imgUrl": "/assets/img/companies/discord.svg"
+        },
+        {
+            "name": "Github organisation",
+            "url": "https://github.com/AssistantNMS",
+            "imgUrl": "/assets/img/companies/github.png"
+        },
+        {
+            "name": "Facebook page",
+            "url": "https://www.facebook.com/AssistantNMS",
+            "imgUrl": "/assets/img/companies/facebook.svg"
+        },
+        {
+            "name": "Steam Community group",
+            "url": "https://steamcommunity.com/groups/AssistantNMS",
+            "imgUrl": "/assets/img/companies/steam.png"
+        },
+        {
+            "name": "Send an email",
+            "url": "mailto:support@nmsassistant.com",
+            "imgUrl": "/assets/img/companies/email.png"
+        }
+    ],
     "preconnectLinks": [
         "https://fonts.googleapis.com"
     ],
