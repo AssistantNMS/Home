@@ -1,6 +1,8 @@
 
 window.onload = function () {
-    parallax();
+    setTimeout(() => {
+        parallax();
+    }, 500);
 };
 
 function parallax() {
@@ -8,6 +10,8 @@ function parallax() {
 
     heroParallax();
     featureParallax();
+
+    waitForParallax();
 }
 
 function heroParallax() {
@@ -24,4 +28,9 @@ function featureParallax() {
     for (const featureParallaxElem of featureParallaxElems) {
         featureParallaxInstances.push(new Parallax(featureParallaxElem));
     }
+}
+
+function waitForParallax() {
+    var bodyElem = document.getElementById('app-body');
+    bodyElem.classList.remove('is-loading');
 }

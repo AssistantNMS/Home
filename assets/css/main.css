@@ -1,3 +1,12 @@
+.hidden-till-loaded {
+  transition: opacity 100ms ease-in-out;
+}
+
+.is-loading .hidden-till-loaded {
+  opacity: 0;
+  position: absolute;
+}
+
 .button-primary,
 .button-secondary {
   display: flex;
@@ -52,6 +61,7 @@
 }
 #landing-hero .app-icon {
   border-radius: 1em;
+  max-width: 76px;
 }
 #landing-hero h1 {
   white-space: nowrap;
@@ -213,11 +223,17 @@
   flex-direction: row;
   align-items: center;
   text-decoration: none;
+  color: aliceblue;
 }
 .navbar-logo img {
   max-width: 50px;
   margin-right: 0.5em;
   border-radius: 0.5em;
+}
+
+.navbar-mobile {
+  width: 3em;
+  height: 3em;
 }
 
 [class^=parallax-],
@@ -332,6 +348,9 @@
   background-image: -webkit-gradient(linear, left top, right top, color-stop(46%, #7986cb), color-stop(0, #fff));
   background-image: linear-gradient(90deg, #7986cb 46%, #fff 0);
 }
+.card-feature.top.third {
+  margin-top: 200px;
+}
 .card-feature.bottom {
   margin-top: 194px;
   margin-bottom: 120px;
@@ -348,13 +367,49 @@
     display: none;
   }
   .section.hero {
-    max-width: calc(100vw - 2em);
+    width: 100vw;
+    margin: 0 auto;
+  }
+  #landing-hero .store-links-container {
+    padding-right: 0;
+  }
+  .section.socials .basic-grid.grid-logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card-feature.top.third {
+    margin-top: 2em;
+  }
+  .card-feature.top, .card-feature.bottom {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: white;
+    background-image: none;
+    border-radius: 32px;
+  }
+  .card-feature.top .feature-image,
+.card-feature.top .feature-image img, .card-feature.bottom .feature-image,
+.card-feature.bottom .feature-image img {
+    height: 50vh;
+    position: relative;
+    padding: 1em;
+    left: 50%;
+    transform: translate(-50%, -0.5em) !important;
+  }
+  .card-feature.top .right-block-card-feature.bottom, .card-feature.bottom .right-block-card-feature.bottom {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 720px) {
   #landing-hero .store-links-container {
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+  #landing-hero .store-links-container .button-primary {
+    justify-content: center;
   }
   .section.hero {
     max-width: calc(100vw - 2em);

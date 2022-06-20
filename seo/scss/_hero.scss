@@ -12,6 +12,7 @@ $hero-transform: rotate3d(-1, 4, 5, 347deg) skew(346deg, 11deg) !important;
     z-index: 1;
     .app-icon {
         border-radius: 1em;
+        max-width: 76px;
     }
 
     h1 {
