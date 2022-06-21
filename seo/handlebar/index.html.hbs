@@ -104,7 +104,7 @@
 <body id="app-body" class="is-loading">
     <div class="page-wrapper">
         <div class="header">
-            <div class="container-nav">
+            <div class="container-nav noselect">
                 <div class="header-left-side">
                     <a href="/" class="navbar-logo hidden-in-desktop">
                         <img src="/assets/favicon/apple-touch-icon-76x76.png" alt="AssistantNMS - Logo"
@@ -147,7 +147,7 @@
                 </div>
                 <div class="header-right-side hidden-in-mobile">
                     <div class="nav-button">
-                        <a href="https://appstemplate.webflow.io/#Download-App" class="button-secondary">
+                        <a href="#download" class="button-secondary">
                             <img src="/assets/img/download.png" alt="AssistantNMS - Logo" class="mg-right-8px">
                             <div class="button-text">Download</div>
                         </a>
@@ -174,7 +174,7 @@
                             phone and everywhere else!
                         </p>
                         <div class="mt-2">
-                            <div class="store-links-container">
+                            <div class="store-links-container noselect">
                                 <a href="{{store.ios}}" class="button-primary">
                                     <img src="/assets/img/AppStoreIcon.png" alt="Apple App Store Logo">
                                     <div class="button-text">Apple App Store</div>
@@ -219,7 +219,7 @@
         </section>
         <section class="section socials">
             <div class="container-1180px">
-                <h2 class="ta-center">Our Socials</h2>
+                <h2 class="ta-center noselect">Our Socials</h2>
                 <div class="basic-grid grid-logos mt-2">
                     {{#each socials as |social index|}}
                     <a href="{{urlref social.url}}" title="{{social.name}}" class="badge-wrapper" target="_blank"
@@ -232,8 +232,8 @@
         </section>
         <section id="Features" class="section">
             <div class="container-1180px">
-                <h2 class="ta-center">Features</h2>
-                <div class="container-600px ta-center">
+                <h2 class="ta-center noselect">Features</h2>
+                <div class="container-600px ta-center noselect">
                     <h3 style="font-weight: 100;">Powerful features to supercharge your gameplay 🎮</h3>
                 </div>
                 <div class="card-feature top">
@@ -308,7 +308,7 @@
                             </div>
                         </div>
                         <div class="left-block-card-feature">
-                            <img src="/assets/img/community.png" alt="Team Collaboration Icon - App Webflow Template">
+                            <img src="/assets/img/community.png" alt="community icon">
                             <div class="margin-bottom-6px">
                                 <h3>Connect with the community</h3>
                             </div>
@@ -323,7 +323,7 @@
                 <h3 class="ta-center">And many more amazing features!</h3>
             </div>
         </section>
-        <section id="Customers" class="section bg-primary-1">
+        <section id="testimonials" class="section">
             <div class="container-1180px">
                 <div class="basic-grid grid-testimonial">
                     <div class="grid-testimonial-left-side">
@@ -332,203 +332,108 @@
                             Over 100 000 downloads and thousands of reviews! We listen to and read all of your reviews.
                             The apps could not be in the state that it is without the community that has supported it!
                         </p>
+                        <a href="{{urlref store.android}}" class="app-store noselect" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="app-store-img">
+                                <img src="/assets/img/GooglePlayRating.png" alt="GooglePlayStore" />
+                            </div>
+                            <div class="app-store-content">
+                                <h4>Google Play Store</h4>
+                                <p>{{googlePlayRating.numberOfReviews}} reviews</p>
+                            </div>
+                            <div class="app-store-trailing">
+                                <span>{{googlePlayRating.allScore}}&nbsp;⭐</span>
+                            </div>
+                        </a>
+                        <a href="{{urlref store.ios}}" class="app-store noselect" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="app-store-img">
+                                <img src="/assets/img/AppStoreRating.png" alt="AppStoreRating" />
+                            </div>
+                            <div class="app-store-content">
+                                <h4>Apple App Store</h4>
+                                <p>{{appleAppStoreRating.numberOfReviews}} reviews</p>
+                            </div>
+                            <div class="app-store-trailing">
+                                <span>{{appleAppStoreRating.allScore}}&nbsp;⭐</span>
+                            </div>
+                        </a>
                     </div>
                     <div class="grid-testimonial-right-side">
-                        <div data-delay="4000" data-animation="slide" class="testimonial-slider w-slider"
-                            data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false"
-                            data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true"
-                            role="region" aria-label="carousel">
-                            <div class="w-slider-mask" id="w-slider-mask-0">
-                                <div class="w-slide" aria-label="1 of 2" role="group"
-                                    style="transform: translateX(0px); opacity: 1;">
-                                    <div class="testimonial-card-wrapper">
-                                        <div class="testimonial-top">
-                                            <div class="testimonial-details"><img
-                                                    src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083238623da7ab_john-carter.jpg"
-                                                    width="72" alt="John Carter - App Webflow Template"
-                                                    class="testimonial-avatar">
-                                                <div>
-                                                    <div class="testimonial-name">John Carter</div>
-                                                </div>
-                                            </div>
+                        <div class="testimonial-slider">
+                            <div class="testimonial-card-wrapper">
+                                <div class="testimonial-top">
+                                    <div class="testimonial-details">
+                                        <img src="https://kurtlourens.com/assets/images/KurtAvatar.svg"
+                                            alt="Kurt Lourens" class="testimonial-avatar" />
+                                        <div class="testimonial-author">
+                                            <h3 class="testimonial-name">Kurt Lourens</h3>
+                                            <small class="testimonial-source">Google Play</small>
                                         </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui integer in amet
-                                            nunc, fusce. Tortor, proin tellus nullam nunc amet. Ac at purus ac neque.
-                                            Venenatis ut”</p>
                                     </div>
                                 </div>
-                                <div class="w-slide" aria-label="2 of 2" role="group" aria-hidden="true"
-                                    style="transform: translateX(0px); opacity: 1;">
-                                    <div class="testimonial-card-wrapper" aria-hidden="true">
-                                        <div class="testimonial-top" aria-hidden="true">
-                                            <div class="testimonial-details" aria-hidden="true"><img
-                                                    src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083238623da7ab_john-carter.jpg"
-                                                    width="72" alt="John Carter - App Webflow Template"
-                                                    class="testimonial-avatar" aria-hidden="true">
-                                                <div aria-hidden="true">
-                                                    <div class="testimonial-name" aria-hidden="true">John Carter</div>
-                                                    <div class="testimonial-role" aria-hidden="true">VP of Sales at
-                                                        Webflow</div>
-                                                </div>
-                                            </div>
-                                            <div aria-hidden="true"><img
-                                                    src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f08321ced3da7ac_review-5-stars.svg"
-                                                    alt="Testimonials Stars - Apps Webflow Template" aria-hidden="true">
-                                            </div>
-                                        </div>
-                                        <p aria-hidden="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Dui integer in amet nunc, fusce. Tortor, proin tellus nullam nunc amet. Ac
-                                            at purus ac neque. Venenatis ut”</p>
+                                <p class="testimonial-text">I think its a great app 👍</p>
+                                <div class="arrow-container">
+                                    <div class="left-arrow" onclick="prevTestimonial()">
+                                        <img src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083223bc3da7ae_arrow-slider-left.svg"
+                                            alt="left arrow" class="arrow-image" />
+                                    </div>
+                                    &nbsp;
+                                    <div class="right-arrow" onclick="nextTestimonial()">
+                                        <img src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083234fd3da7ad_arrow-slider-right.svg"
+                                            alt="right arrow" class="arrow-image" />
                                     </div>
                                 </div>
-                                <div aria-live="off" aria-atomic="true" class="w-slider-aria-label" data-wf-ignore="">
-                                </div>
-                            </div>
-                            <div class="left-arrow w-slider-arrow-left" role="button" tabindex="0"
-                                aria-controls="w-slider-mask-0" aria-label="previous slide"><img
-                                    src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083223bc3da7ae_arrow-slider-left.svg"
-                                    alt="Arrow Icon - App Webflow Template" class="arrow-image"></div>
-                            <div class="right-arrow w-slider-arrow-right" role="button" tabindex="0"
-                                aria-controls="w-slider-mask-0" aria-label="next slide"><img
-                                    src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083234fd3da7ad_arrow-slider-right.svg"
-                                    alt="Arrow Icon - App Webflow Template" class="arrow-image"></div>
-                            <div class="testiomonial-slider-dots w-slider-nav w-round">
-                                <div class="w-slider-dot w-active" data-wf-ignore="" aria-label="Show slide 1 of 2"
-                                    aria-pressed="true" role="button" tabindex="0"
-                                    style="margin-left: 3px; margin-right: 3px;"></div>
-                                <div class="w-slider-dot" data-wf-ignore="" aria-label="Show slide 2 of 2"
-                                    aria-pressed="false" role="button" tabindex="-1"
-                                    style="margin-left: 3px; margin-right: 3px;"></div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="FAQS" class="section">
-            <div class="container-700px text-center">
-                <div class="flex-vc">
-                    <div data-w-id="fd0f45cc-84af-db2b-cab0-902c0609b44d" style="opacity: 1;" class="badge">FAQS</div>
-                </div>
-                <h2 data-w-id="c996a163-9f39-acb0-2f05-b0cfbebc4564" style="opacity: 1;">Frequently Asked Questions</h2>
-                <p data-w-id="b17c33bb-086c-9888-464f-a8f2b0d4d536" style="opacity: 1;" class="paragraph-large">Have
-                    questions? We’ve answers. If you can’t find what we are looking for, feel free to <a
-                        href="/contact-us">get in touch</a>.</p>
-            </div>
-            <div class="container-800px">
-                <div data-w-id="40229d38-0fcf-7bfc-4ed9-341b68b0aed5" style="opacity: 1;" class="faq-container">
-                    <div data-delay="0" data-hover="false" data-w-id="40229d38-0fcf-7bfc-4ed9-341b68b0aed6"
-                        style="height: 84px;" class="faq-item-wrapper w-dropdown">
-                        <div class="faq-top-wrapper w-dropdown-toggle" id="w-dropdown-toggle-2"
-                            aria-controls="w-dropdown-list-2" aria-haspopup="menu" aria-expanded="false" role="button"
-                            tabindex="0">
-                            <div class="faq-question">Can I request a new feature for Apps?</div><img
-                                src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77b4c234e76c5b61b70b2a_plus-icon.svg"
-                                style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                                alt="" class="open-close-icon">
-                        </div>
-                        <nav class="faq-body w-dropdown-list" id="w-dropdown-list-2"
-                            aria-labelledby="w-dropdown-toggle-2">
-                            <div class="answer-wrapper">
-                                <p class="faq-answer-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-                                    ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean
-                                    faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
-                                    tristique posuere.</p>
-                            </div>
-                        </nav>
-                    </div>
-                    <div data-delay="0" data-hover="false" data-w-id="40229d38-0fcf-7bfc-4ed9-341b68b0aedf"
-                        style="height: 84px;" class="faq-item-wrapper w-dropdown">
-                        <div class="faq-center-wrapper w-dropdown-toggle" id="w-dropdown-toggle-3"
-                            aria-controls="w-dropdown-list-3" aria-haspopup="menu" aria-expanded="false" role="button"
-                            tabindex="0">
-                            <div class="faq-question">Can I download Apps data into Excel or CSV?</div><img
-                                src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77b4c234e76c5b61b70b2a_plus-icon.svg"
-                                style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                                alt="" class="open-close-icon">
-                        </div>
-                        <nav class="faq-body w-dropdown-list" id="w-dropdown-list-3"
-                            aria-labelledby="w-dropdown-toggle-3">
-                            <div class="answer-wrapper">
-                                <p class="faq-answer-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-                                    ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean
-                                    faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
-                                    tristique posuere.</p>
-                            </div>
-                        </nav>
-                    </div>
-                    <div data-delay="0" data-hover="false" data-w-id="40229d38-0fcf-7bfc-4ed9-341b68b0aee8"
-                        style="height: 84px;" class="faq-item-wrapper w-dropdown">
-                        <div class="faq-center-wrapper w-dropdown-toggle" id="w-dropdown-toggle-4"
-                            aria-controls="w-dropdown-list-4" aria-haspopup="menu" aria-expanded="false" role="button"
-                            tabindex="0">
-                            <div class="faq-question">Does Apps team offer 1-on-1 support?</div><img
-                                src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77b4c234e76c5b61b70b2a_plus-icon.svg"
-                                style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                                alt="" class="open-close-icon">
-                        </div>
-                        <nav class="faq-body w-dropdown-list" id="w-dropdown-list-4"
-                            aria-labelledby="w-dropdown-toggle-4">
-                            <div class="answer-wrapper">
-                                <p class="faq-answer-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-                                    ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean
-                                    faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
-                                    tristique posuere.</p>
-                            </div>
-                        </nav>
-                    </div>
-                    <div data-delay="0" data-hover="false" data-w-id="40229d38-0fcf-7bfc-4ed9-341b68b0aef1"
-                        style="height: 84px;" class="faq-item-wrapper w-dropdown">
-                        <div class="faq-bottom-wrapper w-dropdown-toggle" id="w-dropdown-toggle-5"
-                            aria-controls="w-dropdown-list-5" aria-haspopup="menu" aria-expanded="false" role="button"
-                            tabindex="0">
-                            <div class="faq-question">Can I invite my teammates to Apps?</div><img
-                                src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77b4c234e76c5b61b70b2a_plus-icon.svg"
-                                style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                                alt="" class="open-close-icon">
-                        </div>
-                        <nav class="faq-body w-dropdown-list" id="w-dropdown-list-5"
-                            aria-labelledby="w-dropdown-toggle-5">
-                            <div class="answer-wrapper last">
-                                <p class="faq-answer-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-                                    ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean
-                                    faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
-                                    tristique posuere.</p>
-                            </div>
-                        </nav>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="patreon" class="section">
-            <assistant-apps-patreon-list />
+        <section id="Support" class="section">
+            <div class="container-1180px">
+                <h2 class="ta-center">Community supported</h2>
+                <div class="container-600px ta-center">
+                    <h3 style="font-weight: 100;">The app is only possible thanks to the NMS community 💖</h3>
+                </div>
+
+                <div class="donation-grid noselect">
+                    {{#each donationOptions as |donationOption index|}}
+                    <div class="donation-card">
+                        <a href="{{urlref donationOption.url}}" target="_blank" rel="noopener noreferrer"
+                            class="card extraMargin">
+                            <img src="{{donationOption.imgUrl}}" alt="{{donationOption.name}}"
+                                class="card-header-image" />
+                            <div class="card-social">{{donationOption.name}}</div>
+                        </a>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
         </section>
 
-        <footer data-w-id="71417737-5b4b-a09e-2591-ff5af838e990" class="footer" style="opacity: 1;">
+        <footer class="footer">
             <div class="container-1180px">
                 <div class="basic-grid footer-top">
-                    <div id="w-node-_71417737-5b4b-a09e-2591-ff5af838e993-f838e990" class="footer-column-1"><a href="/"
-                            aria-current="page" class="footer-logo w-inline-block w--current"><img
+                    <div class="footer-column-1">
+                        <a href="/" aria-current="page" class="footer-logo w-inline-block w--current"><img
                                 src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/60a7cf1142adae13ec1cc408_logo.svg"
                                 alt="Apps Webflow Template - Logo"></a>
                         <p class="footer-paragraph">A simple, yet effective way to be more productive.</p>
-                        <div class="footer-social-media"><a href="https://facebook.com"
-                                class="social-icon w-inline-block"><img
-                                    src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f08320a4b3da7b4_facebook-logo.svg"
+                        <div class="footer-social-media">
+                            <a href="https://facebook.com" class="social-icon w-inline-block">
+                                <img src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f08320a4b3da7b4_facebook-logo.svg"
                                     alt="Facebook Icon - Apps Webflow Template"></a>
-                            <a href="https://twitter.com" class="social-icon w-inline-block"><img
-                                    src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f08322c303da7b6_twitter-logo.svg"
+                            <a href="https://twitter.com" class="social-icon w-inline-block">
+                                <img src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f08322c303da7b6_twitter-logo.svg"
                                     alt="Twitter Icon - Apps Webflow Template"></a>
-                            <a href="https://instagram.com" class="social-icon w-inline-block"><img
-                                    src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083253593da7b5_instagram-logo.svg"
+                            <a href="https://instagram.com" class="social-icon w-inline-block">
+                                <img src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083253593da7b5_instagram-logo.svg"
                                     alt="Instagram Icon - Apps Webflow Template"></a>
-                            <a href="https://linkedin.com" class="social-icon w-inline-block"><img
-                                    src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f0832b4df3da7b7_linkedin-logo.svg"
+                            <a href="https://linkedin.com" class="social-icon w-inline-block">
+                                <img src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f0832b4df3da7b7_linkedin-logo.svg"
                                     alt="LinkedIn Icon - Apps Webflow Template"></a>
                         </div>
                     </div>
@@ -582,8 +487,11 @@
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <div class="copyright">© Copyright Apps | Designed by <a href="https://brixtemplates.com/">BRIX
-                            Templates</a> - Powered by <a href="https://webflow.com/">Webflow</a></div>
+                    <div class="copyright">
+                        <span>©AssistantNMS - </span>
+                        <a href="{{assistantApps.rootUrl}}" target="_blank" rel="noopener noreferrer">AssistantApps</a>
+                        <span> - 4.0.0</span>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -596,6 +504,7 @@
 <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script async defer src="https://assistantapps.github.io/WebComponents/build/bundle.js"></script>
 <script async defer src="./assets/js/skrollr.min.js"></script>
+<script async defer src="./assets/js/testimonials.js"></script>
 <script async defer src="./assets/js/custom.js"></script>
 
 </html>

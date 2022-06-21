@@ -2,6 +2,7 @@
 window.onload = function () {
     setTimeout(() => {
         parallax();
+        initTestimonials();
     }, 500);
 };
 

@@ -57,6 +57,38 @@
             "imgUrl": "/assets/img/companies/email.png"
         }
     ],
+    "donationOptions": [
+        {
+            "name": "Buy me a Coffee",
+            "url": "https://www.buymeacoffee.com/kurt",
+            "imgUrl": "/assets/img/donation/buyMeACoffee.png"
+        },
+        {
+            "name": "Patreon",
+            "url": "https://www.patreon.com/AssistantNMS",
+            "imgUrl": "/assets/img/donation/patreon.png"
+        },
+        {
+            "name": "PayPal",
+            "url": "https://paypal.me/KurtLourens",
+            "imgUrl": "/assets/img/donation/payPal.png"
+        },
+        {
+            "name": "Ko-fi",
+            "url": "https://ko-fi.com/AssistantNMS",
+            "imgUrl": "/assets/img/donation/kofi.png"
+        },
+        {
+            "name": "Brave",
+            "url": "https://brave.com/nms136",
+            "imgUrl": "/assets/img/donation/bat.png"
+        },
+        {
+            "name": "Open Collective",
+            "url": "https://opencollective.com/assistantnms",
+            "imgUrl": "/assets/img/donation/openCollective.png"
+        }
+    ],
     "preconnectLinks": [
         "https://fonts.googleapis.com"
     ],

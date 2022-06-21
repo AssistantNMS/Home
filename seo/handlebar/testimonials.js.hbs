@@ -1,0 +1,53 @@
+var testimonialList = [
+{{#each testimonials as |testimonial index|}}
+{{#if @index}},{{/if}}
+{
+guid: '{{testimonial.guid}}',
+name: '{{{testimonial.name}}}',
+review: `{{{testimonial.review}}}`,
+source: '{{testimonial.source}}',
+imageUrl: '{{{testimonial.imageUrl}}}'
+}
+{{/each}}
+];
+
+function initTestimonials() {
+applyTestimonialToDom(0);
+}
+
+function applyTestimonialToDom(index) {
+const testimonial = testimonialList[index];
+const testimonialBlock = document.getElementById('testimonials');
+const testimonialAvatar = document.querySelector('#testimonials .testimonial-avatar');
+const testimonialName = document.querySelector('#testimonials .testimonial-name');
+const testimonialSource = document.querySelector('#testimonials .testimonial-source');
+const testimonialText = document.querySelector('#testimonials .testimonial-text');
+
+testimonialBlock.value = index;
+testimonialAvatar.src = testimonial.imageUrl;
+testimonialName.innerText = testimonial.name;
+testimonialSource.innerText = getTestimonialSource(testimonial.source);
+testimonialText.innerText = testimonial.review;
+}
+
+function getTestimonialSource(source) {
+if (source == 1) return 'Google Play Store';
+if (source == 2) return 'Apple App Store';
+return 'App Store';
+}
+
+function nextTestimonial() {
+const testimonialBlock = document.getElementById('testimonials');
+let index = (testimonialBlock.value ?? 0) + 1;
+
+if (index >= testimonialList.length) {
+index = index - testimonialList.length;
+}
+applyTestimonialToDom(index);
+}
+
+function prevTestimonial() {
+const testimonialBlock = document.getElementById('testimonials');
+let index = (testimonialBlock.value ?? 0) - 1;
+
+if (index < 0) { index=testimonialList.length - 1; } applyTestimonialToDom(index); }
