@@ -1,162 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="application-name" content="{{meta.appName}}">
-    <title>{{meta.title}}</title>
-    <link rel="icon" type="image/png" href="favicon.ico">
-    <link rel="index" href="{{rootUrl}}">
-    <link rel="canonical" href="{{rootUrl}}">
-    <meta name="referrer" content="no-referrer">
-    <link rel="manifest" href="manifest.json">
-    <link rel="author" href="humans.txt">
-    <link rel="me" href="{{kurt.email}}">
-    <link rel="me" href="{{kurt.website}}" type="text/html">
-    <link rel="search" href="opensearch.xml" type="application/opensearchdescription+xml" title="Search Title">
-
-    <meta name="theme-color" content="{{theme.colour}}">
-    <meta name="subject" content="{{meta.description}}">
-    <meta name="description" content="{{meta.description}}">
-    <meta name="rating" content="General">
-    <meta name="robots" content="index,follow">
-
-    <!-- Google -->
-    <meta name="googlebot" content="index,follow">
-    <meta name="google" content="nositelinkssearchbox">
-    <meta name="mobile-web-app-capable" content="yes">
-
-    <!-- Apple -->
-    <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="{{images.favicon.x76}}">
-    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="{{images.favicon.x114}}">
-    <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="{{images.favicon.x120}}">
-    <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="{{images.favicon.x144}}">
-    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="{{images.favicon.x152}}">
-    <link rel="mask-icon" href="{{images.maskIcon}}" color="{{theme.maskColour}}">
-    <!-- <link rel="apple-touch-startup-image" href="/path/to/launch.png"> -->
-    <meta name="apple-mobile-web-app-title" content="{{meta.appName}}">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="{{theme.appleStatusBar}}">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="{{twitter.metaImageSize}}">
-    <meta name="twitter:site" content="{{twitter.handle}}">
-    <meta name="twitter:creator" content="{{kurt.twitter}}">
-    <meta name="twitter:url" content="{{rootUrl}}">
-    <meta name="twitter:title" content="{{meta.appName}}">
-    <meta name="twitter:description" content="{{meta.description}}">
-    <meta name="twitter:image" content="{{images.twitter}}">
-    <meta name="twitter:image:alt" content="{{twitter.imageAlt}}">
-
-    <!-- Facebook -->
-    <meta property="og:url" content="{{rootUrl}}">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="{{meta.title}}">
-    <meta property="og:image" content="{{images.facebook}}">
-    <meta property="og:image:alt" content="{{twitter.imageAlt}}">
-    <meta property="og:description" content="{{meta.description}}">
-    <meta property="og:site_name" content="{{meta.title}}">
-    <meta property="og:locale" content="en_UK">
-    <meta property="article:author" content="{{kurt.name}}">
-
-    <!-- Microsoft -->
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
-    <meta name="msapplication-config" content="browserconfig.xml">
-    <meta name="msapplication-TileColor" content="{{theme.maskColour}}">
-    <meta name="msapplication-starturl" content="/?pwa-app" />
-
-    {{#each preconnectLinks}}
-    <link rel="preconnect" href="{{this}}">
-    {{/each}}
-
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/icomoon.css">
-
-    {{!-- JSON-LD --}}
-    <script nonce="schema" type="application/ld+json">
-        {
-            "@context": "https://schema.org/",
-            "@type": "Person",
-            "name": "{{kurt.name}}",
-            "givenName": "{{kurt.name}}",
-            "familyName": "{{kurt.name}}",
-            "additionalName": "{{kurt.additionalName}}",
-            "url": "{{rootUrl}}",
-            "image": "{{kurt.image}}",
-            "description": "{{meta.description}}",
-            "jobTitle": "{{kurt.jobTitle}}",
-            "owns": [
-                {
-                    "@type": "OwnershipInfo",
-                    "name": "{{assistantApps.name}}",
-                    "url": "{{assistantApps.rootUrl}}"
-                }
-            ]
-        }
-    </script>
-</head>
+{{> components/documentHead}}
 
 <body id="app-body" class="is-loading">
     <div class="page-wrapper">
-        <div class="header">
-            <div class="container-nav noselect">
-                <div class="header-left-side">
-                    <a href="/" class="navbar-logo hidden-in-desktop">
-                        <img src="/assets/favicon/apple-touch-icon-76x76.png" alt="AssistantNMS - Logo"
-                            class="hidden-in-mobile">
-                        <h4>Assistant for No Man's Sky</h4>
-                    </a>
-                    <nav role="navigation" class="nav-menu w-nav-menu hidden-in-mobile">
-                        <div class="header-dropdown w-dropdown">
-                            <div class="header-dropdown-toggle w-dropdown-toggle">
-                                <div class="dropdown-text">Pages&nbsp;<span class="dropdown-icon"></span></div>
-                            </div>
-                            <nav class="dropdown-list w-dropdown-list">
-                                <div class="mega-menu-container">
-                                    <div class="basic-grid mega-menu-grid">
-                                        <h4 class="mega-menu-title">Pages</h4>
-                                        <div class="menu-2-columns">
-                                            <div class="mega-menu-column-4"><a href="/" aria-current="page"
-                                                    class="mega-menu-link w--current" tabindex="0">Home v1</a>
-                                                <a href="/home-v2" class="mega-menu-link" tabindex="0">Home
-                                                    v2</a>
-                                                <a href="/blog" class="mega-menu-link" tabindex="0">Blog</a>
-                                                <a href="/pricing" class="mega-menu-link" tabindex="0">Pricing</a>
-                                                <a href="/contact-us" class="mega-menu-link-2" tabindex="0">Contact</a>
-                                            </div>
-                                            <div class="mega-menu-column-2"><a href="/about-us" class="mega-menu-link"
-                                                    tabindex="0">About Us</a>
-                                                <a href="/careers" class="mega-menu-link" tabindex="0">Careers</a>
-                                                <a href="/job/ios-ui-ux-designer" class="mega-menu-link"
-                                                    tabindex="0">Job Post</a>
-                                                <a href="/reviews" class="mega-menu-link" tabindex="0">Reviews</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </nav>
-                        </div>
-                        <a href="/blog" class="nav-link w-nav-link">Blog</a>
-                        <a href="/contact-us" class="nav-link w-nav-link">Support</a>
-                    </nav>
-                </div>
-                <div class="header-right-side hidden-in-mobile">
-                    <div class="nav-button">
-                        <a href="#download" class="button-secondary">
-                            <img src="/assets/img/download.png" alt="AssistantNMS - Logo" class="mg-right-8px">
-                            <div class="button-text">Download</div>
-                        </a>
-                    </div>
-                </div>
-                <nav class="navbar-mobile hidden-in-desktop">
-                </nav>
-            </div>
-        </div>
+
+        {{> components/header}}
+
         <section class="section hero">
             <div class="background-parallax-img">
                 <div class="content">
@@ -175,19 +26,23 @@
                         </p>
                         <div class="mt-2">
                             <div class="store-links-container noselect">
-                                <a href="{{store.ios}}" class="button-primary">
+                                <a href="{{store.ios}}" class="button-primary" target="_blank"
+                                    rel="noopener noreferrer">
                                     <img src="/assets/img/AppStoreIcon.png" alt="Apple App Store Logo">
                                     <div class="button-text">Apple App Store</div>
                                 </a>
-                                <a href="{{store.android}}" class="button-primary">
+                                <a href="{{store.android}}" class="button-primary" target="_blank"
+                                    rel="noopener noreferrer">
                                     <img src="/assets/img/PlayStoreIcon.png" alt="Google Play Logo">
                                     <div class="button-text">Google Play</div>
                                 </a>
-                                <a href="{{store.webApp}}" class="button-primary">
+                                <a href="{{store.webApp}}" class="button-primary" target="_blank"
+                                    rel="noopener noreferrer">
                                     <img src="/assets/img/WebVersionIcon.png" alt="WebApp Logo">
                                     <div class="button-text">Web App</div>
                                 </a>
-                                <a href="{{store.windows}}" class="button-primary">
+                                <a href="{{store.windows}}" class="button-primary" target="_blank"
+                                    rel="noopener noreferrer">
                                     <img src="/assets/img/WindowsStoreIcon.png" alt="Windows Logo">
                                     <div class="button-text">Windows</div>
                                 </a>
@@ -411,90 +266,10 @@
                     {{/each}}
                 </div>
             </div>
-
         </section>
 
-        <footer class="footer">
-            <div class="container-1180px">
-                <div class="basic-grid footer-top">
-                    <div class="footer-column-1">
-                        <a href="/" aria-current="page" class="footer-logo w-inline-block w--current"><img
-                                src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/60a7cf1142adae13ec1cc408_logo.svg"
-                                alt="Apps Webflow Template - Logo"></a>
-                        <p class="footer-paragraph">A simple, yet effective way to be more productive.</p>
-                        <div class="footer-social-media">
-                            <a href="https://facebook.com" class="social-icon w-inline-block">
-                                <img src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f08320a4b3da7b4_facebook-logo.svg"
-                                    alt="Facebook Icon - Apps Webflow Template"></a>
-                            <a href="https://twitter.com" class="social-icon w-inline-block">
-                                <img src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f08322c303da7b6_twitter-logo.svg"
-                                    alt="Twitter Icon - Apps Webflow Template"></a>
-                            <a href="https://instagram.com" class="social-icon w-inline-block">
-                                <img src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083253593da7b5_instagram-logo.svg"
-                                    alt="Instagram Icon - Apps Webflow Template"></a>
-                            <a href="https://linkedin.com" class="social-icon w-inline-block">
-                                <img src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f0832b4df3da7b7_linkedin-logo.svg"
-                                    alt="LinkedIn Icon - Apps Webflow Template"></a>
-                        </div>
-                    </div>
-                    <div id="w-node-_06ca93af-6509-e5f3-2f23-17e35bbeb58f-f838e990" class="footer-column-2">
-                        <h4 class="footer-title">Menu</h4>
-                        <ul role="list" class="footer-list w-list-unstyled">
-                            <li class="footer-list-item"><a href="/" aria-current="page"
-                                    class="nav-link-footer w--current">Home v1</a></li>
-                            <li class="footer-list-item"><a href="/home-v2" class="nav-link-footer">Home v2</a></li>
-                            <li class="footer-list-item"><a href="/about-us" class="nav-link-footer">About Us</a></li>
-                            <li class="footer-list-item"><a href="/blog" class="nav-link-footer">Blog</a></li>
-                            <li class="footer-list-item"><a href="/contact-us" class="nav-link-footer">Support</a></li>
-                            <li class="footer-list-item"><a href="/careers" class="nav-link-footer">Careers</a></li>
-                            <li class="footer-list-item"><a href="/job/ios-ui-ux-designer" class="nav-link-footer">Job
-                                    Post</a></li>
-                            <li class="footer-list-item"><a href="/reviews" class="nav-link-footer">Reviews</a></li>
-                        </ul>
-                    </div>
-                    <div id="w-node-beb69711-6805-67f8-ca3c-94cfe2e04c55-f838e990" class="footer-column-3">
-                        <h4 class="footer-title">Utility Pages</h4>
-                        <ul role="list" class="footer-list w-list-unstyled">
-                            <li class="footer-list-item"><a href="/utility-pages/styleguide"
-                                    class="nav-link-footer">Styleguide</a></li>
-                            <li class="footer-list-item"><a href="https://appstemplate.webflow.io/404"
-                                    class="nav-link-footer">404 Not Found</a></li>
-                            <li class="footer-list-item"><a href="https://appstemplate.webflow.io/401"
-                                    class="nav-link-footer">Password Protected</a></li>
-                            <li class="footer-list-item"><a href="/utility-pages/licenses"
-                                    class="nav-link-footer">Licenses</a></li>
-                            <li class="footer-list-item"><a href="/utility-pages/start-here"
-                                    class="nav-link-footer">Start Here</a></li>
-                            <li class="footer-list-item"><a href="/utility-pages/changelog"
-                                    class="nav-link-footer">Changelog</a></li>
-                            <li class="footer-list-item"><a href="https://brixtemplates.com/more-templates"
-                                    class="nav-link-footer special">Browse More Templates</a></li>
-                        </ul>
-                    </div>
-                    <div id="w-node-_71417737-5b4b-a09e-2591-ff5af838e99f-f838e990" class="footer-column-4">
-                        <h4 class="footer-title">Download our App</h4>
-                        <p class="footer-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
-                            egestas quam porta.</p>
-                        <div class="_2-buttons-container"><a href="https://www.apple.com/ios/app-store/"
-                                class="app-download-button small footer-button w-inline-block"><img
-                                    src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f08323df43da790_app-store-button.svg"
-                                    alt="Apps Store - Apps Webflow Template" class="app-store-image small"></a>
-                            <a href="https://play.google.com/store"
-                                class="app-download-button small w-inline-block"><img
-                                    src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f0832838a3da798_play-store-button.svg"
-                                    alt="Google Play - Apps Webflow Template" class="play-store-image small"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <div class="copyright">
-                        <span>©AssistantNMS - </span>
-                        <a href="{{assistantApps.rootUrl}}" target="_blank" rel="noopener noreferrer">AssistantApps</a>
-                        <span> - 4.0.0</span>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        {{> components/footer}}
+
     </div>
     <img data-0="transform:rotate(0deg);left:100vw;" data-500="transform:rotate(-10deg);left:90vw;"
         data-2000="transform:rotate(-10deg);left:90vw;" data-2500="transform:rotate(0deg);left:100vw;"

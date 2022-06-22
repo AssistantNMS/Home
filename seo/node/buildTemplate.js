@@ -1,29 +1,29 @@
 const fs = require('fs');
 const util = require('util');
 const Handlebars = require('handlebars');
-
-const pjson = require('../../package.json');
-
-const dateHelper = require('../handlebar/helpers/date.helper.js');
-const loudHelper = require('../handlebar/helpers/loud.helper.js');
-const urlrefHelper = require('../handlebar/helpers/urlref.helper.js');
-const versionHelper = require('../handlebar/helpers/version.helper.js');
-
 const readFile = util.promisify(fs.readFile);
 
 async function buildTemplates() {
-    process.env['NODE_ENV'] = pjson.version;
-    Handlebars.registerHelper('date', dateHelper);
-    Handlebars.registerHelper('loud', loudHelper);
-    Handlebars.registerHelper('urlref', urlrefHelper);
-    Handlebars.registerHelper('version', versionHelper);
+    process.env['NODE_ENV'] = require('../../package.json').version;
+    Handlebars.registerHelper('date', require('../handlebar/helpers/date.helper.js'));
+    Handlebars.registerHelper('loud', require('../handlebar/helpers/loud.helper.js'));
+    Handlebars.registerHelper('urlref', require('../handlebar/helpers/urlref.helper.js'));
+    Handlebars.registerHelper('version', require('../handlebar/helpers/version.helper.js'));
+
+    Handlebars.registerPartial('components/documentHead', require('../handlebar/components/documentHead.hbs'));
+    Handlebars.registerPartial('components/header', require('../handlebar/components/header.hbs'));
+    Handlebars.registerPartial('components/footer', require('../handlebar/components/footer.hbs'));
 
     const projectDataContents = await readFile('./seo/data/project.json', 'utf8');
     const projectData = JSON.parse(projectDataContents);
 
-    const publicFolder = '../public/';
     const files = [
         { template: './seo/handlebar/index.html.hbs', dest: './index.html' },
+        { template: './seo/handlebar/thankYou.html.hbs', dest: './ThankYou.html' },
+        { template: './seo/handlebar/notFound.html.hbs', dest: './NotFound.html' },
+        { template: './seo/handlebar/friendCodeError.html.hbs', dest: './FriendCodeError.html' },
+        { template: './seo/handlebar/friendCodeSuccess.html.hbs', dest: './FriendCodeSuccess.html' },
+
         { template: './seo/handlebar/testimonials.js.hbs', dest: './assets/js/testimonials.js' },
         { template: './seo/handlebar/humans.txt.hbs', dest: './humans.txt' },
         { template: './seo/handlebar/opensearch.xml.hbs', dest: './opensearch.xml' },

@@ -1,0 +1,40 @@
+.header {
+    .nav-link {
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 29px;
+        padding-bottom: 32px;
+        color: #78798f;
+    }
+
+    .nav-link:hover {
+        color: $secondary;
+    }
+
+    .header-dropdown-toggle {
+        display: flex;
+        padding-top: 0px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+        transition: color 350ms ease;
+        color: #78798f;
+    }
+
+    .header-dropdown-toggle:hover {
+        color: $secondary;
+    }
+
+    @media screen and (max-width: 991px) {
+        .nav-link {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #e7e8f4;
+        }
+
+        .nav-link:hover {
+            display: block;
+            background-color: #f6f6ff;
+        }
+    }
+}

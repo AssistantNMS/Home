@@ -61,32 +61,32 @@
         {
             "name": "Buy me a Coffee",
             "url": "https://www.buymeacoffee.com/kurt",
-            "imgUrl": "/assets/img/donation/buyMeACoffee.png"
+            "imgUrl": "/assets/img/donation/BuyMeACoffee.png"
         },
         {
             "name": "Patreon",
             "url": "https://www.patreon.com/AssistantNMS",
-            "imgUrl": "/assets/img/donation/patreon.png"
+            "imgUrl": "/assets/img/donation/Patreon.png"
         },
         {
             "name": "PayPal",
             "url": "https://paypal.me/KurtLourens",
-            "imgUrl": "/assets/img/donation/payPal.png"
+            "imgUrl": "/assets/img/donation/PayPal.png"
         },
         {
             "name": "Ko-fi",
             "url": "https://ko-fi.com/AssistantNMS",
-            "imgUrl": "/assets/img/donation/kofi.png"
+            "imgUrl": "/assets/img/donation/Kofi.png"
         },
         {
             "name": "Brave",
             "url": "https://brave.com/nms136",
-            "imgUrl": "/assets/img/donation/bat.png"
+            "imgUrl": "/assets/img/donation/BraveRewards.png"
         },
         {
             "name": "Open Collective",
             "url": "https://opencollective.com/assistantnms",
-            "imgUrl": "/assets/img/donation/openCollective.png"
+            "imgUrl": "/assets/img/donation/OpenCollective.png"
         }
     ],
     "preconnectLinks": [
@@ -101,6 +101,7 @@
         "rootUrl": "https://assistantapps.com",
         "name": "Assistant Apps",
         "twitter": "@AssistantNMS",
+        "discord": "https://assistantapps.com/discord",
         "favicon": {
             "x192": "assets/favicon/android-icon-192x192.png"
         }

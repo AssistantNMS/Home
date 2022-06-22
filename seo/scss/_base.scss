@@ -1,3 +1,5 @@
+$scrollbar-dark-thumb: rgba(0, 0, 0, 0.25);
+
 img,
 br,
 .noselect {
@@ -35,6 +37,13 @@ br,
     text-align: center;
 }
 
+.max-1-line {
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+}
+
 ::selection {
     background: darken($primary, 33%);
     color: white;
@@ -49,7 +58,7 @@ br,
 
 *::-webkit-scrollbar {
     width: 10px;
-    background-color: $primary;
+    background-color: $secondary;
 
     @media screen and (max-width: 800px) {
         width: 5px;
@@ -66,14 +75,14 @@ br,
 
 *::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background-color: $primary;
+    background-color: $secondary;
     background-image: -webkit-linear-gradient(
         45deg,
-        rgba(255, 255, 255, 0.2) 25%,
+        $scrollbar-dark-thumb 25%,
         transparent 25%,
         transparent 50%,
-        rgba(255, 255, 255, 0.2) 50%,
-        rgba(255, 255, 255, 0.2) 75%,
+        $scrollbar-dark-thumb 50%,
+        $scrollbar-dark-thumb 75%,
         transparent 75%,
         transparent
     );

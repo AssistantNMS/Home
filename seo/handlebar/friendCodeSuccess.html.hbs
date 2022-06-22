@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+{{> components/documentHead documentTitle="Friend Code Success"}}
+
+<body id="app-body" class="is-loading">
+    <div class="page-wrapper">
+        <section class="section not-found">
+            <div class="container-1180px ta-center">
+                <h2 class="ta-center noselect">Friend Code added!</h2>
+                <div class="container-600px ta-center noselect">
+                    <h3 style="font-weight: 100;">
+                        Successfully added your Friend Code!
+                    </h3>
+                </div>
+                <br />
+                <p>
+                    It may take up to 5 minutes for your Friend Code to become visible. If it takes any longer
+                    please contact us on our <a href="{{assistantApps.discord}}">Discord</a> or send us an
+                    email at <a href="{{meta.mailto}}">support@nmsassistant.com</a>
+                </p>
+
+                <img src="/assets/img/friendCodeSuccess.png" alt="Friend Code added!" />
+            </div>
+        </section>
+
+        {{> components/footer}}
+
+    </div>
+</body>
+
+</html>

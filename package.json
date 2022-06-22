@@ -4,6 +4,7 @@
   "scripts": {
     "build": "npm-run-all --sequential data:* template:* sass:*",
     "dev": "live-server",
+    "data": "npm-run-all --sequential data:*",
     "data:generateLiveJson": "node seo/node/generateLiveJson.js",
     "data:generateProjectData": "node seo/node/getGeneratedProjectJson.js",
     "data:minifyGeneratedFiles": "node seo/node/minifyPublicFiles.js",
