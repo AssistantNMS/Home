@@ -17,7 +17,9 @@
         "title": "Assistant for No Man's Sky",
         "appName": "Assistant for No Man's Sky! Available for Download on the App Stores",
         "description": "Available on the Google Play and Apple App Store. Get Crafting, Refining, Cooking Recipes and much more for the game No Man's Sky!!",
-        "mailto": "mailto:support@nmsassistant.com"
+        "mailto": "mailto:support@nmsassistant.com",
+        "privacyPolicy": "/privacy_policy.html",
+        "termsAndConditions": "/terms_and_conditions.html"
     },
     "store": {
         "ios": "https://apps.apple.com/us/app/id1480287625",
@@ -101,10 +103,25 @@
         "rootUrl": "https://assistantapps.com",
         "name": "Assistant Apps",
         "twitter": "@AssistantNMS",
+        "tools": "https://tools.assistantapps.com",
         "discord": "https://assistantapps.com/discord",
+        "support": "https://nmsassistant.freshdesk.com",
         "favicon": {
             "x192": "assets/favicon/android-icon-192x192.png"
         }
+    },
+    "assistantNms": {
+        "webApp": "https://app.assistantapps.com",
+        "webApi": "https://api.assistantapps.com"
+    },
+    "nmscd": {
+        "home": "https://nmscd.github.io",
+        "cmpt": "https://nmscd.github.io/CommunityMission-Progress-Viewer",
+        "expeditionAlphabet": "https://nmscd.github.io/expedition-alphabet",
+        "communitySearch": ""
+    },
+    "navigation": {
+        "thankyou": "/ThankYou.html"
     },
     "images": {
         "maskIcon": "/safari-pinned-tab.svg",

@@ -6,39 +6,59 @@
                     class="hidden-in-mobile">
                 <h4>Assistant for No Man's Sky</h4>
             </a>
-            <nav role="navigation" class="nav-menu w-nav-menu hidden-in-mobile">
-                <div class="header-dropdown w-dropdown">
-                    <div class="header-dropdown-toggle w-dropdown-toggle">
+            <nav role="navigation" class="nav-menu hidden-in-mobile">
+                <div id="mega-menu-container-overlay" class="open" onclick="closeNavBarWindows()"></div>
+                <div class="header-dropdown">
+                    <div class="header-dropdown-toggle dropdown-openable open"
+                        onclick="toggleNavBarDropdownWindow(this, 'page-dropdown')">
                         <div class="dropdown-text">Pages&nbsp;<span class="dropdown-icon"></span></div>
                     </div>
-                    <nav class="dropdown-list w-dropdown-list">
+                    <nav id="page-dropdown" class="dropdown-list dropdown-openable open">
                         <div class="mega-menu-container">
-                            <div class="basic-grid mega-menu-grid">
-                                <h4 class="mega-menu-title">Pages</h4>
-                                <div class="menu-2-columns">
-                                    <div class="mega-menu-column-4"><a href="/" aria-current="page"
-                                            class="mega-menu-link w--current" tabindex="0">Home v1</a>
-                                        <a href="/home-v2" class="mega-menu-link" tabindex="0">Home
-                                            v2</a>
-                                        <a href="/blog" class="mega-menu-link" tabindex="0">Blog</a>
-                                        <a href="/pricing" class="mega-menu-link" tabindex="0">Pricing</a>
-                                        <a href="/contact-us" class="mega-menu-link-2" tabindex="0">Contact</a>
-                                    </div>
-                                    <div class="mega-menu-column-2"><a href="/about-us" class="mega-menu-link"
-                                            tabindex="0">About Us</a>
-                                        <a href="/careers" class="mega-menu-link" tabindex="0">Careers</a>
-                                        <a href="/job/ios-ui-ux-designer" class="mega-menu-link" tabindex="0">Job
-                                            Post</a>
-                                        <a href="/reviews" class="mega-menu-link" tabindex="0">Reviews</a>
-                                    </div>
+                            <div class="menu-column">
+                                <h4 class="mega-menu-title">Info</h4>
+                                <div class="menu-section-content">
+                                    <a href="{{navigation.thankyou}}" class="max-1-line">Thank you 💖</a>
+                                    <a href="{{assistantApps.support}}" class="max-1-line">Get Support</a>
+                                    <a href="{{assistantApps.discord}}" class="max-1-line">Discord</a>
+                                    <br />
+                                    <a href="{{assistantApps.privacyPolicy}}" class="max-1-line">Privacy Policy</a>
+                                    <a href="{{assistantApps.termsAndConditions}}" class="max-1-line">Terms &amp;
+                                        Conditions</a>
+                                </div>
+                            </div>
+                            <div class="menu-column">
+                                <h4 class="mega-menu-title">Apps &amp; Tools</h4>
+                                <div class="menu-section-content">
+                                    <a href="{{assistantNms.webApp}}" class="max-1-line" target="_blank"
+                                        rel="noopener noreferrer">AssistantNMS WebApp</a>
+                                    <a href="{{assistantNms.webApi}}" class="max-1-line" target="_blank"
+                                        rel="noopener noreferrer">AssistantNMS Api</a>
+                                    <a href="{{assistantApps.rootUrl}}" class="max-1-line" target="_blank"
+                                        rel="noopener noreferrer">AssistantApps</a>
+                                    <a href="{{assistantApps.tools}}" class="max-1-line" target="_blank"
+                                        rel="noopener noreferrer">Translation tool</a>
+                                </div>
+                            </div>
+                            <div class="menu-column">
+                                <h4 class="mega-menu-title">Other projects</h4>
+                                <div class="menu-section-content">
+                                    <a href="{{nmscd.home}}" class="max-1-line" target="_blank"
+                                        rel="noopener noreferrer">NMSCD</a>
+                                    <a href="{{nmscd.cmpt}}" class="max-1-line" target="_blank"
+                                        rel="noopener noreferrer">Community Mission Tracker</a>
+                                    <a href="{{nmscd.expeditionAlphabet}}" class="max-1-line" target="_blank"
+                                        rel="noopener noreferrer">Expedition Alphabet</a>
+                                    <a href="{{nmscd.communitySearch}}" class="max-1-line" disabled target="_blank"
+                                        rel="noopener noreferrer">Community Search (coming soon)</a>
                                 </div>
                             </div>
                         </div>
                     </nav>
                 </div>
-                <a href="/ThankYou.html" class="nav-link w-nav-link">Thank You</a>
-                <a href="https://nmsassistant.freshdesk.com/" class="nav-link w-nav-link" target="_blank"
-                    rel="noopener noreferrer">Support</a>
+                <a href="{{navigation.thankyou}}" class="nav-link">Thank You</a>
+                <a href="{{assistantApps.support}}" class="nav-link" target="_blank" rel="noopener noreferrer">Get
+                    Support</a>
             </nav>
         </div>
         <div class="header-right-side hidden-in-mobile">

@@ -1,10 +1,11 @@
 .header {
     .nav-link {
-        margin-right: 0px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-        padding-top: 29px;
-        padding-bottom: 32px;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        text-decoration: none;
+        margin: 0;
+        padding: 29px 20px 32px 20px;
         color: #78798f;
     }
 

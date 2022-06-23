@@ -870,15 +870,6 @@ figcaption {
   font-weight: 700;
 }
 
-.dropdown-list {
-  top: 70px;
-  display: none;
-}
-
-.dropdown-list.w--open {
-  top: 70px;
-}
-
 .card-highlight-image {
   border-radius: 12px;
 }
@@ -1695,12 +1686,6 @@ figcaption {
   .header-dropdown-toggle:hover {
     background-color: #f6f6ff;
     color: #4e55da;
-  }
-
-  .dropdown-list.w--open {
-    position: static;
-    padding: 0px;
-    background-color: #fff;
   }
 
   .grid-blog-cards {

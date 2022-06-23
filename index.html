@@ -107,39 +107,59 @@
                             class="hidden-in-mobile">
                         <h4>Assistant for No Man's Sky</h4>
                     </a>
-                    <nav role="navigation" class="nav-menu w-nav-menu hidden-in-mobile">
-                        <div class="header-dropdown w-dropdown">
-                            <div class="header-dropdown-toggle w-dropdown-toggle">
+                    <nav role="navigation" class="nav-menu hidden-in-mobile">
+                        <div id="mega-menu-container-overlay" class="open" onclick="closeNavBarWindows()"></div>
+                        <div class="header-dropdown">
+                            <div class="header-dropdown-toggle dropdown-openable open"
+                                onclick="toggleNavBarDropdownWindow(this, 'page-dropdown')">
                                 <div class="dropdown-text">Pages&nbsp;<span class="dropdown-icon"></span></div>
                             </div>
-                            <nav class="dropdown-list w-dropdown-list">
+                            <nav id="page-dropdown" class="dropdown-list dropdown-openable open">
                                 <div class="mega-menu-container">
-                                    <div class="basic-grid mega-menu-grid">
-                                        <h4 class="mega-menu-title">Pages</h4>
-                                        <div class="menu-2-columns">
-                                            <div class="mega-menu-column-4"><a href="/" aria-current="page"
-                                                    class="mega-menu-link w--current" tabindex="0">Home v1</a>
-                                                <a href="/home-v2" class="mega-menu-link" tabindex="0">Home
-                                                    v2</a>
-                                                <a href="/blog" class="mega-menu-link" tabindex="0">Blog</a>
-                                                <a href="/pricing" class="mega-menu-link" tabindex="0">Pricing</a>
-                                                <a href="/contact-us" class="mega-menu-link-2" tabindex="0">Contact</a>
-                                            </div>
-                                            <div class="mega-menu-column-2"><a href="/about-us" class="mega-menu-link"
-                                                    tabindex="0">About Us</a>
-                                                <a href="/careers" class="mega-menu-link" tabindex="0">Careers</a>
-                                                <a href="/job/ios-ui-ux-designer" class="mega-menu-link" tabindex="0">Job
-                                                    Post</a>
-                                                <a href="/reviews" class="mega-menu-link" tabindex="0">Reviews</a>
-                                            </div>
+                                    <div class="menu-column">
+                                        <h4 class="mega-menu-title">Info</h4>
+                                        <div class="menu-section-content">
+                                            <a href="/ThankYou.html" class="max-1-line">Thank you 💖</a>
+                                            <a href="https://nmsassistant.freshdesk.com" class="max-1-line">Get Support</a>
+                                            <a href="https://assistantapps.com/discord" class="max-1-line">Discord</a>
+                                            <br />
+                                            <a href="" class="max-1-line">Privacy Policy</a>
+                                            <a href="" class="max-1-line">Terms &amp;
+                                                Conditions</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-column">
+                                        <h4 class="mega-menu-title">Apps &amp; Tools</h4>
+                                        <div class="menu-section-content">
+                                            <a href="https://app.assistantapps.com" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">AssistantNMS WebApp</a>
+                                            <a href="" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">AssistantNMS Api</a>
+                                            <a href="https://assistantapps.com" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">AssistantApps</a>
+                                            <a href="https://tools.assistantapps.com" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">Translation tool</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-column">
+                                        <h4 class="mega-menu-title">Other projects</h4>
+                                        <div class="menu-section-content">
+                                            <a href="" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">NMSCD</a>
+                                            <a href="https://nmscd.github.io/CommunityMission-Progress-Viewer" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">Community Mission Tracker</a>
+                                            <a href="https://nmscd.github.io/expedition-alphabet" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">Expedition Alphabet</a>
+                                            <a href="" class="max-1-line" disabled target="_blank"
+                                                rel="noopener noreferrer">Community Search (coming soon)</a>
                                         </div>
                                     </div>
                                 </div>
                             </nav>
                         </div>
-                        <a href="/ThankYou.html" class="nav-link w-nav-link">Thank You</a>
-                        <a href="https://nmsassistant.freshdesk.com/" class="nav-link w-nav-link" target="_blank"
-                            rel="noopener noreferrer">Support</a>
+                        <a href="/ThankYou.html" class="nav-link">Thank You</a>
+                        <a href="https://nmsassistant.freshdesk.com" class="nav-link" target="_blank" rel="noopener noreferrer">Get
+                            Support</a>
                     </nav>
                 </div>
                 <div class="header-right-side hidden-in-mobile">
@@ -288,12 +308,16 @@
                         <div class="left-block-card-feature bottom">
                             <img src="/assets/img/live.png" alt="connected icon" />
                             <div class="margin-bottom-6px">
-                                <h3>View live event statuses</h3>
+                                <h3>Multiple Language support</h3>
                             </div>
                             <p>
-                                View live in-game events such as the Community Missions, Weekend Missions and
-                                Expeditions all from within the app with live and accurate data.
+                                View the data in all the languages that No Man's Sky supports as well as a few others.
+                                These translations are supported by the amazing NMS community! 💪
                             </p>
+                            <a href="https://tools.assistantapps.com" class="button-primary" target="_blank"
+                                rel="noopener noreferrer">
+                                <span class="button-text">Translation Tool</span>
+                            </a>
                         </div>
                         <div class="right-block-card-feature bottom">
                             <div class="feature-img-stack">
@@ -335,6 +359,33 @@
                                 Community resources integrated into the app. Easily find No Man's Sky content creators!
                                 Listen to community made ByteBeat music provided by the NMSFM 🎵.
                             </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-feature bottom">
+                    <div class="basic-grid feature-grid bottom">
+                        <div class="left-block-card-feature bottom">
+                            <img src="/assets/img/live.png" alt="connected icon" />
+                            <div class="margin-bottom-6px">
+                                <h3>View live event statuses</h3>
+                            </div>
+                            <p>
+                                View live in-game events such as the Community Missions, Weekend Missions and
+                                Expeditions all from within the app with live and accurate data 🎯.
+                            </p>
+                        </div>
+                        <div class="right-block-card-feature bottom">
+                            <div class="feature-img-stack">
+                                <div class="feature-image">
+                                    <img src="/assets/img/screenshots/phone-bg.png"
+                                        class="feature-image-bg-offset hidden-in-mobile" alt="phone with app running" />
+                                    <img src="/assets/img/screenshots/phoneWithExp.png" alt="phone with app running" />
+                                </div>
+                                <div class="feature-image-1 hidden-in-mobile">
+                                    <img src="/assets/img/screenshots/phoneWithExpOverlay.png"
+                                        alt="community mission panel" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
