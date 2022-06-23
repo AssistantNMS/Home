@@ -42,9 +42,7 @@ function toggleNavBarDropdownWindow(linkElem, idSelector) {
     const navOverlayElem = document.getElementById('mega-menu-container-overlay');
 
     if (linkElem.classList.contains(classToUse)) {
-        linkElem.classList.remove(classToUse);
-        navElem.classList.remove(classToUse);
-        navOverlayElem.classList.remove(classToUse);
+        closeNavBarWindows();
     } else {
         linkElem.classList.add(classToUse);
         navElem.classList.add(classToUse);
@@ -54,9 +52,6 @@ function toggleNavBarDropdownWindow(linkElem, idSelector) {
 
 function closeNavBarWindows() {
     const classToUse = 'open';
-
-    const navOverlayElem = document.getElementById('mega-menu-container-overlay');
-    navOverlayElem.classList.remove(classToUse);
 
     const dropDownElems = document.getElementsByClassName('dropdown-openable');
     for (const dropDownElem of dropDownElems) {
