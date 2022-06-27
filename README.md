@@ -1,7 +1,7 @@
 <div align="center">
   
   # Assistant for No Man's Sky
-  ### Android & iOS app built in Flutter  
+  ### Home page
   ![header](./.github/img/header.png)
   
   <br />
