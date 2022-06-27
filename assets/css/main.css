@@ -38,6 +38,10 @@
   background-color: #5465bd;
   color: #fff;
 }
+.button-primary.fit {
+  display: inline-block;
+  border-radius: 30px;
+}
 
 .button-secondary {
   background-color: #80cbc4;
@@ -167,6 +171,7 @@
   left: 50%;
   max-height: calc(100% + 100px);
   z-index: 1;
+  overflow: hidden;
   transition: opacity 500ms ease-in-out;
   will-change: opacity;
 }
@@ -675,6 +680,72 @@
     transform: translateX(0);
   }
 }
+.section.hero {
+  position: relative;
+  overflow: hidden;
+}
+.section.hero .background-container-ship #ship1,
+.section.hero .background-container-ship #ship2,
+.section.hero .background-container-ship #ship3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5vw;
+  height: 5vw;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: 0;
+  opacity: 0.3;
+  will-change: transform;
+}
+.section.hero .background-container-ship #ship1 {
+  top: 25vh;
+  animation-name: background-ship1-anim;
+  animation-duration: 12s;
+}
+.section.hero .background-container-ship #ship2 {
+  top: 25vh;
+  left: 90vw;
+  animation-name: background-ship2-anim;
+  animation-duration: 25s;
+}
+.section.hero .background-container-ship #ship3 {
+  left: 25vw;
+  animation-name: background-ship3-anim;
+  animation-duration: 35s;
+}
+
+@keyframes background-ship1-anim {
+  0% {
+    transform: rotate(-100deg) translateY(100vw);
+  }
+  75% {
+    transform: rotate(-100deg) translateY(-10vw);
+  }
+  100% {
+    transform: rotate(-100deg) translateY(-10vw);
+  }
+}
+@keyframes background-ship2-anim {
+  0% {
+    transform: rotate(75deg) translateY(100vw);
+  }
+  60% {
+    transform: rotate(75deg) translateY(-50vw);
+  }
+  100% {
+    transform: rotate(75deg) translateY(-50vw);
+  }
+}
+@keyframes background-ship3-anim {
+  0% {
+    transform: rotate(-55deg) translateY(100vw);
+  }
+  100% {
+    transform: rotate(-55deg) translateY(-50vw);
+  }
+}
 .parallax-sentinalBlue {
   position: fixed;
   top: 60vh;
@@ -866,6 +937,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #2b2f4b;
   color: #d0d0d0;
+  scroll-behavior: smooth;
 }
 html .header,
 body .header {

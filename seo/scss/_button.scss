@@ -28,6 +28,11 @@
         background-color: darken($primary, 10%);
         color: #fff;
     }
+
+    &.fit {
+        display: inline-block;
+        border-radius: 30px;
+    }
 }
 
 .button-secondary {

@@ -25,6 +25,7 @@ $feature-img-overlap: 100px;
         left: 50%;
         max-height: calc(100% + $feature-img-overlap);
         z-index: 1;
+        overflow: hidden;
         transition: opacity 500ms ease-in-out;
         will-change: opacity;
 
