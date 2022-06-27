@@ -1,7 +1,7 @@
 <div align="center">
   
   # Assistant for No Man's Sky
-  ### Home page
+  ### Home page source code
   ![header](./.github/img/header.png)
   
   <br />
