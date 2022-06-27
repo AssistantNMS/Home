@@ -1,2 +1,3 @@
 node_modules/*
 /webpack/node/env.js
+assistantnms_web/node_modules/*
