@@ -227,8 +227,11 @@ footer.footer .container .col {
   padding: 0 2em;
   max-width: 40%;
 }
-footer.footer .container .col h4 {
+footer.footer .container .col h4.pl {
   padding-left: 0.25em;
+}
+footer.footer .container .col a {
+  text-decoration: none;
 }
 footer.footer .powered-by-card {
   width: unset;

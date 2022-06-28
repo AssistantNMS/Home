@@ -3,7 +3,10 @@ const util = require('util');
 
 const readFile = util.promisify(fs.readFile);
 
+const pjson = require('../../package.json');
+
 async function generateFullJson() {
+    process.env['NODE_ENV'] = pjson.version;
 
     const siteDataContents = await readFile('./seo/data/site.json', 'utf8');
     const liveDataContents = await readFile('./seo/data/live.json', 'utf8');

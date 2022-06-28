@@ -7,8 +7,12 @@ footer.footer {
             padding: 0 2em;
             max-width: 40%;
 
-            h4 {
+            h4.pl {
                 padding-left: 0.25em;
+            }
+
+            a {
+                text-decoration: none;
             }
         }
     }
@@ -16,6 +20,7 @@ footer.footer {
     .powered-by-card {
         // see donation.scss for base style
         width: unset;
+
         img {
             border-radius: 0.25em;
         }
