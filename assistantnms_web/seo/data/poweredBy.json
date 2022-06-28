@@ -1,25 +1,25 @@
 [
   {
     "name": "RemoteConfigs, Inc",
-    "imageUrl": "assets/img/poweredBy/RemoteConfigs.png",
+    "imgUrl": "assets/img/poweredBy/RemoteConfigs.png",
     "link": "https://remoteconfigs.com",
     "description": "Website & App Remote Management"
   },
   {
     "name": "Red Ruby IT",
-    "imageUrl": "assets/img/poweredBy/RedRubyIT.png",
+    "imgUrl": "assets/img/poweredBy/RedRubyIT.png",
     "link": "https://redrubyit.co.za",
     "description": "Development"
   },
   {
     "name": "LionessLilo",
-    "imageUrl": "assets/img/poweredBy/LionessLilo.jpg",
+    "imgUrl": "assets/img/poweredBy/LionessLilo.jpg",
     "link": "https://lionesslilo.com",
     "description": "Domain & Hosting"
   },
   {
     "name": "NMSCD",
-    "imageUrl": "assets/img/poweredBy/NMSCD.png",
+    "imgUrl": "assets/img/poweredBy/NMSCD.png",
     "link": "https://nmscd.github.io/",
     "description": "Community Support"
   }

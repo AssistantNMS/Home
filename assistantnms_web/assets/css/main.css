@@ -219,6 +219,24 @@
   transform: translate(-30%, -15%) rotate3d(1, -14, -6, 17deg) skew(-2deg, 7deg) !important;
 }
 
+footer.footer .container {
+  display: flex;
+}
+footer.footer .container .col {
+  flex-grow: 1;
+  padding: 0 2em;
+  max-width: 40%;
+}
+footer.footer .container .col h4 {
+  padding-left: 0.25em;
+}
+footer.footer .powered-by-card {
+  width: unset;
+}
+footer.footer .powered-by-card img {
+  border-radius: 0.25em;
+}
+
 .navbar-logo {
   display: flex;
   flex-direction: row;
@@ -553,27 +571,33 @@
   flex-wrap: wrap;
   margin-top: 2em;
 }
-.donation-grid .donation-card {
+
+.powered-by-card,
+.donation-card {
   padding: 0.25em;
   width: 24%;
   min-width: 250px;
 }
 @media screen and (max-width: 1048px) {
-  .donation-grid .donation-card {
+  .powered-by-card,
+.donation-card {
     width: 33%;
   }
 }
 @media screen and (max-width: 800px) {
-  .donation-grid .donation-card {
+  .powered-by-card,
+.donation-card {
     width: 40%;
   }
 }
 @media screen and (max-width: 600px) {
-  .donation-grid .donation-card {
+  .powered-by-card,
+.donation-card {
     width: 100%;
   }
 }
-.donation-grid .donation-card .card {
+.powered-by-card .card,
+.donation-card .card {
   display: flex;
   flex-direction: row;
   background-color: rgba(0, 0, 0, 0.3);
@@ -583,14 +607,17 @@
   color: lightgray;
   transition: transform 350ms ease;
 }
-.donation-grid .donation-card .card:hover {
+.powered-by-card .card:hover,
+.donation-card .card:hover {
   transform: translate(0px, -5px);
 }
-.donation-grid .donation-card .card img {
+.powered-by-card .card img,
+.donation-card .card img {
   width: 3em;
   margin-right: 0.5em;
 }
-.donation-grid .donation-card .card .card-social {
+.powered-by-card .card .card-social,
+.donation-card .card .card-social {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -598,10 +625,12 @@
   align-items: flex-start;
   max-width: calc(100% - 3.5em);
 }
-.donation-grid .donation-card .card .card-social .card-social-title {
+.powered-by-card .card .card-social .card-social-title,
+.donation-card .card .card-social .card-social-title {
   max-width: 100%;
 }
-.donation-grid .donation-card .card .card-social .card-social-sub {
+.powered-by-card .card .card-social .card-social-sub,
+.donation-card .card .card-social .card-social-sub {
   font-size: small;
 }
 
