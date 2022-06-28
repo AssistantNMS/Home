@@ -1,11 +1,11 @@
 footer.footer {
     .container {
         display: flex;
+        flex-wrap: wrap;
 
         .col {
             flex-grow: 1;
             padding: 0 2em;
-            max-width: 40%;
 
             h4.pl {
                 padding-left: 0.25em;
@@ -17,12 +17,40 @@ footer.footer {
         }
     }
 
+    @media screen and (max-width: 1000px) {
+        .container {
+            .col.powered-by {
+                margin-bottom: 2em;
+            }
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .container {
+            display: block;
+
+            .col.powered-by {
+                margin-bottom: unset;
+            }
+
+            h4,
+            a {
+                text-align: center;
+            }
+        }
+    }
+
     .powered-by-card {
         // see donation.scss for base style
         width: unset;
 
         img {
             border-radius: 0.25em;
+        }
+
+
+        .card-social-sub {
+            max-width: 100%;
         }
     }
 }

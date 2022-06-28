@@ -9,13 +9,14 @@
                     <img src="{{poweredByItem.imgUrl}}" alt="{{poweredByItem.name}}" class="card-header-image" />
                     <div class="card-social">
                         <div class="card-social-title">{{poweredByItem.name}}</div>
-                        <div class="card-social-sub">{{poweredByItem.description}}</div>
+                        <div class="card-social-sub max-1-line">{{poweredByItem.description}}</div>
                     </div>
                 </a>
             </div>
             {{/each}}
         </div>
         <div class="col">
+            <br class="hidden-in-desktop" />
             <h4>Other pages</h4>
             <a href="{{navigation.thankyou}}" class="max-1-line">Thank you 💖</a>
             <a href="{{assistantApps.support}}" class="max-1-line">Get Support</a>
@@ -24,6 +25,7 @@
             <a href="{{assistantApps.discord}}" class="max-1-line">Discord</a>
             <a href="{{assistantApps.privacyPolicy}}" class="max-1-line">Privacy Policy</a>
             <a href="{{assistantApps.termsAndConditions}}" class="max-1-line">Terms &amp; Conditions</a>
+            <br />
         </div>
         <div class="col">
             <h4>Apps &amp; Tools</h4>

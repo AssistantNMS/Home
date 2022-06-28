@@ -221,11 +221,11 @@
 
 footer.footer .container {
   display: flex;
+  flex-wrap: wrap;
 }
 footer.footer .container .col {
   flex-grow: 1;
   padding: 0 2em;
-  max-width: 40%;
 }
 footer.footer .container .col h4.pl {
   padding-left: 0.25em;
@@ -233,11 +233,31 @@ footer.footer .container .col h4.pl {
 footer.footer .container .col a {
   text-decoration: none;
 }
+@media screen and (max-width: 1000px) {
+  footer.footer .container .col.powered-by {
+    margin-bottom: 2em;
+  }
+}
+@media screen and (max-width: 700px) {
+  footer.footer .container {
+    display: block;
+  }
+  footer.footer .container .col.powered-by {
+    margin-bottom: unset;
+  }
+  footer.footer .container h4,
+footer.footer .container a {
+    text-align: center;
+  }
+}
 footer.footer .powered-by-card {
   width: unset;
 }
 footer.footer .powered-by-card img {
   border-radius: 0.25em;
+}
+footer.footer .powered-by-card .card-social-sub {
+  max-width: 100%;
 }
 
 .navbar-logo {
@@ -348,6 +368,11 @@ footer.footer .powered-by-card img {
   grid-column-gap: 100px;
   grid-template-columns: 1fr 1.2fr;
   grid-template-rows: auto;
+}
+@media screen and (max-width: 991px) {
+  #testimonials.section .grid-testimonial {
+    grid-template-columns: 1fr;
+  }
 }
 #testimonials.section .testimonial-card-wrapper {
   position: relative;
@@ -855,8 +880,12 @@ footer.footer .powered-by-card img {
     border-radius: 32px;
   }
   .card-feature.top .feature-image,
-.card-feature.top .feature-image img, .card-feature.bottom .feature-image,
-.card-feature.bottom .feature-image img {
+.card-feature.top .feature-image img,
+.card-feature.top .feature-image-1,
+.card-feature.top .feature-image-1 img, .card-feature.bottom .feature-image,
+.card-feature.bottom .feature-image img,
+.card-feature.bottom .feature-image-1,
+.card-feature.bottom .feature-image-1 img {
     height: 50vh;
     position: relative;
     padding: 1em;

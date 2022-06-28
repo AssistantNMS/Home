@@ -27,6 +27,11 @@
         grid-column-gap: 100px;
         grid-template-columns: 1fr 1.2fr;
         grid-template-rows: auto;
+
+
+        @media screen and (max-width: 991px) {
+            grid-template-columns: 1fr;
+        }
     }
 
     .testimonial-card-wrapper {
@@ -70,6 +75,7 @@
         .left-arrow:hover,
         .right-arrow:hover {
             background-color: $secondary;
+
             img {
                 filter: invert(1);
             }
@@ -211,6 +217,7 @@
     .app-store-content {
         flex-grow: 1;
     }
+
     .app-store-trailing {
         margin-left: 0.5em;
         padding: 0 1em;
