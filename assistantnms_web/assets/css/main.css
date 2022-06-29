@@ -1077,7 +1077,7 @@ br,
 
 :root {
   --assistantapps-font-family: $defaultFont;
-  --assistantapps-font-weight: "300";
+  --assistantapps-font-weight: 100;
   --assistantapps-team-member-link-text-colour: #80cbc4;
 }
 
