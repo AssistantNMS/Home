@@ -1,7 +1,17 @@
+function heroParallax() {
+    var heroParallaxElems = document.getElementsByClassName('hero-parallax');
+    var heroParallaxInstances = [];
+    for (const heroParallaxElem of heroParallaxElems) {
+        heroParallaxInstances.push(new Parallax(heroParallaxElem));
+    }
+}
+
 function customOnLoad() {
     try {
         var s = skrollr.init();
+        heroParallax();
     } catch { }
+
     try {
         initTestimonials();
     } catch { }
@@ -11,5 +21,5 @@ function customOnLoad() {
 }
 
 setTimeout(() => {
-    customOnLoad();
+    customOnLoad?.();
 }, 1000);
