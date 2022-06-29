@@ -1,5 +1,8 @@
 name: NodeJS with Webpack
 
+permissions:
+  contents: write
+
 on:
   push:
     branches: [ "main" ]
@@ -32,5 +35,12 @@ jobs:
       run: |
         cd assistantnms_web
         rm -d -r node_modules
+    
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4.3.4
+      with:
+        folder: assistantnms_web # The folder the action should deploy.
+
+    
       
     
