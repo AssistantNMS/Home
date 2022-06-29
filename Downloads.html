@@ -1,0 +1,404 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="application-name" content="Assistant for No Man&#x27;s Sky! Available for Download on the App Stores">
+    <title>Downloads - Assistant for No Man&#x27;s Sky</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="index" href="https://nmsassistant.com/">
+    <link rel="canonical" href="https://nmsassistant.com/">
+    <meta name="referrer" content="no-referrer">
+    <link rel="manifest" href="manifest.json">
+    <link rel="author" href="humans.txt">
+    <link rel="me" href="mailto:hi@kurtlourens.com">
+    <link rel="me" href="https://kurtlourens.com" type="text/html">
+    <link rel="search" href="opensearch.xml" type="application/opensearchdescription+xml" title="Search Title">
+
+    <meta name="theme-color" content="#7986cb">
+    <meta name="subject" content="Available on the Google Play and Apple App Store. Get Crafting, Refining, Cooking Recipes and much more for the game No Man&#x27;s Sky!!">
+    <meta name="description" content="Available on the Google Play and Apple App Store. Get Crafting, Refining, Cooking Recipes and much more for the game No Man&#x27;s Sky!!">
+    <meta name="rating" content="General">
+    <meta name="robots" content="index,follow">
+
+    <!-- Google -->
+    <meta name="googlebot" content="index,follow">
+    <meta name="google" content="nositelinkssearchbox">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Apple -->
+    <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="">
+    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="">
+    <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="">
+    <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="">
+    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#7986cb">
+    <!-- <link rel="apple-touch-startup-image" href="/path/to/launch.png"> -->
+    <meta name="apple-mobile-web-app-title" content="Assistant for No Man&#x27;s Sky! Available for Download on the App Stores">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#7986cb">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@AssistantNMS">
+    <meta name="twitter:creator" content="@KhaozTopsy">
+    <meta name="twitter:url" content="https://nmsassistant.com/">
+    <meta name="twitter:title" content="Assistant for No Man&#x27;s Sky! Available for Download on the App Stores">
+    <meta name="twitter:description" content="Available on the Google Play and Apple App Store. Get Crafting, Refining, Cooking Recipes and much more for the game No Man&#x27;s Sky!!">
+    <meta name="twitter:image" content="https://www.mugshotbot.com/m?mode&#x3D;dark&amp;color&#x3D;red&amp;pattern&#x3D;bubbles&amp;url&#x3D;https://nmsassistant.com">
+    <meta name="twitter:image:alt" content="Logo of AssistantNMS">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="https://nmsassistant.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Assistant for No Man&#x27;s Sky">
+    <meta property="og:image" content="https://www.mugshotbot.com/m?mode&#x3D;dark&amp;color&#x3D;red&amp;pattern&#x3D;bubbles&amp;url&#x3D;https://nmsassistant.com">
+    <meta property="og:image:alt" content="Logo of AssistantNMS">
+    <meta property="og:description" content="Available on the Google Play and Apple App Store. Get Crafting, Refining, Cooking Recipes and much more for the game No Man&#x27;s Sky!!">
+    <meta property="og:site_name" content="Assistant for No Man&#x27;s Sky">
+    <meta property="og:locale" content="en_UK">
+    <meta property="article:author" content="Kurt Lourens">
+
+    <!-- Microsoft -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="msapplication-TileColor" content="#7986cb">
+    <meta name="msapplication-starturl" content="/?pwa-app" />
+
+    <link rel="preload" as="image" href="/assets/images/loader.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <style>
+        .opacity80 {
+            background-color: #303030;
+            opacity: 0.8;
+        }
+
+        .full-page-loader {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            z-index: 1003;
+            color: white;
+            transition: opacity 500ms ease-in-out;
+            pointer-events: none;
+        }
+
+        .is-loading .full-page-loader {
+            opacity: 0.9;
+        }
+
+        .full-page-loader img {
+            width: 150px;
+            margin: 0 auto;
+        }
+    </style>
+
+    <script nonce="schema" type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "Person",
+            "name": "Kurt Lourens",
+            "givenName": "Kurt Lourens",
+            "familyName": "Kurt Lourens",
+            "additionalName": "KhaozTopsy",
+            "url": "https://nmsassistant.com/",
+            "image": "https://kurtlourens.com/assets/images/KurtAvatar.svg",
+            "description": "Available on the Google Play and Apple App Store. Get Crafting, Refining, Cooking Recipes and much more for the game No Man&#x27;s Sky!!",
+            "jobTitle": "",
+            "owns": [
+                {
+                    "@type": "OwnershipInfo",
+                    "name": "Assistant Apps",
+                    "url": "https://assistantapps.com"
+                }
+            ]
+        }
+    </script>
+</head>
+<body id="app-body">
+    <div class="page-wrapper">
+
+        <div class="header">
+            <div class="container-nav noselect">
+                <div class="header-left-side">
+                    <a href="/" class="navbar-logo hidden-in-desktop">
+                        <img src="/assets/favicon/apple-touch-icon-76x76.png" alt="AssistantNMS - Logo"
+                            class="hidden-in-mobile">
+                        <h4>Assistant for No Man's Sky</h4>
+                    </a>
+                    <nav role="navigation" class="nav-menu hidden-in-mobile">
+                        <div id="mega-menu-container-overlay" class="dropdown-openable" onclick="closeNavBarWindows()"></div>
+                        <div class="header-dropdown">
+                            <div class="header-dropdown-toggle dropdown-openable"
+                                onclick="toggleNavBarDropdownWindow(this, 'page-dropdown')">
+                                <div class="dropdown-text">Pages&nbsp;<span class="dropdown-icon"></span></div>
+                            </div>
+                            <nav id="page-dropdown" class="dropdown-list dropdown-openable">
+                                <div class="mega-menu-container">
+                                    <div class="menu-column">
+                                        <h4 class="mega-menu-title">Info</h4>
+                                        <div class="menu-section-content">
+                                            <a href="/" class="max-1-line">Home</a>
+                                            <a href="/ThankYou.html" class="max-1-line">Thank you 💖</a>
+                                            <a href="/Contributors.html" class="max-1-line">Contributors</a>
+                                            <a href="https://nmsassistant.freshdesk.com" class="max-1-line">Get Support</a>
+                                            <a href="https://assistantapps.com/discord" class="max-1-line">Discord</a>
+                                            <br />
+                                            <a href="" class="max-1-line">Privacy Policy</a>
+                                            <a href="" class="max-1-line">Terms &amp;
+                                                Conditions</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-column">
+                                        <h4 class="mega-menu-title">Apps &amp; Tools</h4>
+                                        <div class="menu-section-content">
+                                            <a href="https://app.assistantapps.com" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">AssistantNMS WebApp</a>
+                                            <a href="https://api.assistantapps.com" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">AssistantNMS Api</a>
+                                            <a href="https://assistantapps.com" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">AssistantApps</a>
+                                            <a href="https://tools.assistantapps.com" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">Translation tool</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-column">
+                                        <h4 class="mega-menu-title">Other projects</h4>
+                                        <div class="menu-section-content">
+                                            <a href="https://nmscd.github.io" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">NMSCD</a>
+                                            <a href="https://nmscd.github.io/CommunityMission-Progress-Viewer" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">Community Mission Tracker</a>
+                                            <a href="https://nmscd.github.io/expedition-alphabet" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">Expedition Alphabet</a>
+                                            <a href="" class="max-1-line" disabled target="_blank"
+                                                rel="noopener noreferrer">Community Search (coming soon)</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <a href="/ThankYou.html" class="nav-link">Thank You</a>
+                        <a href="/Contributors.html" class="nav-link">Contributors</a>
+                        <a href="https://nmsassistant.freshdesk.com" class="nav-link" target="_blank" rel="noopener noreferrer">Get
+                            Support</a>
+                    </nav>
+                </div>
+                <div class="header-right-side hidden-in-mobile">
+                    <div class="nav-button">
+                        <a href="/Downloads.html" class="button-secondary">
+                            <img src="/assets/img/download.png" alt="AssistantNMS - Logo" class="mg-right-8px">
+                            <div class="button-text">Download</div>
+                        </a>
+                    </div>
+                </div>
+                <nav class="navbar-mobile hidden-in-desktop" onclick="navbarTap(this)">
+                    <div class="navbar-content">
+                        <h4>Other pages</h4>
+                        <a href="/ThankYou.html" class="max-1-line">Thank you 💖</a>
+                        <a href="/Contributors.html" class="max-1-line">Contributors</a>
+                        <a href="/Downloads.html" class="max-1-line">Downloads</a>
+                        <a href="https://nmsassistant.freshdesk.com" class="max-1-line">Get Support</a>
+                        <br />
+                        <h4>External links</h4>
+                        <a href="https://assistantapps.com/discord" class="max-1-line">Discord</a>
+                        <a href="" class="max-1-line">Privacy Policy</a>
+                        <a href="" class="max-1-line">Terms &amp; Conditions</a>
+                        <br />
+                        <h4>Apps &amp; Tools</h4>
+                        <a href="https://app.assistantapps.com" class="max-1-line" target="_blank"
+                            rel="noopener noreferrer">AssistantNMS
+                            WebApp</a>
+                        <a href="https://api.assistantapps.com" class="max-1-line" target="_blank"
+                            rel="noopener noreferrer">AssistantNMS
+                            Api</a>
+                        <a href="https://assistantapps.com" class="max-1-line" target="_blank"
+                            rel="noopener noreferrer">AssistantApps</a>
+                        <a href="https://tools.assistantapps.com" class="max-1-line" target="_blank"
+                            rel="noopener noreferrer">Translation
+                            tool</a>
+                        <br />
+                        <h4>Other projects</h4>
+                        <a href="https://nmscd.github.io" class="max-1-line" target="_blank" rel="noopener noreferrer">NMSCD</a>
+                        <a href="https://nmscd.github.io/CommunityMission-Progress-Viewer" class="max-1-line" target="_blank" rel="noopener noreferrer">Community Mission
+                            Tracker</a>
+                        <a href="https://nmscd.github.io/expedition-alphabet" class="max-1-line" target="_blank"
+                            rel="noopener noreferrer">Expedition Alphabet</a>
+                        <a href="" class="max-1-line" disabled target="_blank"
+                            rel="noopener noreferrer">Community Search (coming soon)</a>
+                    </div>
+                    <div class="burger-menu"><span></span></div>
+                    <div class="burger-menu"><span></span></div>
+                    <div class="burger-menu"><span></span></div>
+                </nav>
+            </div>
+        </div>
+        <section class="section thank-you">
+            <div class="container-1180px ta-center noselect">
+                <h2 class="ta-center noselect">Downloads</h2>
+                <h3 style="font-weight: 100;">Available on these stores. </h3>
+                <br />
+                <div class="downloads-store-links-container noselect">
+                    <a href="https://apps.apple.com/us/app/id1480287625" class="ta-center" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/img/AppStore.png" alt="Apple App Store Logo">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id&#x3D;com.kurtlourens.no_mans_sky_recipes" class="ta-center" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/img/PlayStore.png" alt="Google Play Logo">
+                    </a>
+                    <a href="https://app.nmsassistant.com/" class="ta-center" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/img/WebVersion.png" alt="WebApp Logo">
+                    </a>
+                    <a href="https://apps.microsoft.com/store/detail/assistant-for-no-mans-sky/9NQLF7XD0LF3" class="ta-center" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/img/WindowsStore.png" alt="Windows Logo">
+                    </a>
+                </div>
+                <br />
+            </div>
+        </section>
+
+        <section class="section alternative">
+            <div class="container-1180px ta-center noselect">
+                <h2>Other Links</h2>
+                <h3 style="font-weight: 100;">Want to dowload older versions of the app, checkout our Github
+                    Organisation!</h3>
+                <br />
+                <div class="downloads-store-links-container fixed-width noselect">
+                    <a href="https://github.com/AssistantNMS" class="button-primary" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="/assets/img/github.png" alt="Github Organisation">
+                        <div class="button-text">Github Organisation</div>
+                    </a>
+                    <a href="https://github.com/AssistantNMS/App" class="button-primary" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="/assets/img/github.png" alt="Github App repository">
+                        <div class="button-text">App source code</div>
+                    </a>
+                    <a href="https://github.com/AssistantNMS/App/releases" class="button-primary" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="/assets/img/github.png" alt="App releases">
+                        <div class="button-text">Older releases of the app</div>
+                    </a>
+                    <a href="https://github.com/AssistantNMS/Versions" class="button-primary" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="/assets/img/github.png" alt="Github versions repo">
+                        <div class="button-text">Very old versions of the app</div>
+                    </a>
+                </div>
+
+                <br />
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="col powered-by">
+                    <h4 class="pl">Powered by:</h4>
+                    <div class="powered-by-card">
+                        <a href="https://remoteconfigs.com?ref&#x3D;assistantNMS" target="_blank" rel="noopener noreferrer"
+                            class="card extraMargin">
+                            <img src="assets/img/poweredBy/RemoteConfigs.png" alt="RemoteConfigs, Inc" class="card-header-image" />
+                            <div class="card-social">
+                                <div class="card-social-title">RemoteConfigs, Inc</div>
+                                <div class="card-social-sub max-1-line">Website &amp; App Remote Management</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="powered-by-card">
+                        <a href="https://redrubyit.co.za?ref&#x3D;assistantNMS" target="_blank" rel="noopener noreferrer"
+                            class="card extraMargin">
+                            <img src="assets/img/poweredBy/RedRubyIT.png" alt="Red Ruby IT" class="card-header-image" />
+                            <div class="card-social">
+                                <div class="card-social-title">Red Ruby IT</div>
+                                <div class="card-social-sub max-1-line">Development</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="powered-by-card">
+                        <a href="https://lionesslilo.com?ref&#x3D;assistantNMS" target="_blank" rel="noopener noreferrer"
+                            class="card extraMargin">
+                            <img src="assets/img/poweredBy/LionessLilo.jpg" alt="LionessLilo" class="card-header-image" />
+                            <div class="card-social">
+                                <div class="card-social-title">LionessLilo</div>
+                                <div class="card-social-sub max-1-line">Domain &amp; Hosting</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="powered-by-card">
+                        <a href="https://nmscd.github.io/?ref&#x3D;assistantNMS" target="_blank" rel="noopener noreferrer"
+                            class="card extraMargin">
+                            <img src="assets/img/poweredBy/NMSCD.png" alt="NMSCD" class="card-header-image" />
+                            <div class="card-social">
+                                <div class="card-social-title">NMSCD</div>
+                                <div class="card-social-sub max-1-line">Community Support</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <br class="hidden-in-desktop" />
+                    <h4>Other pages</h4>
+                    <a href="/ThankYou.html" class="max-1-line">Thank you 💖</a>
+                    <a href="/Contributors.html" class="max-1-line">Contributors</a>
+                    <a href="https://nmsassistant.freshdesk.com" class="max-1-line">Get Support</a>
+                    <br />
+                    <h4>External links</h4>
+                    <a href="https://assistantapps.com/discord" class="max-1-line">Discord</a>
+                    <a href="" class="max-1-line">Privacy Policy</a>
+                    <a href="" class="max-1-line">Terms &amp; Conditions</a>
+                    <br />
+                </div>
+                <div class="col">
+                    <h4>Apps &amp; Tools</h4>
+                    <a href="https://app.assistantapps.com" class="max-1-line" target="_blank" rel="noopener noreferrer">AssistantNMS
+                        WebApp</a>
+                    <a href="https://api.assistantapps.com" class="max-1-line" target="_blank" rel="noopener noreferrer">AssistantNMS
+                        Api</a>
+                    <a href="https://assistantapps.com" class="max-1-line" target="_blank"
+                        rel="noopener noreferrer">AssistantApps</a>
+                    <a href="https://tools.assistantapps.com" class="max-1-line" target="_blank" rel="noopener noreferrer">Translation
+                        tool</a>
+                    <br />
+                    <h4>Other projects</h4>
+                    <a href="https://nmscd.github.io" class="max-1-line" target="_blank" rel="noopener noreferrer">NMSCD</a>
+                    <a href="https://nmscd.github.io/CommunityMission-Progress-Viewer" class="max-1-line" target="_blank" rel="noopener noreferrer">Community Mission
+                        Tracker</a>
+                    <a href="https://nmscd.github.io/expedition-alphabet" class="max-1-line" target="_blank"
+                        rel="noopener noreferrer">Expedition Alphabet</a>
+                    <a href="" class="max-1-line" disabled target="_blank"
+                        rel="noopener noreferrer">Community Search (coming soon)</a>
+                </div>
+            </div>
+        
+            <br />
+            <br />
+        </footer>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                <span>©AssistantNMS - </span>
+                <a href="https://assistantapps.com" target="_blank" rel="noopener noreferrer">AssistantApps</a>
+                <span> - 4.0.0</span>
+            </div>
+        </div>
+        <br />
+    </div>
+</body>
+<script async defer src="https://assistantapps.github.io/WebComponents/build/bundle.js"></script>
+<script async defer src="./assets/js/navbar.js"></script>
+
+</html>

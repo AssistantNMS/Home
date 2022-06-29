@@ -1,0 +1,64 @@
+<footer class="footer">
+    <div class="container">
+        <div class="col powered-by">
+            <h4 class="pl">Powered by:</h4>
+            {{#each poweredBy as |poweredByItem index|}}
+            <div class="powered-by-card">
+                <a href="{{urlref poweredByItem.link}}" target="_blank" rel="noopener noreferrer"
+                    class="card extraMargin">
+                    <img src="{{poweredByItem.imgUrl}}" alt="{{poweredByItem.name}}" class="card-header-image" />
+                    <div class="card-social">
+                        <div class="card-social-title">{{poweredByItem.name}}</div>
+                        <div class="card-social-sub max-1-line">{{poweredByItem.description}}</div>
+                    </div>
+                </a>
+            </div>
+            {{/each}}
+        </div>
+        <div class="col">
+            <br class="hidden-in-desktop" />
+            <h4>Other pages</h4>
+            <a href="{{navigation.thankyou}}" class="max-1-line">Thank you 💖</a>
+            <a href="{{navigation.contributors}}" class="max-1-line">Contributors</a>
+            <a href="{{assistantApps.support}}" class="max-1-line">Get Support</a>
+            <br />
+            <h4>External links</h4>
+            <a href="{{assistantApps.discord}}" class="max-1-line">Discord</a>
+            <a href="{{assistantApps.privacyPolicy}}" class="max-1-line">Privacy Policy</a>
+            <a href="{{assistantApps.termsAndConditions}}" class="max-1-line">Terms &amp; Conditions</a>
+            <br />
+        </div>
+        <div class="col">
+            <h4>Apps &amp; Tools</h4>
+            <a href="{{assistantNms.webApp}}" class="max-1-line" target="_blank" rel="noopener noreferrer">AssistantNMS
+                WebApp</a>
+            <a href="{{assistantNms.webApi}}" class="max-1-line" target="_blank" rel="noopener noreferrer">AssistantNMS
+                Api</a>
+            <a href="{{assistantApps.rootUrl}}" class="max-1-line" target="_blank"
+                rel="noopener noreferrer">AssistantApps</a>
+            <a href="{{assistantApps.tools}}" class="max-1-line" target="_blank" rel="noopener noreferrer">Translation
+                tool</a>
+            <br />
+            <h4>Other projects</h4>
+            <a href="{{nmscd.home}}" class="max-1-line" target="_blank" rel="noopener noreferrer">NMSCD</a>
+            <a href="{{nmscd.cmpt}}" class="max-1-line" target="_blank" rel="noopener noreferrer">Community Mission
+                Tracker</a>
+            <a href="{{nmscd.expeditionAlphabet}}" class="max-1-line" target="_blank"
+                rel="noopener noreferrer">Expedition Alphabet</a>
+            <a href="{{nmscd.communitySearch}}" class="max-1-line" disabled target="_blank"
+                rel="noopener noreferrer">Community Search (coming soon)</a>
+        </div>
+    </div>
+
+    <br />
+    <br />
+</footer>
+
+<div class="footer-bottom">
+    <div class="copyright">
+        <span>©AssistantNMS - </span>
+        <a href="{{assistantApps.rootUrl}}" target="_blank" rel="noopener noreferrer">AssistantApps</a>
+        <span> - {{version}}</span>
+    </div>
+</div>
+<br />

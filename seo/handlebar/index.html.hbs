@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+{{> components/documentHead}}
+
+<body id="app-body" class="is-loading">
+    <div class="full-page-loader opacity80"></div>
+    <div class="full-page-loader">
+        <img src="/assets/img/loader.svg" draggable="false" alt="loading-animation">
+    </div>
+
+    <div class="page-wrapper">
+
+        {{> components/header}}
+
+        <section class="section hero">
+            <div class="background-parallax-img">
+                <div class="content">
+                    <img src="/assets/img/bg-hero.svg" alt="background image" />
+                </div>
+            </div>
+            <div class="background-container-ship">
+                <img id="ship1" src="/assets/img/ship-white-small.png" alt="ship image" />
+                <img id="ship2" src="/assets/img/ship-white-small.png" alt="ship image" />
+                <img id="ship3" src="/assets/img/ship-white-small.png" alt="ship image" />
+            </div>
+            <div class="container-1180px">
+                <div id="download" class="basic-grid grid-hero">
+                    <div id="landing-hero" class="grid-hero-left-block">
+                        <img src="/assets/favicon/apple-touch-icon-76x76.png" alt="AssistantNMS - Logo"
+                            class="app-icon">
+                        <h1>Assistant for&nbsp;<wbr/>No Man's Sky</h1>
+                        <p class="paragraph-large">
+                            View all the possible recipes, live status of Community events and so much more from your
+                            phone and everywhere else!
+                        </p>
+                        <div class="mt-2">
+                            <div class="store-links-container noselect">
+                                <a href="{{store.ios}}" class="button-primary" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="/assets/img/AppStoreIcon.png" alt="Apple App Store Logo">
+                                    <div class="button-text">Apple App Store</div>
+                                </a>
+                                <a href="{{store.android}}" class="button-primary" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="/assets/img/PlayStoreIcon.png" alt="Google Play Logo">
+                                    <div class="button-text">Google Play</div>
+                                </a>
+                                <a href="{{store.webApp}}" class="button-primary" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="/assets/img/WebVersionIcon.png" alt="WebApp Logo">
+                                    <div class="button-text">Web App</div>
+                                </a>
+                                <a href="{{store.windows}}" class="button-primary" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="/assets/img/WindowsStoreIcon.png" alt="Windows Logo">
+                                    <div class="button-text">Windows</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-hero-right-block">
+                        <div class="hero-img-stack">
+                            <img class="hero-image-bg" src="/assets/img/hero-img.svg" alt="background shadow" />
+
+                            <div class="hero-parallax hero-image">
+                                <img data-depth="0.05" src="/assets/img/screenshots/phone-bg.png"
+                                    class="hero-image-bg-offset hidden-till-loaded" alt="phone with app running" />
+                                <img data-depth="0.05" src="/assets/img/screenshots/phoneWithApp.png"
+                                    alt="phone with app running" />
+                            </div>
+                            <div class="hero-parallax hero-image-cm">
+                                <img data-depth="0.25" src="/assets/img/screenshots/cooking.png"
+                                    alt="community mission panel" />
+                            </div>
+                            <div class="hero-parallax hero-image-qs">
+                                <img data-depth="0.5" src="/assets/img/screenshots/quicksilverReward.png"
+                                    alt="community mission panel" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section socials">
+            <div class="container-1180px">
+                <h2 class="ta-center noselect">Our Socials</h2>
+                <div class="basic-grid grid-logos mt-2">
+                    {{#each socials as |social index|}}
+                    <a href="{{urlref social.url}}" title="{{social.name}}" class="badge-wrapper" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="{{social.imgUrl}}" alt="{{social.name}}" />
+                    </a>
+                    {{/each}}
+                </div>
+            </div>
+        </section>
+
+        <section id="Features" class="section">
+            <div class="container-1180px">
+                <h2 class="ta-center noselect">Features</h2>
+                <div class="container-600px ta-center noselect">
+                    <h3 style="font-weight: 100;">Powerful features to supercharge your gameplay 🎮</h3>
+                </div>
+                <div class="card-feature top">
+                    <div class="basic-grid feature-grid">
+                        <div class="right-block-card-feature">
+                            <div class="feature-img-stack">
+                                <div class="feature-image alt">
+                                    <img src="/assets/img/screenshots/phone-bg.png"
+                                        class="feature-image-bg-offset hidden-in-mobile" alt="phone with app running" />
+                                    <img src="/assets/img/screenshots/phoneWithStasis.png"
+                                        alt="phone with app running" />
+                                </div>
+                                <div class="feature-image-1 alt hidden-in-mobile">
+                                    <img src="/assets/img/screenshots/phoneWithStasisOverlay.png" alt="app overlay" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left-block-card-feature">
+                            <img src="/assets/img/interconnected.png" alt="interconnected icon">
+                            <div class="margin-bottom-6px">
+                                <h3>Packed with data</h3>
+                            </div>
+                            <p>
+                                Comprehensive amount of data displayed for each item with a links to other items.<br />
+                                See how to craft, refine and cook an item as well as how an item can be used in other
+                                crafting, refining and cooking recipes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-feature bottom">
+                    <div class="basic-grid feature-grid bottom">
+                        <div class="left-block-card-feature bottom">
+                            <img src="/assets/img/translate.png" alt="connected icon" />
+                            <div class="margin-bottom-6px">
+                                <h3>Multiple Language support</h3>
+                            </div>
+                            <p>
+                                View the data in all the languages that No Man's Sky supports as well as a few others.
+                                These translations are supported by the amazing NMS community! 💪
+                            </p>
+                            <a href="{{assistantApps.tools}}" class="button-primary fit" target="_blank"
+                                rel="noopener noreferrer">
+                                <span class="button-text">Translation Tool</span>
+                            </a>
+                        </div>
+                        <div class="right-block-card-feature bottom">
+                            <div class="feature-img-stack">
+                                <div class="feature-image">
+                                    <img src="/assets/img/screenshots/phone-bg.png"
+                                        class="feature-image-bg-offset hidden-in-mobile" alt="phone with app running" />
+                                    <img src="/assets/img/screenshots/phoneWithLanguages.png"
+                                        alt="phone with app running" />
+                                </div>
+                                <div class="feature-image-1 hidden-in-mobile">
+                                    <img src="/assets/img/screenshots/phoneWithLanguagesOverlay.png"
+                                        alt="community mission panel" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-feature top third">
+                    <div class="basic-grid feature-grid">
+                        <div class="right-block-card-feature">
+                            <div class="feature-img-stack">
+                                <div class="feature-image alt">
+                                    <img src="/assets/img/screenshots/phone-bg.png"
+                                        class="feature-image-bg-offset hidden-in-mobile" alt="phone with app running" />
+                                    <img src="/assets/img/screenshots/phoneWithCommunity.png"
+                                        alt="phone with app running" />
+                                </div>
+                                <div class="feature-image-1 alt hidden-in-mobile">
+                                    <img src="/assets/img/screenshots/phoneWithCommunityOverlay.png"
+                                        alt="app overlay" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left-block-card-feature">
+                            <img src="/assets/img/community.png" alt="community icon">
+                            <div class="margin-bottom-6px">
+                                <h3>Connect with the community</h3>
+                            </div>
+                            <p>
+                                Community resources integrated into the app. Easily find No Man's Sky content creators!
+                                Listen to community made ByteBeat music provided by the NMSFM 🎵.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-feature bottom">
+                    <div class="basic-grid feature-grid bottom">
+                        <div class="left-block-card-feature bottom">
+                            <img src="/assets/img/live.png" alt="connected icon" />
+                            <div class="margin-bottom-6px">
+                                <h3>View live event statuses</h3>
+                            </div>
+                            <p>
+                                View live in-game events such as the Community Missions, Weekend Missions and
+                                Expeditions all from within the app with live and accurate data 🎯.
+                            </p>
+                        </div>
+                        <div class="right-block-card-feature bottom">
+                            <div class="feature-img-stack">
+                                <div class="feature-image">
+                                    <img src="/assets/img/screenshots/phone-bg.png"
+                                        class="feature-image-bg-offset hidden-in-mobile" alt="phone with app running" />
+                                    <img src="/assets/img/screenshots/phoneWithExp.png" alt="phone with app running" />
+                                </div>
+                                <div class="feature-image-1 hidden-in-mobile">
+                                    <img src="/assets/img/screenshots/phoneWithExpOverlay.png"
+                                        alt="community mission panel" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="ta-center">And many more amazing features!</h3>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section">
+            <div class="container-1180px">
+                <div class="basic-grid grid-testimonial">
+                    <div class="grid-testimonial-left-side">
+                        <h2 class="testimonials-title color-white">Don't just take our word for it!</h2>
+                        <p class="paragraph-large color-grey-light">
+                            Over 100 000 downloads and thousands of reviews! We listen to and read all of your reviews.
+                            The apps could not be in the state that it is without the community that has supported it!
+                        </p>
+                        <a href="{{urlref store.android}}" class="app-store noselect" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="app-store-img">
+                                <img src="/assets/img/GooglePlayRating.png" alt="GooglePlayStore" />
+                            </div>
+                            <div class="app-store-content">
+                                <h4>Google Play Store</h4>
+                                <p>{{googlePlayRating.numberOfReviews}} reviews</p>
+                            </div>
+                            <div class="app-store-trailing">
+                                <span>{{googlePlayRating.allScore}}&nbsp;⭐</span>
+                            </div>
+                        </a>
+                        <a href="{{urlref store.ios}}" class="app-store noselect" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="app-store-img">
+                                <img src="/assets/img/AppStoreRating.png" alt="AppStoreRating" />
+                            </div>
+                            <div class="app-store-content">
+                                <h4>Apple App Store</h4>
+                                <p>{{appleAppStoreRating.numberOfReviews}} reviews</p>
+                            </div>
+                            <div class="app-store-trailing">
+                                <span>{{appleAppStoreRating.allScore}}&nbsp;⭐</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-testimonial-right-side">
+                        <div class="testimonial-slider">
+                            <div class="testimonial-card-wrapper">
+                                <div class="testimonial-top">
+                                    <div class="testimonial-details">
+                                        <img src="https://kurtlourens.com/assets/images/KurtAvatar.svg"
+                                            alt="Kurt Lourens" class="testimonial-avatar" />
+                                        <div class="testimonial-author">
+                                            <h3 class="testimonial-name">Kurt Lourens</h3>
+                                            <small class="testimonial-source">Google Play</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="testimonial-text">I think its a great app 👍</p>
+                                <div class="arrow-container">
+                                    <div class="left-arrow" onclick="prevTestimonial()">
+                                        <img src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083223bc3da7ae_arrow-slider-left.svg"
+                                            alt="left arrow" class="arrow-image" />
+                                    </div>
+                                    &nbsp;
+                                    <div class="right-arrow" onclick="nextTestimonial()">
+                                        <img src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083234fd3da7ad_arrow-slider-right.svg"
+                                            alt="right arrow" class="arrow-image" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Support" class="section">
+            <div class="container-1180px">
+                <h2 class="ta-center">Community supported</h2>
+                <div class="container-600px ta-center">
+                    <h3 style="font-weight: 100;">The app is only possible thanks to the NMS community 💖</h3>
+                </div>
+
+                <div class="mt-2 ta-center">
+                    <a href="{{navigation.contributors}}" class="button-secondary fit">
+                        <span class="button-text">Team &amp; Contributors</span>
+                    </a>
+                </div>
+
+                <div class="donation-grid noselect">
+                    {{#each donationOptions as |donationOption index|}}
+                    <div class="donation-card">
+                        <a href="{{urlref donationOption.url}}" target="_blank" rel="noopener noreferrer"
+                            class="card extraMargin">
+                            <img src="{{donationOption.imgUrl}}" alt="{{donationOption.name}}"
+                                class="card-header-image" />
+                            <div class="card-social">{{donationOption.name}}</div>
+                        </a>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </section>
+
+        {{> components/footer}}
+
+    </div>
+    <img data-0="transform:rotate(0deg);left:100vw;" data-500="transform:rotate(-10deg);left:90vw;"
+        data-2000="transform:rotate(-10deg);left:90vw;" data-2500="transform:rotate(0deg);left:100vw;"
+        src="./assets/img/sentinalBlue.png" class="parallax-sentinalBlue hidden-in-mobile" alt="image with parallax" />
+</body>
+<script async defer src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script async defer src="https://assistantapps.github.io/WebComponents/build/bundle.js"></script>
+<script async defer src="./assets/js/skrollr.min.js"></script>
+<script async defer src="./assets/js/testimonials.js"></script>
+<script async defer src="./assets/js/navbar.js"></script>
+<script async defer src="./assets/js/custom.js"></script>
+
+</html>
+
+</html>

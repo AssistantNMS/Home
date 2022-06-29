@@ -1,0 +1,44 @@
+@import "variables";
+@import "loading";
+@import "button";
+@import "hero";
+@import "feature";
+@import "footer";
+@import "navbar";
+@import "testimonial";
+@import "downloads";
+@import "header";
+@import "section";
+@import "donation";
+@import "parallax";
+@import "card";
+@import "mobile";
+@import "base";
+
+$defaultFont: "Poppins", sans-serif !important;
+
+:root {
+    // AssistantApps WebComponents
+    --assistantapps-font-family: $defaultFont;
+    --assistantapps-font-weight: "300";
+    --assistantapps-team-member-link-text-colour: #{$secondary};
+}
+
+html,
+body {
+    height: unset !important;
+    overflow: unset !important;
+    font-family: $defaultFont;
+    background-color: $background;
+    color: $text-color;
+    scroll-behavior: smooth;
+
+    .header {
+        background-color: darken($background, 5%);
+        z-index: 2;
+    }
+}
+
+.footer-column {
+    max-width: 33%;
+}

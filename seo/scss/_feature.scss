@@ -1,0 +1,84 @@
+$feature-transform: rotate3d(-1, 4, 5, 347deg) skew(346deg, 11deg) !important;
+$feature-transform-alt: rotate3d(1, -14, -6, 17deg) skew(-2deg, 7deg) !important;
+
+$feature-img-overlap: 100px;
+
+.feature-img-stack {
+    position: relative;
+    text-align: center;
+    height: 100%;
+
+    &:hover {
+        .feature-image-1,
+        .feature-image-2,
+        .feature-image-3 {
+            opacity: 0;
+        }
+    }
+
+    .feature-image img,
+    .feature-image-1,
+    .feature-image-2,
+    .feature-image-3 {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        max-height: calc(100% + $feature-img-overlap);
+        z-index: 1;
+        overflow: hidden;
+        transition: opacity 500ms ease-in-out;
+        will-change: opacity;
+
+        img {
+            max-height: calc(100% + $feature-img-overlap);
+        }
+    }
+
+    .feature-image {
+        img {
+            left: 60%;
+            transform: translate(-25%, -#{$feature-img-overlap}) #{$feature-transform};
+            z-index: 2;
+        }
+
+        .feature-image-bg-offset {
+            margin-top: 0.2em;
+            margin-left: 0.4em;
+        }
+
+        &.alt {
+            img {
+                left: 40%;
+                transform: translate(-70%, -#{$feature-img-overlap}) #{$feature-transform-alt};
+            }
+
+            .feature-image-bg-offset {
+                margin-left: -0.4em;
+            }
+        }
+    }
+
+    .feature-image-1 {
+        transform: translate(-40%, -15%) #{$feature-transform};
+        z-index: 3;
+        &.alt {
+            transform: translate(-30%, -15%) #{$feature-transform-alt};
+        }
+    }
+
+    .feature-image-2 {
+        transform: translate(-30%, -15%) #{$feature-transform};
+        z-index: 4;
+        &.alt {
+            transform: translate(-30%, -15%) #{$feature-transform-alt};
+        }
+    }
+
+    .feature-image-3 {
+        transform: translate(-30%, -15%) #{$feature-transform};
+        z-index: 5;
+        &.alt {
+            transform: translate(-30%, -15%) #{$feature-transform-alt};
+        }
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+{{> components/documentHead documentTitle="Contributors"}}
+
+<body id="app-body">
+    <div class="page-wrapper">
+
+        {{> components/header showHome="true"}}
+
+        <section class="section thank-you">
+            <div class="container-1180px">
+                <h2 class="ta-center noselect">Team members</h2>
+                <div class="container-600px ta-center noselect">
+                    <h3 style="font-weight: 100;">Meet the team!</h3>
+                </div>
+                <br />
+                <br />
+                <div class="max-w-500px" style="margin: 0 auto">
+                    <assistant-apps-team-list>
+                        <div style="text-align: center;">
+                            <img src="/assets/img/loader.svg" height="100px" draggable="false" alt="loading-animation">
+                        </div>
+                    </assistant-apps-team-list>
+                </div>
+            </div>
+        </section>
+
+        <section class="section alternative">
+            <div class="container-1180px ta-center noselect">
+                <h2>Contributors</h2>
+                <h3 style="font-weight: 100;">Thank you to all of these people for their hard work!</h3>
+
+                <div class="donation-grid noselect">
+                    {{#each contributors as |contributor index|}}
+                    <div class="donation-card">
+                        <a href="{{contributor.link}}" class="card extraMargin">
+                            <img src="{{contributor.imageUrl}}" alt="{{contributor.name}}" class="card-header-image" />
+                            <div class="card-social">
+                                <div class="card-social-title max-1-line">{{contributor.name}}</div>
+                                <div class="card-social-sub max-1-line">{{contributor.description}}</div>
+                            </div>
+
+                        </a>
+                    </div>
+                    {{/each}}
+                </div>
+                <br />
+            </div>
+        </section>
+
+        {{> components/footer}}
+
+    </div>
+</body>
+<script async defer src="https://assistantapps.github.io/WebComponents/build/bundle.js"></script>
+<script async defer src="./assets/js/navbar.js"></script>
+
+</html>
