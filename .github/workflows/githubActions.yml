@@ -22,12 +22,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Correct dir
-      run: |
-        cd assistantnms_web
-
     - name: Build
       run: |
+        cd assistantnms_web
         npm ci
         npm run build
 
@@ -35,6 +32,6 @@ jobs:
       uses: actions/upload-artifact@v3.1.0
       with:
         name: staticFiles
-        path: ./**/*
+        path: ./assistantnms_web/**/*
       
     
