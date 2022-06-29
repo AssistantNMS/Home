@@ -1,40 +1,15 @@
-function heroParallax() {
-    var heroParallaxElems = document.getElementsByClassName('hero-parallax');
-    var heroParallaxInstances = [];
-    for (const heroParallaxElem of heroParallaxElems) {
-        heroParallaxInstances.push(new Parallax(heroParallaxElem));
-    }
-}
-
-function featureParallax() {
-    var featureParallaxElems = document.getElementsByClassName('feature-parallax');
-    var featureParallaxInstances = [];
-    for (const featureParallaxElem of featureParallaxElems) {
-        featureParallaxInstances.push(new Parallax(featureParallaxElem));
-    }
-}
-
-function waitForParallax() {
-    var bodyElem = document.getElementById('app-body');
-    bodyElem.classList.remove('is-loading');
-}
-
-window.onload = function () {
-    setTimeout(() => {
-        parallax();
+function customOnLoad() {
+    try {
+        var s = skrollr.init();
+    } catch { }
+    try {
         initTestimonials();
-    }, 500);
-};
+    } catch { }
 
-function parallax() {
-    var s = skrollr.init();
-
-    heroParallax();
-    featureParallax();
-
-    waitForParallax();
+    const bodyElem = document.getElementById('app-body');
+    bodyElem?.classList?.remove?.('is-loading');
 }
 
 setTimeout(() => {
-    waitForParallax();
+    customOnLoad();
 }, 1000);

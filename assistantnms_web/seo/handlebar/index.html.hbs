@@ -66,8 +66,8 @@
                             <div class="hero-parallax hero-image">
                                 <img data-depth="0.05" src="/assets/img/screenshots/phone-bg.png"
                                     class="hero-image-bg-offset hidden-till-loaded" alt="phone with app running" />
-                                <img data-depth="0.05" src="/assets/img/screenshots/phoneWithApp.png"
-                                    alt="phone with app running" />
+                                <img data-depth="0.05" class="main-hero-img"
+                                    src="/assets/img/screenshots/phoneWithApp.png" alt="phone with app running" />
                             </div>
                             <div class="hero-parallax hero-image-cm">
                                 <img data-depth="0.25" src="/assets/img/screenshots/cooking.png"
@@ -331,6 +331,14 @@
 <script async defer src="./assets/js/testimonials.js"></script>
 <script async defer src="./assets/js/navbar.js"></script>
 <script async defer src="./assets/js/custom.js"></script>
+
+<script>
+    window.onload = function () {
+        setTimeout(() => {
+            customOnLoad();
+        }, 500);
+    };
+</script>
 
 </html>
 

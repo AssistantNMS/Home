@@ -51,6 +51,12 @@ $hero-transform: rotate3d(-1, 4, 5, 347deg) skew(346deg, 11deg) !important;
         z-index: 1;
         img {
             max-height: 70vh;
+
+            &.main-hero-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
         }
     }
 
