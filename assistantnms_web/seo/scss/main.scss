@@ -20,7 +20,7 @@ $defaultFont: "Poppins", sans-serif !important;
 :root {
     // AssistantApps WebComponents
     --assistantapps-font-family: $defaultFont;
-    --assistantapps-font-weight: "300";
+    --assistantapps-font-weight: 100;
     --assistantapps-team-member-link-text-colour: #{$secondary};
 }
 
