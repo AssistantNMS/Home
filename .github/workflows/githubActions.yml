@@ -31,6 +31,6 @@ jobs:
     - name: Remove node_modules
       run: |
         cd assistantnms_web
-        rm node_modules
+        rm -d -r node_modules
       
     
