@@ -40,6 +40,7 @@
         img {
             width: 3em;
             margin-right: 0.5em;
+            border-radius: 0.25em;
         }
 
         .card-social {
@@ -56,6 +57,7 @@
 
             .card-social-sub {
                 font-size: small;
+                max-width: 100%;
             }
         }
     }

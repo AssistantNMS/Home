@@ -44,6 +44,10 @@ br,
     text-overflow: ellipsis;
 }
 
+.max-w-500px {
+    max-width: 500px;
+}
+
 ::selection {
     background: darken($primary, 33%);
     color: white;

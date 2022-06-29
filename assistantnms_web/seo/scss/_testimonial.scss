@@ -28,7 +28,6 @@
         grid-template-columns: 1fr 1.2fr;
         grid-template-rows: auto;
 
-
         @media screen and (max-width: 991px) {
             grid-template-columns: 1fr;
         }
@@ -194,6 +193,11 @@
     margin-top: 0.5em;
     background-color: rgba(0, 0, 0, 0.3);
     text-decoration: none;
+    transition: background-color 250ms ease-in-out;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
 
     .app-store-img img {
         height: 5em;

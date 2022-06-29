@@ -38,10 +38,6 @@
   background-color: #5465bd;
   color: #fff;
 }
-.button-primary.fit {
-  display: inline-block;
-  border-radius: 30px;
-}
 
 .button-secondary {
   background-color: #80cbc4;
@@ -50,6 +46,12 @@
 .button-secondary:hover {
   background-color: #5cbcb3;
   color: #1f212a;
+}
+
+.button-primary.fit,
+.button-secondary.fit {
+  display: inline-block;
+  border-radius: 30px;
 }
 
 .section.hero {
@@ -253,12 +255,6 @@ footer.footer .container a {
 footer.footer .powered-by-card {
   width: unset;
 }
-footer.footer .powered-by-card img {
-  border-radius: 0.25em;
-}
-footer.footer .powered-by-card .card-social-sub {
-  max-width: 100%;
-}
 
 .navbar-logo {
   display: flex;
@@ -274,8 +270,69 @@ footer.footer .powered-by-card .card-social-sub {
 }
 
 .navbar-mobile {
-  width: 3em;
-  height: 3em;
+  transition: none;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 2em;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0 16px;
+  margin: 28px 0;
+  z-index: 999;
+}
+.navbar-mobile:focus {
+  outline: none;
+}
+.navbar-mobile .burger-menu {
+  border-radius: 1em;
+  transition: width 200ms ease-out, height 0.3s linear, transform 0.3s linear, opacity 300ms linear;
+  position: relative;
+  transform-origin: 1px;
+  height: 9px;
+}
+.navbar-mobile .burger-menu span {
+  background: #ffffff;
+  height: 5px;
+  display: block;
+  margin: 2px 0;
+  border-radius: 5px;
+}
+.navbar-mobile .burger-menu:nth-child(2) {
+  transform: rotate(0);
+  width: 2em;
+}
+.navbar-mobile .burger-menu:nth-child(3) {
+  width: 2em;
+}
+.navbar-mobile .burger-menu:nth-child(4) {
+  transform: rotate(0);
+  width: 2em;
+}
+.navbar-mobile .navbar-content {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 100vw;
+  width: calc(100vw - 4em);
+  height: 100vh;
+  padding: 2em;
+  border-radius: 1em;
+  background-color: #34395b;
+  transition: transform 0.3s linear;
+}
+.navbar-mobile.open .burger-menu:nth-child(2) {
+  transform: rotate(45deg);
+}
+.navbar-mobile.open .burger-menu:nth-child(3) {
+  width: 0;
+}
+.navbar-mobile.open .burger-menu:nth-child(4) {
+  transform: rotate(-45deg);
+}
+.navbar-mobile.open .navbar-content {
+  transform: translateX(-100vw);
 }
 
 .mega-menu-container {
@@ -513,6 +570,10 @@ footer.footer .powered-by-card .card-social-sub {
   margin-top: 0.5em;
   background-color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
+  transition: background-color 250ms ease-in-out;
+}
+.app-store:hover {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .app-store .app-store-img img {
   height: 5em;
@@ -538,6 +599,23 @@ footer.footer .powered-by-card .card-social-sub {
   margin-left: 0.5em;
   padding: 0 1em;
   line-height: unset;
+}
+
+.downloads-store-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.downloads-store-links-container.fixed-width a {
+  width: 400px;
+}
+.downloads-store-links-container a {
+  max-width: 350px;
+  margin: 0.25em;
+  transition: transform 250ms ease-in-out;
+}
+.downloads-store-links-container a:hover {
+  transform: translateY(-0.25em);
 }
 
 .header .nav-link {
@@ -576,12 +654,12 @@ footer.footer .powered-by-card .card-social-sub {
 }
 
 .section.socials,
-.section.patreon {
+.section.alternative {
   padding-top: 100px;
   background-color: rgba(0, 0, 0, 0.21);
 }
 
-.section.patreon,
+.section.alternative,
 .section.donator {
   padding-top: 4em;
   padding-bottom: 4em;
@@ -643,6 +721,7 @@ footer.footer .powered-by-card .card-social-sub {
 .donation-card .card img {
   width: 3em;
   margin-right: 0.5em;
+  border-radius: 0.25em;
 }
 .powered-by-card .card .card-social,
 .donation-card .card .card-social {
@@ -660,6 +739,7 @@ footer.footer .powered-by-card .card-social-sub {
 .powered-by-card .card .card-social .card-social-sub,
 .donation-card .card .card-social .card-social-sub {
   font-size: small;
+  max-width: 100%;
 }
 
 [class^=parallax-],
@@ -955,6 +1035,10 @@ br,
   text-overflow: ellipsis;
 }
 
+.max-w-500px {
+  max-width: 500px;
+}
+
 ::selection {
   background: #2c3670;
   color: white;
@@ -991,11 +1075,17 @@ br,
   background-image: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.25) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.25) 75%, transparent 75%, transparent);
 }
 
+:root {
+  --assistantapps-font-family: $defaultFont;
+  --assistantapps-font-weight: "300";
+  --assistantapps-team-member-link-text-colour: #80cbc4;
+}
+
 html,
 body {
   height: unset !important;
   overflow: unset !important;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   background-color: #2b2f4b;
   color: #d0d0d0;
   scroll-behavior: smooth;

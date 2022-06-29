@@ -1,0 +1,19 @@
+.downloads-store-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &.fixed-width a {
+        width: 400px;
+    }
+
+    a {
+        max-width: 350px;
+        margin: 0.25em;
+        transition: transform 250ms ease-in-out;
+
+        &:hover {
+            transform: translateY(-0.25em);
+        }
+    }
+}

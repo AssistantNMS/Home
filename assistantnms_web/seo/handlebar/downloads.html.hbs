@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+{{> components/documentHead documentTitle="Downloads"}}
+
+<body id="app-body">
+    <div class="page-wrapper">
+
+        {{> components/header showHome="true"}}
+
+        <section class="section thank-you">
+            <div class="container-1180px ta-center noselect">
+                <h2 class="ta-center noselect">Downloads</h2>
+                <h3 style="font-weight: 100;">Available on these stores. </h3>
+                <br />
+                <div class="downloads-store-links-container noselect">
+                    <a href="{{store.ios}}" class="ta-center" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/img/AppStore.png" alt="Apple App Store Logo">
+                    </a>
+                    <a href="{{store.android}}" class="ta-center" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/img/PlayStore.png" alt="Google Play Logo">
+                    </a>
+                    <a href="{{store.webApp}}" class="ta-center" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/img/WebVersion.png" alt="WebApp Logo">
+                    </a>
+                    <a href="{{store.windows}}" class="ta-center" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/img/WindowsStore.png" alt="Windows Logo">
+                    </a>
+                </div>
+                <br />
+            </div>
+        </section>
+
+        <section class="section alternative">
+            <div class="container-1180px ta-center noselect">
+                <h2>Other Links</h2>
+                <h3 style="font-weight: 100;">Want to dowload older versions of the app, checkout our Github
+                    Organisation!</h3>
+                <br />
+                <div class="downloads-store-links-container fixed-width noselect">
+                    <a href="{{assistantNms.githubOrg}}" class="button-primary" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="/assets/img/github.png" alt="Github Organisation">
+                        <div class="button-text">Github Organisation</div>
+                    </a>
+                    <a href="{{assistantNms.githubApp}}" class="button-primary" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="/assets/img/github.png" alt="Github App repository">
+                        <div class="button-text">App source code</div>
+                    </a>
+                    <a href="{{assistantNms.githubAppReleases}}" class="button-primary" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="/assets/img/github.png" alt="App releases">
+                        <div class="button-text">Older releases of the app</div>
+                    </a>
+                    <a href="{{assistantNms.githuubVersions}}" class="button-primary" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="/assets/img/github.png" alt="Github versions repo">
+                        <div class="button-text">Very old versions of the app</div>
+                    </a>
+                </div>
+
+                <br />
+            </div>
+        </section>
+
+        {{> components/footer}}
+
+    </div>
+</body>
+<script async defer src="https://assistantapps.github.io/WebComponents/build/bundle.js"></script>
+<script async defer src="./assets/js/navbar.js"></script>
+
+</html>

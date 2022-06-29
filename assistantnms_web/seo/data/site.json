@@ -67,7 +67,7 @@
         },
         {
             "name": "Patreon",
-            "url": "https://www.patreon.com/AssistantNMS",
+            "url": "https://www.patreon.com/AssistantApps",
             "imgUrl": "/assets/img/donation/Patreon.png"
         },
         {
@@ -112,7 +112,11 @@
     },
     "assistantNms": {
         "webApp": "https://app.assistantapps.com",
-        "webApi": "https://api.assistantapps.com"
+        "webApi": "https://api.assistantapps.com",
+        "githubOrg": "https://github.com/AssistantNMS",
+        "githubApp": "https://github.com/AssistantNMS/App",
+        "githubAppReleases": "https://github.com/AssistantNMS/App/releases",
+        "githuubVersions": "https://github.com/AssistantNMS/Versions"
     },
     "nmscd": {
         "home": "https://nmscd.github.io",
@@ -121,7 +125,9 @@
         "communitySearch": ""
     },
     "navigation": {
-        "thankyou": "/ThankYou.html"
+        "thankyou": "/ThankYou.html",
+        "contributors": "/Contributors.html",
+        "downloads": "/Downloads.html"
     },
     "images": {
         "maskIcon": "/safari-pinned-tab.svg",

@@ -98,7 +98,8 @@ imageUrl: 'https://lh3.googleusercontent.com/a-/AOh14GicCa8r555IEsDn_wB0-QorAdQL
 ];
 
 function initTestimonials() {
-applyTestimonialToDom(0);
+const testimonialRndIndex = Math.floor(Math.random() * testimonialList.length);
+applyTestimonialToDom(testimonialRndIndex);
 }
 
 function applyTestimonialToDom(index) {

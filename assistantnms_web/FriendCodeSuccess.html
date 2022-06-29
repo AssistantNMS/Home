@@ -67,12 +67,46 @@
     <meta name="msapplication-TileColor" content="#7986cb">
     <meta name="msapplication-starturl" content="/?pwa-app" />
 
+    <link rel="preload" as="image" href="/assets/images/loader.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+
+    <style>
+        .opacity80 {
+            background-color: #303030;
+            opacity: 0.8;
+        }
+
+        .full-page-loader {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            z-index: 1003;
+            color: white;
+            transition: opacity 500ms ease-in-out;
+            pointer-events: none;
+        }
+
+        .is-loading .full-page-loader {
+            opacity: 0.9;
+        }
+
+        .full-page-loader img {
+            width: 150px;
+            margin: 0 auto;
+        }
+    </style>
 
     <script nonce="schema" type="application/ld+json">
         {
@@ -96,8 +130,124 @@
         }
     </script>
 </head>
-<body id="app-body" class="is-loading">
+<body id="app-body">
     <div class="page-wrapper">
+
+        <div class="header">
+            <div class="container-nav noselect">
+                <div class="header-left-side">
+                    <a href="/" class="navbar-logo hidden-in-desktop">
+                        <img src="/assets/favicon/apple-touch-icon-76x76.png" alt="AssistantNMS - Logo"
+                            class="hidden-in-mobile">
+                        <h4>Assistant for No Man's Sky</h4>
+                    </a>
+                    <nav role="navigation" class="nav-menu hidden-in-mobile">
+                        <div id="mega-menu-container-overlay" class="dropdown-openable" onclick="closeNavBarWindows()"></div>
+                        <div class="header-dropdown">
+                            <div class="header-dropdown-toggle dropdown-openable"
+                                onclick="toggleNavBarDropdownWindow(this, 'page-dropdown')">
+                                <div class="dropdown-text">Pages&nbsp;<span class="dropdown-icon"></span></div>
+                            </div>
+                            <nav id="page-dropdown" class="dropdown-list dropdown-openable">
+                                <div class="mega-menu-container">
+                                    <div class="menu-column">
+                                        <h4 class="mega-menu-title">Info</h4>
+                                        <div class="menu-section-content">
+                                            <a href="/" class="max-1-line">Home</a>
+                                            <a href="/ThankYou.html" class="max-1-line">Thank you 💖</a>
+                                            <a href="/Contributors.html" class="max-1-line">Contributors</a>
+                                            <a href="https://nmsassistant.freshdesk.com" class="max-1-line">Get Support</a>
+                                            <a href="https://assistantapps.com/discord" class="max-1-line">Discord</a>
+                                            <br />
+                                            <a href="" class="max-1-line">Privacy Policy</a>
+                                            <a href="" class="max-1-line">Terms &amp;
+                                                Conditions</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-column">
+                                        <h4 class="mega-menu-title">Apps &amp; Tools</h4>
+                                        <div class="menu-section-content">
+                                            <a href="https://app.assistantapps.com" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">AssistantNMS WebApp</a>
+                                            <a href="https://api.assistantapps.com" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">AssistantNMS Api</a>
+                                            <a href="https://assistantapps.com" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">AssistantApps</a>
+                                            <a href="https://tools.assistantapps.com" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">Translation tool</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-column">
+                                        <h4 class="mega-menu-title">Other projects</h4>
+                                        <div class="menu-section-content">
+                                            <a href="https://nmscd.github.io" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">NMSCD</a>
+                                            <a href="https://nmscd.github.io/CommunityMission-Progress-Viewer" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">Community Mission Tracker</a>
+                                            <a href="https://nmscd.github.io/expedition-alphabet" class="max-1-line" target="_blank"
+                                                rel="noopener noreferrer">Expedition Alphabet</a>
+                                            <a href="" class="max-1-line" disabled target="_blank"
+                                                rel="noopener noreferrer">Community Search (coming soon)</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <a href="/ThankYou.html" class="nav-link">Thank You</a>
+                        <a href="/Contributors.html" class="nav-link">Contributors</a>
+                        <a href="https://nmsassistant.freshdesk.com" class="nav-link" target="_blank" rel="noopener noreferrer">Get
+                            Support</a>
+                    </nav>
+                </div>
+                <div class="header-right-side hidden-in-mobile">
+                    <div class="nav-button">
+                        <a href="/Downloads.html" class="button-secondary">
+                            <img src="/assets/img/download.png" alt="AssistantNMS - Logo" class="mg-right-8px">
+                            <div class="button-text">Download</div>
+                        </a>
+                    </div>
+                </div>
+                <nav class="navbar-mobile hidden-in-desktop" onclick="navbarTap(this)">
+                    <div class="navbar-content">
+                        <h4>Other pages</h4>
+                        <a href="/ThankYou.html" class="max-1-line">Thank you 💖</a>
+                        <a href="/Contributors.html" class="max-1-line">Contributors</a>
+                        <a href="" class="max-1-line">Downloads</a>
+                        <a href="https://nmsassistant.freshdesk.com" class="max-1-line">Get Support</a>
+                        <br />
+                        <h4>External links</h4>
+                        <a href="https://assistantapps.com/discord" class="max-1-line">Discord</a>
+                        <a href="" class="max-1-line">Privacy Policy</a>
+                        <a href="" class="max-1-line">Terms &amp; Conditions</a>
+                        <br />
+                        <h4>Apps &amp; Tools</h4>
+                        <a href="https://app.assistantapps.com" class="max-1-line" target="_blank"
+                            rel="noopener noreferrer">AssistantNMS
+                            WebApp</a>
+                        <a href="https://api.assistantapps.com" class="max-1-line" target="_blank"
+                            rel="noopener noreferrer">AssistantNMS
+                            Api</a>
+                        <a href="https://assistantapps.com" class="max-1-line" target="_blank"
+                            rel="noopener noreferrer">AssistantApps</a>
+                        <a href="https://tools.assistantapps.com" class="max-1-line" target="_blank"
+                            rel="noopener noreferrer">Translation
+                            tool</a>
+                        <br />
+                        <h4>Other projects</h4>
+                        <a href="https://nmscd.github.io" class="max-1-line" target="_blank" rel="noopener noreferrer">NMSCD</a>
+                        <a href="https://nmscd.github.io/CommunityMission-Progress-Viewer" class="max-1-line" target="_blank" rel="noopener noreferrer">Community Mission
+                            Tracker</a>
+                        <a href="https://nmscd.github.io/expedition-alphabet" class="max-1-line" target="_blank"
+                            rel="noopener noreferrer">Expedition Alphabet</a>
+                        <a href="" class="max-1-line" disabled target="_blank"
+                            rel="noopener noreferrer">Community Search (coming soon)</a>
+                    </div>
+                    <div class="burger-menu"><span></span></div>
+                    <div class="burger-menu"><span></span></div>
+                    <div class="burger-menu"><span></span></div>
+                </nav>
+            </div>
+        </div>
         <section class="section not-found">
             <div class="container-1180px ta-center">
                 <h2 class="ta-center noselect">Friend Code added!</h2>
@@ -166,6 +316,7 @@
                     <br class="hidden-in-desktop" />
                     <h4>Other pages</h4>
                     <a href="/ThankYou.html" class="max-1-line">Thank you 💖</a>
+                    <a href="/Contributors.html" class="max-1-line">Contributors</a>
                     <a href="https://nmsassistant.freshdesk.com" class="max-1-line">Get Support</a>
                     <br />
                     <h4>External links</h4>
@@ -204,11 +355,12 @@
             <div class="copyright">
                 <span>©AssistantNMS - </span>
                 <a href="https://assistantapps.com" target="_blank" rel="noopener noreferrer">AssistantApps</a>
-                <span> - 3.0.2</span>
+                <span> - 4.0.0</span>
             </div>
         </div>
         <br />
     </div>
 </body>
+<script async defer src="./assets/js/navbar.js"></script>
 
 </html>

@@ -4,6 +4,11 @@
 {{> components/documentHead}}
 
 <body id="app-body" class="is-loading">
+    <div class="full-page-loader opacity80"></div>
+    <div class="full-page-loader">
+        <img src="/assets/img/loader.svg" draggable="false" alt="loading-animation">
+    </div>
+
     <div class="page-wrapper">
 
         {{> components/header}}
@@ -90,6 +95,7 @@
                 </div>
             </div>
         </section>
+
         <section id="Features" class="section">
             <div class="container-1180px">
                 <h2 class="ta-center noselect">Features</h2>
@@ -215,6 +221,7 @@
                 <h3 class="ta-center">And many more amazing features!</h3>
             </div>
         </section>
+
         <section id="testimonials" class="section">
             <div class="container-1180px">
                 <div class="basic-grid grid-testimonial">
@@ -290,6 +297,12 @@
                     <h3 style="font-weight: 100;">The app is only possible thanks to the NMS community 💖</h3>
                 </div>
 
+                <div class="mt-2 ta-center">
+                    <a href="{{navigation.contributors}}" class="button-secondary fit">
+                        <span class="button-text">Team &amp; Contributors</span>
+                    </a>
+                </div>
+
                 <div class="donation-grid noselect">
                     {{#each donationOptions as |donationOption index|}}
                     <div class="donation-card">
@@ -311,12 +324,12 @@
     <img data-0="transform:rotate(0deg);left:100vw;" data-500="transform:rotate(-10deg);left:90vw;"
         data-2000="transform:rotate(-10deg);left:90vw;" data-2500="transform:rotate(0deg);left:100vw;"
         src="./assets/img/sentinalBlue.png" class="parallax-sentinalBlue hidden-in-mobile" alt="image with parallax" />
-
 </body>
 <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script async defer src="https://assistantapps.github.io/WebComponents/build/bundle.js"></script>
 <script async defer src="./assets/js/skrollr.min.js"></script>
 <script async defer src="./assets/js/testimonials.js"></script>
+<script async defer src="./assets/js/navbar.js"></script>
 <script async defer src="./assets/js/custom.js"></script>
 
 </html>

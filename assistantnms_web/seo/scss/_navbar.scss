@@ -13,8 +13,84 @@
 }
 
 .navbar-mobile {
-    width: 3em;
-    height: 3em;
+    transition: none;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 2em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 16px;
+    margin: 28px 0;
+    z-index: 999;
+
+    &:focus {
+        outline: none;
+    }
+
+    .burger-menu {
+        border-radius: 1em;
+        transition: width 200ms ease-out, height 0.3s linear, transform 0.3s linear, opacity 300ms linear;
+        position: relative;
+        transform-origin: 1px;
+        height: 9px;
+
+        span {
+            background: #ffffff;
+            height: 5px;
+            display: block;
+            margin: 2px 0;
+            border-radius: 5px;
+        }
+
+        &:nth-child(2) {
+            transform: rotate(0);
+            width: 2em;
+        }
+
+        &:nth-child(3) {
+            width: 2em;
+        }
+
+        &:nth-child(4) {
+            transform: rotate(0);
+            width: 2em;
+        }
+    }
+
+    .navbar-content {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 100vw;
+        width: calc(100vw - 4em);
+        height: 100vh;
+        padding: 2em;
+        border-radius: 1em;
+        background-color: lighten($background, 5%);
+        transition: transform 0.3s linear;
+    }
+
+    &.open {
+        .burger-menu {
+            &:nth-child(2) {
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(3) {
+                width: 0;
+            }
+
+            &:nth-child(4) {
+                transform: rotate(-45deg);
+            }
+        }
+
+        .navbar-content {
+            transform: translateX(-100vw);
+        }
+    }
 }
 
 .mega-menu-container {

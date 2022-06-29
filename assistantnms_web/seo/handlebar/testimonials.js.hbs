@@ -12,7 +12,8 @@ imageUrl: '{{{testimonial.imageUrl}}}'
 ];
 
 function initTestimonials() {
-applyTestimonialToDom(0);
+const testimonialRndIndex = Math.floor(Math.random() * testimonialList.length);
+applyTestimonialToDom(testimonialRndIndex);
 }
 
 function applyTestimonialToDom(index) {

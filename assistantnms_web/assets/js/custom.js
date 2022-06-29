@@ -35,26 +35,3 @@ function waitForParallax() {
     var bodyElem = document.getElementById('app-body');
     bodyElem.classList.remove('is-loading');
 }
-
-function toggleNavBarDropdownWindow(linkElem, idSelector) {
-    const classToUse = 'open';
-    const navElem = document.getElementById(idSelector);
-    const navOverlayElem = document.getElementById('mega-menu-container-overlay');
-
-    if (linkElem.classList.contains(classToUse)) {
-        closeNavBarWindows();
-    } else {
-        linkElem.classList.add(classToUse);
-        navElem.classList.add(classToUse);
-        navOverlayElem.classList.add(classToUse);
-    }
-}
-
-function closeNavBarWindows() {
-    const classToUse = 'open';
-
-    const dropDownElems = document.getElementsByClassName('dropdown-openable');
-    for (const dropDownElem of dropDownElems) {
-        dropDownElem.classList.remove(classToUse);
-    }
-}

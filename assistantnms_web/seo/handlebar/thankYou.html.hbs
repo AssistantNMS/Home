@@ -3,10 +3,10 @@
 
 {{> components/documentHead documentTitle="Thank You"}}
 
-<body id="app-body" class="is-loading">
+<body id="app-body">
     <div class="page-wrapper">
 
-        {{> components/header}}
+        {{> components/header showHome="true"}}
 
         <section class="section thank-you">
             <div class="container-1180px ta-center">
@@ -26,12 +26,16 @@
             </div>
         </section>
 
-        <section class="section patreon">
+        <section class="section alternative">
             <div class="container-1180px ta-center noselect">
                 <h2>Patreon</h2>
                 <h3 style="font-weight: 100;">Special thank you to these amazing people 💖</h3>
                 <br />
-                <assistant-apps-patreon-list />
+                <assistant-apps-patreon-list>
+                    <div style="text-align: center;">
+                        <img src="/assets/img/loader.svg" height="100px" draggable="false" alt="loading-animation">
+                    </div>
+                </assistant-apps-patreon-list>
             </div>
         </section>
 
@@ -63,5 +67,6 @@
     </div>
 </body>
 <script async defer src="https://assistantapps.github.io/WebComponents/build/bundle.js"></script>
+<script async defer src="./assets/js/navbar.js"></script>
 
 </html>
