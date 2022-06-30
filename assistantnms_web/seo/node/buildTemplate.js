@@ -13,6 +13,7 @@ async function buildTemplates() {
     Handlebars.registerPartial('components/documentHead', require('../handlebar/components/documentHead.hbs'));
     Handlebars.registerPartial('components/header', require('../handlebar/components/header.hbs'));
     Handlebars.registerPartial('components/footer', require('../handlebar/components/footer.hbs'));
+    Handlebars.registerPartial('components/scripts', require('../handlebar/components/scripts.hbs'));
 
     const projectDataContents = await readFile('./seo/data/project.json', 'utf8');
     const projectData = JSON.parse(projectDataContents);

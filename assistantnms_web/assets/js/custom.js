@@ -1,6 +1,6 @@
 function heroParallax() {
-    var heroParallaxElems = document.getElementsByClassName('hero-parallax');
-    var heroParallaxInstances = [];
+    const heroParallaxElems = document.getElementsByClassName('hero-parallax');
+    const heroParallaxInstances = [];
     for (const heroParallaxElem of heroParallaxElems) {
         heroParallaxInstances.push(new Parallax(heroParallaxElem));
     }
@@ -8,7 +8,7 @@ function heroParallax() {
 
 function customOnLoad() {
     try {
-        var s = skrollr.init();
+        var s = skrollr.init(); // global skrollr instance
         heroParallax();
     } catch { }
 

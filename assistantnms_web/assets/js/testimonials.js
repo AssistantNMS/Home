@@ -1,4 +1,4 @@
-var testimonialList = [
+const testimonialList = [
 
 {
 guid: 'a1d760e9-4475-4705-a101-e15aa9ecefc1',
