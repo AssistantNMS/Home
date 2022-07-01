@@ -33,6 +33,7 @@ async function buildTemplates() {
         { template: './seo/handlebar/manifest.json.hbs', dest: './manifest.json' },
         { template: './seo/handlebar/site.webmanifest.hbs', dest: './site.webmanifest' },
         { template: './seo/handlebar/sitemap.xml.hbs', dest: './sitemap.xml' },
+        { template: './seo/handlebar/serviceWorker.js.hbs', dest: './serviceWorker.js' },
         { template: './seo/handlebar/web.config.hbs', dest: './web.config' },
     ]
 
