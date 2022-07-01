@@ -23,6 +23,8 @@
                                     {{/if}}
                                     <a href="{{navigation.thankyou}}" class="max-1-line">Thank you 💖</a>
                                     <a href="{{navigation.contributors}}" class="max-1-line">Contributors</a>
+                                    <a href="{{navigation.downloads}}" class="max-1-line">Downloads</a>
+                                    <br />
                                     <a href="{{assistantApps.support}}" class="max-1-line">Get Support</a>
                                     <a href="{{assistantApps.discord}}" class="max-1-line">Discord</a>
                                     <br />
@@ -66,6 +68,7 @@
                     Support</a>
             </nav>
         </div>
+        {{#if showDownloadButton}}
         <div class="header-right-side hidden-in-mobile">
             <div class="nav-button">
                 <a href="/Downloads.html" class="button-secondary">
@@ -74,11 +77,18 @@
                 </a>
             </div>
         </div>
-        <nav class="navbar-mobile hidden-in-desktop" onclick="navbarTap(this)">
+        {{/if}}
+        <nav class="navbar-mobile hidden-in-desktop">
+            <input type="checkbox" />
             <div class="navbar-content">
                 <h4>Other pages</h4>
+                {{#if showHome}}
+                <a href="/" class="max-1-line">Home</a>
+                {{/if}}
                 <a href="{{navigation.thankyou}}" class="max-1-line">Thank you 💖</a>
                 <a href="{{navigation.contributors}}" class="max-1-line">Contributors</a>
+                <a href="{{navigation.downloads}}" class="max-1-line">Downloads</a>
+                <br />
                 <a href="{{navigation.downloads}}" class="max-1-line">Downloads</a>
                 <a href="{{assistantApps.support}}" class="max-1-line">Get Support</a>
                 <br />

@@ -160,6 +160,8 @@
                                         <div class="menu-section-content">
                                             <a href="/ThankYou.html" class="max-1-line">Thank you 💖</a>
                                             <a href="/Contributors.html" class="max-1-line">Contributors</a>
+                                            <a href="/Downloads.html" class="max-1-line">Downloads</a>
+                                            <br />
                                             <a href="https://nmsassistant.freshdesk.com" class="max-1-line">Get Support</a>
                                             <a href="https://assistantapps.com/discord" class="max-1-line">Discord</a>
                                             <br />
@@ -211,11 +213,14 @@
                         </a>
                     </div>
                 </div>
-                <nav class="navbar-mobile hidden-in-desktop" onclick="navbarTap(this)">
+                <nav class="navbar-mobile hidden-in-desktop">
+                    <input type="checkbox" />
                     <div class="navbar-content">
                         <h4>Other pages</h4>
                         <a href="/ThankYou.html" class="max-1-line">Thank you 💖</a>
                         <a href="/Contributors.html" class="max-1-line">Contributors</a>
+                        <a href="/Downloads.html" class="max-1-line">Downloads</a>
+                        <br />
                         <a href="/Downloads.html" class="max-1-line">Downloads</a>
                         <a href="https://nmsassistant.freshdesk.com" class="max-1-line">Get Support</a>
                         <br />
@@ -255,19 +260,19 @@
         <section class="section hero">
             <div class="background-parallax-img">
                 <div class="content">
-                    <img src="/assets/img/bg-hero.svg" alt="background image" />
+                    <img src="/assets/img/bg-hero.svg" draggable="false" alt="background image" />
                 </div>
             </div>
             <div class="background-container-ship">
-                <img id="ship1" src="/assets/img/ship-white-small.png" alt="ship image" />
-                <img id="ship2" src="/assets/img/ship-white-small.png" alt="ship image" />
-                <img id="ship3" src="/assets/img/ship-white-small.png" alt="ship image" />
+                <img id="ship1" src="/assets/img/ship-white-small.png" draggable="false" alt="ship image" />
+                <img id="ship2" src="/assets/img/ship-white-small.png" draggable="false" alt="ship image" />
+                <img id="ship3" src="/assets/img/ship-white-small.png" draggable="false" alt="ship image" />
             </div>
             <div class="container-1180px">
                 <div id="download" class="basic-grid grid-hero">
                     <div id="landing-hero" class="grid-hero-left-block">
-                        <img src="/assets/favicon/apple-touch-icon-76x76.png" alt="AssistantNMS - Logo"
-                            class="app-icon">
+                        <img src="/assets/favicon/apple-touch-icon-76x76.png" draggable="false"
+                            alt="AssistantNMS - Logo" class="app-icon">
                         <h1>Assistant for&nbsp;<wbr/>No Man's Sky</h1>
                         <p class="paragraph-large">
                             View all the possible recipes, live status of Community events and so much more from your
@@ -275,24 +280,25 @@
                         </p>
                         <div class="mt-2">
                             <div class="store-links-container noselect">
-                                <a href="https://apps.apple.com/us/app/id1480287625" class="button-primary" target="_blank"
+                                <a href="https://apps.apple.com/us/app/id1480287625" class="button-primary" draggable="false" target="_blank"
                                     rel="noopener noreferrer">
-                                    <img src="/assets/img/AppStoreIcon.png" alt="Apple App Store Logo">
+                                    <img src="/assets/img/AppStoreIcon.png" draggable="false"
+                                        alt="Apple App Store Logo">
                                     <div class="button-text">Apple App Store</div>
                                 </a>
-                                <a href="https://play.google.com/store/apps/details?id&#x3D;com.kurtlourens.no_mans_sky_recipes" class="button-primary" target="_blank"
+                                <a href="https://play.google.com/store/apps/details?id&#x3D;com.kurtlourens.no_mans_sky_recipes" class="button-primary" draggable="false" target="_blank"
                                     rel="noopener noreferrer">
-                                    <img src="/assets/img/PlayStoreIcon.png" alt="Google Play Logo">
+                                    <img src="/assets/img/PlayStoreIcon.png" draggable="false" alt="Google Play Logo">
                                     <div class="button-text">Google Play</div>
                                 </a>
-                                <a href="https://app.nmsassistant.com/" class="button-primary" target="_blank"
+                                <a href="https://app.nmsassistant.com/" class="button-primary" draggable="false" target="_blank"
                                     rel="noopener noreferrer">
-                                    <img src="/assets/img/WebVersionIcon.png" alt="WebApp Logo">
+                                    <img src="/assets/img/WebVersionIcon.png" draggable="false" alt="WebApp Logo">
                                     <div class="button-text">Web App</div>
                                 </a>
-                                <a href="https://apps.microsoft.com/store/detail/assistant-for-no-mans-sky/9NQLF7XD0LF3" class="button-primary" target="_blank"
+                                <a href="https://apps.microsoft.com/store/detail/assistant-for-no-mans-sky/9NQLF7XD0LF3" class="button-primary" draggable="false" target="_blank"
                                     rel="noopener noreferrer">
-                                    <img src="/assets/img/WindowsStoreIcon.png" alt="Windows Logo">
+                                    <img src="/assets/img/WindowsStoreIcon.png" draggable="false" alt="Windows Logo">
                                     <div class="button-text">Windows</div>
                                 </a>
                             </div>
@@ -300,21 +306,22 @@
                     </div>
                     <div class="grid-hero-right-block">
                         <div class="hero-img-stack">
-                            <img class="hero-image-bg" src="/assets/img/hero-img.svg" alt="background shadow" />
+                            <img src="/assets/img/hero-img.svg" class="hero-image-bg" draggable="false"
+                                alt="background shadow" />
 
                             <div class="hero-parallax hero-image">
-                                <img data-depth="0.05" src="/assets/img/screenshots/phone-bg.png"
+                                <img data-depth="0.05" src="/assets/img/screenshots/phone-bg.png" draggable="false"
                                     class="hero-image-bg-offset hidden-till-loaded" alt="phone with app running" />
-                                <img data-depth="0.05" class="main-hero-img"
+                                <img data-depth="0.05" class="main-hero-img" draggable="false"
                                     src="/assets/img/screenshots/phoneWithApp.png" alt="phone with app running" />
                             </div>
                             <div class="hero-parallax hero-image-cm">
-                                <img data-depth="0.25" src="/assets/img/screenshots/cooking.png"
+                                <img data-depth="0.25" src="/assets/img/screenshots/cooking.png" draggable="false"
                                     alt="community mission panel" />
                             </div>
                             <div class="hero-parallax hero-image-qs">
                                 <img data-depth="0.5" src="/assets/img/screenshots/quicksilverReward.png"
-                                    alt="community mission panel" />
+                                    draggable="false" alt="community mission panel" />
                             </div>
                         </div>
                     </div>
@@ -326,28 +333,28 @@
                 <h2 class="ta-center noselect">Our Socials</h2>
                 <div class="basic-grid grid-logos mt-2">
                     <a href="https://twitter.com/AssistantNMS?ref&#x3D;assistantNMS" title="Twitter" class="badge-wrapper" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="/assets/img/companies/twitter.png" alt="Twitter" />
+                        draggable="false" rel="noopener noreferrer">
+                        <img src="/assets/img/companies/twitter.png" draggable="false" alt="Twitter" />
                     </a>
                     <a href="https://assistantapps.com/discord?ref&#x3D;assistantNMS" title="Discord Server" class="badge-wrapper" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="/assets/img/companies/discord.svg" alt="Discord Server" />
+                        draggable="false" rel="noopener noreferrer">
+                        <img src="/assets/img/companies/discord.svg" draggable="false" alt="Discord Server" />
                     </a>
                     <a href="https://github.com/AssistantNMS?ref&#x3D;assistantNMS" title="Github organisation" class="badge-wrapper" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="/assets/img/companies/github.png" alt="Github organisation" />
+                        draggable="false" rel="noopener noreferrer">
+                        <img src="/assets/img/companies/github.png" draggable="false" alt="Github organisation" />
                     </a>
                     <a href="https://www.facebook.com/AssistantNMS?ref&#x3D;assistantNMS" title="Facebook page" class="badge-wrapper" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="/assets/img/companies/facebook.svg" alt="Facebook page" />
+                        draggable="false" rel="noopener noreferrer">
+                        <img src="/assets/img/companies/facebook.svg" draggable="false" alt="Facebook page" />
                     </a>
                     <a href="https://steamcommunity.com/groups/AssistantNMS?ref&#x3D;assistantNMS" title="Steam Community group" class="badge-wrapper" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="/assets/img/companies/steam.png" alt="Steam Community group" />
+                        draggable="false" rel="noopener noreferrer">
+                        <img src="/assets/img/companies/steam.png" draggable="false" alt="Steam Community group" />
                     </a>
                     <a href="mailto:support@nmsassistant.com?ref&#x3D;assistantNMS" title="Send an email" class="badge-wrapper" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="/assets/img/companies/email.png" alt="Send an email" />
+                        draggable="false" rel="noopener noreferrer">
+                        <img src="/assets/img/companies/email.png" draggable="false" alt="Send an email" />
                     </a>
                 </div>
             </div>
@@ -364,18 +371,19 @@
                         <div class="right-block-card-feature">
                             <div class="feature-img-stack">
                                 <div class="feature-image alt">
-                                    <img src="/assets/img/screenshots/phone-bg.png"
+                                    <img src="/assets/img/screenshots/phone-bg.png" draggable="false"
                                         class="feature-image-bg-offset hidden-in-mobile" alt="phone with app running" />
-                                    <img src="/assets/img/screenshots/phoneWithStasis.png"
+                                    <img src="/assets/img/screenshots/phoneWithStasis.png" draggable="false"
                                         alt="phone with app running" />
                                 </div>
                                 <div class="feature-image-1 alt hidden-in-mobile">
-                                    <img src="/assets/img/screenshots/phoneWithStasisOverlay.png" alt="app overlay" />
+                                    <img src="/assets/img/screenshots/phoneWithStasisOverlay.png" draggable="false"
+                                        alt="app overlay" />
                                 </div>
                             </div>
                         </div>
                         <div class="left-block-card-feature">
-                            <img src="/assets/img/interconnected.png" alt="interconnected icon">
+                            <img src="/assets/img/interconnected.png" draggable="false" alt="interconnected icon">
                             <div class="margin-bottom-6px">
                                 <h3>Packed with data</h3>
                             </div>
@@ -390,7 +398,7 @@
                 <div class="card-feature bottom">
                     <div class="basic-grid feature-grid bottom">
                         <div class="left-block-card-feature bottom">
-                            <img src="/assets/img/translate.png" alt="connected icon" />
+                            <img src="/assets/img/translate.png" draggable="false" alt="connected icon" />
                             <div class="margin-bottom-6px">
                                 <h3>Multiple Language support</h3>
                             </div>
@@ -399,20 +407,20 @@
                                 These translations are supported by the amazing NMS community! 💪
                             </p>
                             <a href="https://tools.assistantapps.com" class="button-primary fit" target="_blank"
-                                rel="noopener noreferrer">
-                                <span class="button-text">Translation Tool</span>
+                                draggable="false" rel="noopener noreferrer">
+                                <span class="button-text noselect">Translation Tool</span>
                             </a>
                         </div>
                         <div class="right-block-card-feature bottom">
                             <div class="feature-img-stack">
                                 <div class="feature-image">
-                                    <img src="/assets/img/screenshots/phone-bg.png"
+                                    <img src="/assets/img/screenshots/phone-bg.png" draggable="false"
                                         class="feature-image-bg-offset hidden-in-mobile" alt="phone with app running" />
-                                    <img src="/assets/img/screenshots/phoneWithLanguages.png"
+                                    <img src="/assets/img/screenshots/phoneWithLanguages.png" draggable="false"
                                         alt="phone with app running" />
                                 </div>
                                 <div class="feature-image-1 hidden-in-mobile">
-                                    <img src="/assets/img/screenshots/phoneWithLanguagesOverlay.png"
+                                    <img src="/assets/img/screenshots/phoneWithLanguagesOverlay.png" draggable="false"
                                         alt="community mission panel" />
                                 </div>
                             </div>
@@ -424,19 +432,19 @@
                         <div class="right-block-card-feature">
                             <div class="feature-img-stack">
                                 <div class="feature-image alt">
-                                    <img src="/assets/img/screenshots/phone-bg.png"
+                                    <img src="/assets/img/screenshots/phone-bg.png" draggable="false"
                                         class="feature-image-bg-offset hidden-in-mobile" alt="phone with app running" />
-                                    <img src="/assets/img/screenshots/phoneWithCommunity.png"
+                                    <img src="/assets/img/screenshots/phoneWithCommunity.png" draggable="false"
                                         alt="phone with app running" />
                                 </div>
                                 <div class="feature-image-1 alt hidden-in-mobile">
-                                    <img src="/assets/img/screenshots/phoneWithCommunityOverlay.png"
+                                    <img src="/assets/img/screenshots/phoneWithCommunityOverlay.png" draggable="false"
                                         alt="app overlay" />
                                 </div>
                             </div>
                         </div>
                         <div class="left-block-card-feature">
-                            <img src="/assets/img/community.png" alt="community icon">
+                            <img src="/assets/img/community.png" draggable="false" alt="community icon">
                             <div class="margin-bottom-6px">
                                 <h3>Connect with the community</h3>
                             </div>
@@ -450,7 +458,7 @@
                 <div class="card-feature bottom">
                     <div class="basic-grid feature-grid bottom">
                         <div class="left-block-card-feature bottom">
-                            <img src="/assets/img/live.png" alt="connected icon" />
+                            <img src="/assets/img/live.png" draggable="false" alt="connected icon" />
                             <div class="margin-bottom-6px">
                                 <h3>View live event statuses</h3>
                             </div>
@@ -462,12 +470,13 @@
                         <div class="right-block-card-feature bottom">
                             <div class="feature-img-stack">
                                 <div class="feature-image">
-                                    <img src="/assets/img/screenshots/phone-bg.png"
+                                    <img src="/assets/img/screenshots/phone-bg.png" draggable="false"
                                         class="feature-image-bg-offset hidden-in-mobile" alt="phone with app running" />
-                                    <img src="/assets/img/screenshots/phoneWithExp.png" alt="phone with app running" />
+                                    <img src="/assets/img/screenshots/phoneWithExp.png" draggable="false"
+                                        alt="phone with app running" />
                                 </div>
                                 <div class="feature-image-1 hidden-in-mobile">
-                                    <img src="/assets/img/screenshots/phoneWithExpOverlay.png"
+                                    <img src="/assets/img/screenshots/phoneWithExpOverlay.png" draggable="false"
                                         alt="community mission panel" />
                                 </div>
                             </div>
@@ -488,10 +497,10 @@
                             Over 100 000 downloads and thousands of reviews! We listen to and read all of your reviews.
                             The apps could not be in the state that it is without the community that has supported it!
                         </p>
-                        <a href="https://play.google.com/store/apps/details?id&#x3D;com.kurtlourens.no_mans_sky_recipes&amp;ref&#x3D;assistantNMS" class="app-store noselect" target="_blank"
+                        <a href="https://play.google.com/store/apps/details?id&#x3D;com.kurtlourens.no_mans_sky_recipes&amp;ref&#x3D;assistantNMS" class="app-store noselect" target="_blank" draggable="false"
                             rel="noopener noreferrer">
                             <div class="app-store-img">
-                                <img src="/assets/img/GooglePlayRating.png" alt="GooglePlayStore" />
+                                <img src="/assets/img/GooglePlayRating.png" draggable="false" alt="GooglePlayStore" />
                             </div>
                             <div class="app-store-content">
                                 <h4>Google Play Store</h4>
@@ -501,10 +510,10 @@
                                 <span>4.7&nbsp;⭐</span>
                             </div>
                         </a>
-                        <a href="https://apps.apple.com/us/app/id1480287625?ref&#x3D;assistantNMS" class="app-store noselect" target="_blank"
+                        <a href="https://apps.apple.com/us/app/id1480287625?ref&#x3D;assistantNMS" class="app-store noselect" target="_blank" draggable="false"
                             rel="noopener noreferrer">
                             <div class="app-store-img">
-                                <img src="/assets/img/AppStoreRating.png" alt="AppStoreRating" />
+                                <img src="/assets/img/AppStoreRating.png" draggable="false" alt="AppStoreRating" />
                             </div>
                             <div class="app-store-content">
                                 <h4>Apple App Store</h4>
@@ -521,7 +530,7 @@
                                 <div class="testimonial-top">
                                     <div class="testimonial-details">
                                         <img src="https://kurtlourens.com/assets/images/KurtAvatar.svg"
-                                            alt="Kurt Lourens" class="testimonial-avatar" />
+                                            draggable="false" alt="Kurt Lourens" class="testimonial-avatar" />
                                         <div class="testimonial-author">
                                             <h3 class="testimonial-name">Kurt Lourens</h3>
                                             <small class="testimonial-source">Google Play</small>
@@ -529,14 +538,14 @@
                                     </div>
                                 </div>
                                 <p class="testimonial-text">I think its a great app 👍</p>
-                                <div class="arrow-container">
+                                <div class="arrow-container noselect">
                                     <div class="left-arrow" onclick="prevTestimonial()">
-                                        <img src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083223bc3da7ae_arrow-slider-left.svg"
-                                            alt="left arrow" class="arrow-image" />
+                                        <img src="/assets/img/arrow-slider-left.svg" draggable="false" alt="left arrow"
+                                            class="arrow-image" />
                                     </div>
                                     &nbsp;
                                     <div class="right-arrow" onclick="nextTestimonial()">
-                                        <img src="https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e77af6b1f083234fd3da7ad_arrow-slider-right.svg"
+                                        <img src="/assets/img/arrow-slider-right.svg" draggable="false"
                                             alt="right arrow" class="arrow-image" />
                                     </div>
                                 </div>
@@ -548,14 +557,14 @@
         </section>
 
         <section id="Support" class="section">
-            <div class="container-1180px">
+            <div class="container-1180px noselect">
                 <h2 class="ta-center">Community supported</h2>
                 <div class="container-600px ta-center">
                     <h3 style="font-weight: 100;">The app is only possible thanks to the NMS community 💖</h3>
                 </div>
 
                 <div class="mt-2 ta-center">
-                    <a href="/Contributors.html" class="button-secondary fit">
+                    <a href="/Contributors.html" class="button-secondary fit" draggable="false">
                         <span class="button-text">Team &amp; Contributors</span>
                     </a>
                 </div>
@@ -563,48 +572,48 @@
                 <div class="donation-grid noselect">
                     <div class="donation-card">
                         <a href="https://www.buymeacoffee.com/kurt?ref&#x3D;assistantNMS" target="_blank" rel="noopener noreferrer"
-                            class="card extraMargin">
-                            <img src="/assets/img/donation/BuyMeACoffee.png" alt="Buy me a Coffee"
+                            draggable="false" class="card extraMargin">
+                            <img src="/assets/img/donation/BuyMeACoffee.png" alt="Buy me a Coffee" draggable="false"
                                 class="card-header-image" />
                             <div class="card-social">Buy me a Coffee</div>
                         </a>
                     </div>
                     <div class="donation-card">
                         <a href="https://www.patreon.com/AssistantApps?ref&#x3D;assistantNMS" target="_blank" rel="noopener noreferrer"
-                            class="card extraMargin">
-                            <img src="/assets/img/donation/Patreon.png" alt="Patreon"
+                            draggable="false" class="card extraMargin">
+                            <img src="/assets/img/donation/Patreon.png" alt="Patreon" draggable="false"
                                 class="card-header-image" />
                             <div class="card-social">Patreon</div>
                         </a>
                     </div>
                     <div class="donation-card">
                         <a href="https://paypal.me/KurtLourens?ref&#x3D;assistantNMS" target="_blank" rel="noopener noreferrer"
-                            class="card extraMargin">
-                            <img src="/assets/img/donation/Paypal.png" alt="PayPal"
+                            draggable="false" class="card extraMargin">
+                            <img src="/assets/img/donation/Paypal.png" alt="PayPal" draggable="false"
                                 class="card-header-image" />
                             <div class="card-social">PayPal</div>
                         </a>
                     </div>
                     <div class="donation-card">
                         <a href="https://ko-fi.com/AssistantNMS?ref&#x3D;assistantNMS" target="_blank" rel="noopener noreferrer"
-                            class="card extraMargin">
-                            <img src="/assets/img/donation/KoFi.png" alt="Ko-fi"
+                            draggable="false" class="card extraMargin">
+                            <img src="/assets/img/donation/KoFi.png" alt="Ko-fi" draggable="false"
                                 class="card-header-image" />
                             <div class="card-social">Ko-fi</div>
                         </a>
                     </div>
                     <div class="donation-card">
                         <a href="https://brave.com/nms136?ref&#x3D;assistantNMS" target="_blank" rel="noopener noreferrer"
-                            class="card extraMargin">
-                            <img src="/assets/img/donation/BraveRewards.png" alt="Brave"
+                            draggable="false" class="card extraMargin">
+                            <img src="/assets/img/donation/BraveRewards.png" alt="Brave" draggable="false"
                                 class="card-header-image" />
                             <div class="card-social">Brave</div>
                         </a>
                     </div>
                     <div class="donation-card">
                         <a href="https://opencollective.com/assistantnms?ref&#x3D;assistantNMS" target="_blank" rel="noopener noreferrer"
-                            class="card extraMargin">
-                            <img src="/assets/img/donation/OpenCollective.png" alt="Open Collective"
+                            draggable="false" class="card extraMargin">
+                            <img src="/assets/img/donation/OpenCollective.png" alt="Open Collective" draggable="false"
                                 class="card-header-image" />
                             <div class="card-social">Open Collective</div>
                         </a>
@@ -701,14 +710,15 @@
             <div class="copyright">
                 <span>©AssistantNMS - </span>
                 <a href="https://assistantapps.com" target="_blank" rel="noopener noreferrer">AssistantApps</a>
-                <span> - 4.0.8</span>
+                <span> - 4.0.9</span>
             </div>
         </div>
         <br />
     </div>
     <img data-0="transform:rotate(0deg);left:100vw;" data-500="transform:rotate(-10deg);left:90vw;"
         data-2000="transform:rotate(-10deg);left:90vw;" data-2500="transform:rotate(0deg);left:100vw;"
-        src="./assets/img/sentinalBlue.png" class="parallax-sentinalBlue hidden-in-mobile" alt="image with parallax" />
+        src="./assets/img/sentinalBlue.png" class="parallax-sentinalBlue hidden-in-mobile" draggable="false"
+        alt="image with parallax" />
 </body>
 
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
