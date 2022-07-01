@@ -6,10 +6,21 @@ function heroParallax() {
     }
 }
 
+function featureParallax() {
+    var featureParallaxElems = document.getElementsByClassName('feature-parallax');
+    var featureParallaxInstances = [];
+    for (const featureParallaxElem of featureParallaxElems) {
+        featureParallaxInstances.push(new Parallax(featureParallaxElem));
+    }
+}
+
 function customOnLoad() {
     try {
-        var s = skrollr.init(); // global skrollr instance
-        heroParallax();
+        if ((screen?.width ?? 0) > 1000) {
+            var s = skrollr.init(); // global skrollr instance
+            heroParallax();
+            featureParallax();
+        }
     } catch { }
 
     try {

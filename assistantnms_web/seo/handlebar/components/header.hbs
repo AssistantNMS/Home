@@ -7,13 +7,13 @@
                 <h4>Assistant for No Man's Sky</h4>
             </a>
             <nav role="navigation" class="nav-menu hidden-in-mobile">
-                <div id="mega-menu-container-overlay" class="dropdown-openable" onclick="closeNavBarWindows()"></div>
                 <div class="header-dropdown">
-                    <div class="header-dropdown-toggle dropdown-openable"
-                        onclick="toggleNavBarDropdownWindow(this, 'page-dropdown')">
+                    <input type="checkbox" />
+                    <div class="dropdown-overlay"></div>
+                    <div class="header-dropdown-toggle">
                         <div class="dropdown-text">Pages&nbsp;<span class="dropdown-icon"></span></div>
                     </div>
-                    <nav id="page-dropdown" class="dropdown-list dropdown-openable">
+                    <div class="dropdown-list">
                         <div class="mega-menu-container">
                             <div class="menu-column">
                                 <h4 class="mega-menu-title">Info</h4>
@@ -58,7 +58,7 @@
                                 </div>
                             </div>
                         </div>
-                    </nav>
+                    </div>
                 </div>
                 <a href="{{navigation.thankyou}}" class="nav-link">Thank You</a>
                 <a href="{{navigation.contributors}}" class="nav-link">Contributors</a>

@@ -14,13 +14,21 @@ footer.footer {
             a {
                 text-decoration: none;
             }
+
+            &.powered-by {
+                max-width: 80vw;
+                margin: 0 auto;
+            }
         }
     }
 
     @media screen and (max-width: 1000px) {
         .container {
-            .col.powered-by {
-                margin-bottom: 2em;
+            .col {
+                padding: 0 1em;
+                &.powered-by {
+                    margin-bottom: 2em;
+                }
             }
         }
     }
@@ -29,8 +37,12 @@ footer.footer {
         .container {
             display: block;
 
-            .col.powered-by {
-                margin-bottom: unset;
+            .col {
+                &.powered-by {
+                    max-width: 520px;
+                    margin-bottom: unset;
+                    overflow: hidden;
+                }
             }
 
             h4,

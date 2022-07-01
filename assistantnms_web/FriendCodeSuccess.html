@@ -142,13 +142,13 @@
                         <h4>Assistant for No Man's Sky</h4>
                     </a>
                     <nav role="navigation" class="nav-menu hidden-in-mobile">
-                        <div id="mega-menu-container-overlay" class="dropdown-openable" onclick="closeNavBarWindows()"></div>
                         <div class="header-dropdown">
-                            <div class="header-dropdown-toggle dropdown-openable"
-                                onclick="toggleNavBarDropdownWindow(this, 'page-dropdown')">
+                            <input type="checkbox" />
+                            <div class="dropdown-overlay"></div>
+                            <div class="header-dropdown-toggle">
                                 <div class="dropdown-text">Pages&nbsp;<span class="dropdown-icon"></span></div>
                             </div>
-                            <nav id="page-dropdown" class="dropdown-list dropdown-openable">
+                            <div class="dropdown-list">
                                 <div class="mega-menu-container">
                                     <div class="menu-column">
                                         <h4 class="mega-menu-title">Info</h4>
@@ -191,7 +191,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </nav>
+                            </div>
                         </div>
                         <a href="/ThankYou.html" class="nav-link">Thank You</a>
                         <a href="/Contributors.html" class="nav-link">Contributors</a>
@@ -355,7 +355,7 @@
             <div class="copyright">
                 <span>©AssistantNMS - </span>
                 <a href="https://assistantapps.com" target="_blank" rel="noopener noreferrer">AssistantApps</a>
-                <span> - 4.0.7</span>
+                <span> - 4.0.8</span>
             </div>
         </div>
         <br />
@@ -368,6 +368,5 @@
 <script defer src="./assets/js/testimonials.js"></script>;=
 
 <script defer src="./assets/js/analytics.js"></script>
-<script defer src="./assets/js/navbar.js"></script>
 <script defer src="./assets/js/custom.js"></script>
 </html>
