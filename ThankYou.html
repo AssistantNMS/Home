@@ -142,13 +142,13 @@
                         <h4>Assistant for No Man's Sky</h4>
                     </a>
                     <nav role="navigation" class="nav-menu hidden-in-mobile">
-                        <div id="mega-menu-container-overlay" class="dropdown-openable" onclick="closeNavBarWindows()"></div>
                         <div class="header-dropdown">
-                            <div class="header-dropdown-toggle dropdown-openable"
-                                onclick="toggleNavBarDropdownWindow(this, 'page-dropdown')">
+                            <input type="checkbox" />
+                            <div class="dropdown-overlay"></div>
+                            <div class="header-dropdown-toggle">
                                 <div class="dropdown-text">Pages&nbsp;<span class="dropdown-icon"></span></div>
                             </div>
-                            <nav id="page-dropdown" class="dropdown-list dropdown-openable">
+                            <div class="dropdown-list">
                                 <div class="mega-menu-container">
                                     <div class="menu-column">
                                         <h4 class="mega-menu-title">Info</h4>
@@ -156,6 +156,8 @@
                                             <a href="/" class="max-1-line">Home</a>
                                             <a href="/ThankYou.html" class="max-1-line">Thank you 💖</a>
                                             <a href="/Contributors.html" class="max-1-line">Contributors</a>
+                                            <a href="/Downloads.html" class="max-1-line">Downloads</a>
+                                            <br />
                                             <a href="https://nmsassistant.freshdesk.com" class="max-1-line">Get Support</a>
                                             <a href="https://assistantapps.com/discord" class="max-1-line">Discord</a>
                                             <br />
@@ -186,12 +188,12 @@
                                                 rel="noopener noreferrer">Community Mission Tracker</a>
                                             <a href="https://nmscd.github.io/expedition-alphabet" class="max-1-line" target="_blank"
                                                 rel="noopener noreferrer">Expedition Alphabet</a>
-                                            <a href="" class="max-1-line" disabled target="_blank"
+                                            <a href="https://github.com/NMSCD/Community-Search" class="max-1-line" disabled target="_blank"
                                                 rel="noopener noreferrer">Community Search (coming soon)</a>
                                         </div>
                                     </div>
                                 </div>
-                            </nav>
+                            </div>
                         </div>
                         <a href="/ThankYou.html" class="nav-link">Thank You</a>
                         <a href="/Contributors.html" class="nav-link">Contributors</a>
@@ -207,11 +209,15 @@
                         </a>
                     </div>
                 </div>
-                <nav class="navbar-mobile hidden-in-desktop" onclick="navbarTap(this)">
+                <nav class="navbar-mobile hidden-in-desktop">
+                    <input type="checkbox" />
                     <div class="navbar-content">
                         <h4>Other pages</h4>
+                        <a href="/" class="max-1-line">Home</a>
                         <a href="/ThankYou.html" class="max-1-line">Thank you 💖</a>
                         <a href="/Contributors.html" class="max-1-line">Contributors</a>
+                        <a href="/Downloads.html" class="max-1-line">Downloads</a>
+                        <br />
                         <a href="/Downloads.html" class="max-1-line">Downloads</a>
                         <a href="https://nmsassistant.freshdesk.com" class="max-1-line">Get Support</a>
                         <br />
@@ -239,7 +245,7 @@
                             Tracker</a>
                         <a href="https://nmscd.github.io/expedition-alphabet" class="max-1-line" target="_blank"
                             rel="noopener noreferrer">Expedition Alphabet</a>
-                        <a href="" class="max-1-line" disabled target="_blank"
+                        <a href="https://github.com/NMSCD/Community-Search" class="max-1-line" disabled target="_blank"
                             rel="noopener noreferrer">Community Search (coming soon)</a>
                     </div>
                     <div class="burger-menu"><span></span></div>
@@ -1973,7 +1979,7 @@
                             <img src="/assets/img/donation/Paypal.png" alt="Paypal"
                                 class="card-header-image" />
                             <div class="card-social">
-                                <div class="card-social-title max-1-line">Tanguy le Blanc</div>
+                                <div class="card-social-title max-1-line">Randy Weeks</div>
                                 <div class="card-social-sub">Paypal</div>
                             </div>
 
@@ -1984,7 +1990,7 @@
                             <img src="/assets/img/donation/Paypal.png" alt="Paypal"
                                 class="card-header-image" />
                             <div class="card-social">
-                                <div class="card-social-title max-1-line">Randy Weeks</div>
+                                <div class="card-social-title max-1-line">Tanguy le Blanc</div>
                                 <div class="card-social-sub">Paypal</div>
                             </div>
 
@@ -2146,22 +2152,22 @@
                     </div>
                     <div class="donation-card">
                         <div class="card extraMargin">
-                            <img src="/assets/img/donation/BraveRewards.png" alt="BraveRewards"
+                            <img src="/assets/img/donation/Paypal.png" alt="Paypal"
                                 class="card-header-image" />
                             <div class="card-social">
-                                <div class="card-social-title max-1-line">u/sircod</div>
-                                <div class="card-social-sub">BraveRewards</div>
+                                <div class="card-social-title max-1-line">Torsten Urbas</div>
+                                <div class="card-social-sub">Paypal</div>
                             </div>
 
                         </div>
                     </div>
                     <div class="donation-card">
                         <div class="card extraMargin">
-                            <img src="/assets/img/donation/Paypal.png" alt="Paypal"
+                            <img src="/assets/img/donation/BraveRewards.png" alt="BraveRewards"
                                 class="card-header-image" />
                             <div class="card-social">
-                                <div class="card-social-title max-1-line">Torsten Urbas</div>
-                                <div class="card-social-sub">Paypal</div>
+                                <div class="card-social-title max-1-line">u/sircod</div>
+                                <div class="card-social-sub">BraveRewards</div>
                             </div>
 
                         </div>
@@ -2256,7 +2262,7 @@
                         Tracker</a>
                     <a href="https://nmscd.github.io/expedition-alphabet" class="max-1-line" target="_blank"
                         rel="noopener noreferrer">Expedition Alphabet</a>
-                    <a href="" class="max-1-line" disabled target="_blank"
+                    <a href="https://github.com/NMSCD/Community-Search" class="max-1-line" disabled target="_blank"
                         rel="noopener noreferrer">Community Search (coming soon)</a>
                 </div>
             </div>
@@ -2269,7 +2275,7 @@
             <div class="copyright">
                 <span>©AssistantNMS - </span>
                 <a href="https://assistantapps.com" target="_blank" rel="noopener noreferrer">AssistantApps</a>
-                <span> - 4.0.7</span>
+                <span> - 4.0.10</span>
             </div>
         </div>
         <br />
@@ -2284,6 +2290,5 @@
 <script defer src="./assets/js/testimonials.js"></script>;=
 
 <script defer src="./assets/js/analytics.js"></script>
-<script defer src="./assets/js/navbar.js"></script>
-<script defer src="./assets/js/custom.js"></script>
+<script defer src="./assets/js/custom.js?v=4.0.10"></script>
 </html>

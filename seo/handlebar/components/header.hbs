@@ -7,13 +7,13 @@
                 <h4>Assistant for No Man's Sky</h4>
             </a>
             <nav role="navigation" class="nav-menu hidden-in-mobile">
-                <div id="mega-menu-container-overlay" class="dropdown-openable" onclick="closeNavBarWindows()"></div>
                 <div class="header-dropdown">
-                    <div class="header-dropdown-toggle dropdown-openable"
-                        onclick="toggleNavBarDropdownWindow(this, 'page-dropdown')">
+                    <input type="checkbox" />
+                    <div class="dropdown-overlay"></div>
+                    <div class="header-dropdown-toggle">
                         <div class="dropdown-text">Pages&nbsp;<span class="dropdown-icon"></span></div>
                     </div>
-                    <nav id="page-dropdown" class="dropdown-list dropdown-openable">
+                    <div class="dropdown-list">
                         <div class="mega-menu-container">
                             <div class="menu-column">
                                 <h4 class="mega-menu-title">Info</h4>
@@ -23,6 +23,8 @@
                                     {{/if}}
                                     <a href="{{navigation.thankyou}}" class="max-1-line">Thank you 💖</a>
                                     <a href="{{navigation.contributors}}" class="max-1-line">Contributors</a>
+                                    <a href="{{navigation.downloads}}" class="max-1-line">Downloads</a>
+                                    <br />
                                     <a href="{{assistantApps.support}}" class="max-1-line">Get Support</a>
                                     <a href="{{assistantApps.discord}}" class="max-1-line">Discord</a>
                                     <br />
@@ -58,7 +60,7 @@
                                 </div>
                             </div>
                         </div>
-                    </nav>
+                    </div>
                 </div>
                 <a href="{{navigation.thankyou}}" class="nav-link">Thank You</a>
                 <a href="{{navigation.contributors}}" class="nav-link">Contributors</a>
@@ -66,6 +68,7 @@
                     Support</a>
             </nav>
         </div>
+        {{#if showDownloadButton}}
         <div class="header-right-side hidden-in-mobile">
             <div class="nav-button">
                 <a href="/Downloads.html" class="button-secondary">
@@ -74,11 +77,18 @@
                 </a>
             </div>
         </div>
-        <nav class="navbar-mobile hidden-in-desktop" onclick="navbarTap(this)">
+        {{/if}}
+        <nav class="navbar-mobile hidden-in-desktop">
+            <input type="checkbox" />
             <div class="navbar-content">
                 <h4>Other pages</h4>
+                {{#if showHome}}
+                <a href="/" class="max-1-line">Home</a>
+                {{/if}}
                 <a href="{{navigation.thankyou}}" class="max-1-line">Thank you 💖</a>
                 <a href="{{navigation.contributors}}" class="max-1-line">Contributors</a>
+                <a href="{{navigation.downloads}}" class="max-1-line">Downloads</a>
+                <br />
                 <a href="{{navigation.downloads}}" class="max-1-line">Downloads</a>
                 <a href="{{assistantApps.support}}" class="max-1-line">Get Support</a>
                 <br />
