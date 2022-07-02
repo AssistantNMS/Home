@@ -65,6 +65,10 @@
     <meta name="msapplication-starturl" content="/?pwa-app" />
 
     <link rel="preload" as="image" href="/assets/img/loader.svg">
+    {{#if preloadMainImgs}}
+    <link rel="preload" as="image" href="/assets/img/screenshots/phone-bg.png">
+    <link rel="preload" as="image" href="/assets/img/screenshots/phoneWithApp.png">
+    {{/if}}
     {{#each preconnectLinks}}
     <link rel="preconnect" href="{{this}}">
     {{/each}}
