@@ -37,23 +37,23 @@
                         <div class="mt-2">
                             <div class="store-links-container noselect">
                                 <a href="{{store.ios}}" class="button-primary" draggable="false" target="_blank"
-                                    rel="noopener noreferrer">
+                                    rel="noopener noreferrer" title="Apple App Store Logo">
                                     <img src="/assets/img/AppStoreIcon.png" draggable="false"
                                         alt="Apple App Store Logo">
                                     <div class="button-text">Apple App Store</div>
                                 </a>
                                 <a href="{{store.android}}" class="button-primary" draggable="false" target="_blank"
-                                    rel="noopener noreferrer">
+                                    rel="noopener noreferrer" title="Google Play Logo">
                                     <img src="/assets/img/PlayStoreIcon.png" draggable="false" alt="Google Play Logo">
                                     <div class="button-text">Google Play</div>
                                 </a>
                                 <a href="{{store.webApp}}" class="button-primary" draggable="false" target="_blank"
-                                    rel="noopener noreferrer">
+                                    rel="noopener noreferrer" title="WebApp Logo">
                                     <img src="/assets/img/WebVersionIcon.png" draggable="false" alt="WebApp Logo">
                                     <div class="button-text">Web App</div>
                                 </a>
                                 <a href="{{store.windows}}" class="button-primary" draggable="false" target="_blank"
-                                    rel="noopener noreferrer">
+                                    rel="noopener noreferrer" title="Windows Logo">
                                     <img src="/assets/img/WindowsStoreIcon.png" draggable="false" alt="Windows Logo">
                                     <div class="button-text">Windows</div>
                                 </a>
@@ -90,7 +90,7 @@
                 <div class="basic-grid grid-logos mt-2">
                     {{#each socials as |social index|}}
                     <a href="{{urlref social.url}}" title="{{social.name}}" class="badge-wrapper" target="_blank"
-                        draggable="false" rel="noopener noreferrer">
+                        draggable="false" rel="noopener noreferrer" title="{{social.name}}">
                         <img src="{{social.imgUrl}}" draggable="false" alt="{{social.name}}" />
                     </a>
                     {{/each}}
@@ -145,7 +145,7 @@
                                 These translations are supported by the amazing NMS community! 💪
                             </p>
                             <a href="{{assistantApps.tools}}" class="button-primary fit" target="_blank"
-                                draggable="false" rel="noopener noreferrer">
+                                draggable="false" rel="noopener noreferrer" title="Translation Tool">
                                 <span class="button-text noselect">Translation Tool</span>
                             </a>
                         </div>
@@ -236,7 +236,7 @@
                             The apps could not be in the state that it is without the community that has supported it!
                         </p>
                         <a href="{{urlref store.android}}" class="app-store noselect" target="_blank" draggable="false"
-                            rel="noopener noreferrer">
+                            rel="noopener noreferrer" title="Google Play Store">
                             <div class="app-store-img">
                                 <img src="/assets/img/GooglePlayRating.png" draggable="false" alt="GooglePlayStore" />
                             </div>
@@ -249,7 +249,7 @@
                             </div>
                         </a>
                         <a href="{{urlref store.ios}}" class="app-store noselect" target="_blank" draggable="false"
-                            rel="noopener noreferrer">
+                            rel="noopener noreferrer" title="Apple App Store">
                             <div class="app-store-img">
                                 <img src="/assets/img/AppStoreRating.png" draggable="false" alt="AppStoreRating" />
                             </div>
@@ -302,7 +302,8 @@
                 </div>
 
                 <div class="mt-2 ta-center">
-                    <a href="{{navigation.contributors}}" class="button-secondary fit" draggable="false">
+                    <a href="{{navigation.contributors}}" class="button-secondary fit" draggable="false"
+                        title="Team & Contributors">
                         <span class="button-text">Team &amp; Contributors</span>
                     </a>
                 </div>
@@ -311,7 +312,7 @@
                     {{#each donationOptions as |donationOption index|}}
                     <div class="donation-card">
                         <a href="{{urlref donationOption.url}}" target="_blank" rel="noopener noreferrer"
-                            draggable="false" class="card extraMargin">
+                            draggable="false" class="card extraMargin" title="{{donationOption.name}}">
                             <img src="{{donationOption.imgUrl}}" alt="{{donationOption.name}}" draggable="false"
                                 class="card-header-image" />
                             <div class="card-social">{{donationOption.name}}</div>

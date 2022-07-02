@@ -167,8 +167,8 @@
                 "path": "assets/favicon/apple-touch-icon-76x76.png"
             }
         ],
-        "twitter": "https://www.mugshotbot.com/m?mode=dark&color=red&pattern=bubbles&url=https://nmsassistant.com",
-        "facebook": "https://www.mugshotbot.com/m?mode=dark&color=red&pattern=bubbles&url=https://nmsassistant.com"
+        "twitter": "/assets/img/twitterCard.png",
+        "facebook": "/assets/img/twitterCard.png"
     },
     "headers": [
         {
