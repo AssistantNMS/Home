@@ -116,18 +116,20 @@
         "githubOrg": "https://github.com/AssistantNMS",
         "githubApp": "https://github.com/AssistantNMS/App",
         "githubAppReleases": "https://github.com/AssistantNMS/App/releases",
-        "githuubVersions": "https://github.com/AssistantNMS/Versions"
+        "githubVersions": "https://github.com/AssistantNMS/Versions"
     },
     "nmscd": {
-        "home": "https://nmscd.github.io",
-        "cmpt": "https://nmscd.github.io/CommunityMission-Progress-Viewer",
-        "expeditionAlphabet": "https://nmscd.github.io/expedition-alphabet",
-        "communitySearch": "https://github.com/NMSCD/Community-Search"
+        "home": "https://www.nmscd.com",
+        "cmpt": "https://community-mission.nmscd.com",
+        "expeditionAlphabet": "https://alphabet.nmscd.com",
+        "communitySearch": "https://community.nmscd.com"
     },
     "navigation": {
         "thankyou": "/ThankYou.html",
         "contributors": "/Contributors.html",
-        "downloads": "/Downloads.html"
+        "downloads": "/Downloads.html",
+        "privacyPolicy": "/privacy_policy.html",
+        "termsAndConditions": "/terms_and_conditions.html"
     },
     "images": {
         "maskIcon": "/safari-pinned-tab.svg",
