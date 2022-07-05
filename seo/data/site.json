@@ -5,6 +5,7 @@
         "email": "mailto:hi@kurtlourens.com",
         "website": "https://kurtlourens.com",
         "image": "https://kurtlourens.com/assets/images/KurtAvatar.svg",
+        "jobTitle": "Senior Software Engineer",
         "additionalName": "KhaozTopsy",
         "twitter": "@KhaozTopsy"
     },
@@ -141,11 +142,11 @@
             "x196": "assets/favicon/favicon-196x196.png"
         },
         "apple": {
-            "x76": "assets/images/pwa/apple-touch-icon-76x76.png",
-            "x114": "assets/images/pwa/apple-touch-icon-114x114.png",
-            "x120": "assets/images/pwa/apple-touch-icon-120x120.png",
-            "x144": "assets/images/pwa/apple-touch-icon-144x144.png",
-            "x152": "assets/images/pwa/apple-touch-icon-152x152.png"
+            "x76": "assets/favicon/apple-touch-icon-76x76.png",
+            "x114": "assets/favicon/apple-touch-icon-114x114.png",
+            "x120": "assets/favicon/apple-touch-icon-120x120.png",
+            "x144": "assets/favicon/apple-touch-icon-144x144.png",
+            "x152": "assets/favicon/apple-touch-icon-152x152.png"
         },
         "manifest": [
             {
@@ -169,8 +170,8 @@
                 "path": "assets/favicon/apple-touch-icon-76x76.png"
             }
         ],
-        "twitter": "/assets/img/twitterCard.png",
-        "facebook": "/assets/img/twitterCard.png"
+        "twitter": "https://staging.nmsassistant.com/assets/img/twitterCard.png",
+        "facebook": "https://staging.nmsassistant.com/assets/img/twitterCard.png"
     },
     "headers": [
         {
