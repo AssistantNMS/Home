@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="application-name" content="{{meta.appName}}">
     <title>{{#if documentTitle}}{{documentTitle}} - {{/if}}{{meta.title}}</title>
-    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="index" href="{{rootUrl}}">
@@ -27,11 +27,11 @@
     <meta name="mobile-web-app-capable" content="yes">
 
     <!-- Apple -->
-    <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="{{images.favicon.x76}}">
-    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="{{images.favicon.x114}}">
-    <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="{{images.favicon.x120}}">
-    <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="{{images.favicon.x144}}">
-    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="{{images.favicon.x152}}">
+    <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="{{images.apple.x76}}">
+    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="{{images.apple.x114}}">
+    <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="{{images.apple.x120}}">
+    <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="{{images.apple.x144}}">
+    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="{{images.apple.x152}}">
     <link rel="mask-icon" href="{{images.maskIcon}}" color="{{theme.maskColour}}">
     <!-- <link rel="apple-touch-startup-image" href="/path/to/launch.png"> -->
     <meta name="apple-mobile-web-app-title" content="{{meta.appName}}">
@@ -129,8 +129,8 @@
             "owns": [
                 {
                     "@type": "OwnershipInfo",
-                    "name": "{{assistantApps.name}}",
-                    "url": "{{assistantApps.rootUrl}}"
+                    "name": "{{meta.title}}",
+                    "url": "{{rootUrl}}"
                 }
             ]
         }
