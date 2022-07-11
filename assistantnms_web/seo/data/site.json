@@ -93,7 +93,9 @@
         }
     ],
     "preconnectLinks": [
-        "https://fonts.googleapis.com"
+        "https://fonts.googleapis.com",
+        "https://fonts.gstatic.com",
+        "https://cdnjs.cloudflare.com"
     ],
     "twitter": {
         "handle": "@AssistantNMS",

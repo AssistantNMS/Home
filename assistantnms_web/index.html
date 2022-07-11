@@ -73,11 +73,13 @@
     <link rel="preload" as="image" href="/assets/img/screenshots/phone-bg.png">
     <link rel="preload" as="image" href="/assets/img/screenshots/phoneWithApp.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./assets/css/base.css?v=4.0.17">
-    <link rel="stylesheet" href="./assets/css/main.css?v=4.0.17">
+    <link rel="stylesheet" href="./assets/css/base.css?v=4.0.18">
+    <link rel="stylesheet" href="./assets/css/main.css?v=4.0.18">
 
     <style>
         .opacity80 {
@@ -276,13 +278,16 @@
         <section class="section hero">
             <div class="background-parallax-img">
                 <div class="content">
-                    <img src="/assets/img/bg-hero.svg" draggable="false" alt="background image" />
+                    <img src="/assets/img/bg-hero.svg" draggable="false" alt="background image" loading="lazy" />
                 </div>
             </div>
             <div class="background-container-ship">
-                <img id="ship1" src="/assets/img/ship-white-small.png" draggable="false" alt="ship image" />
-                <img id="ship2" src="/assets/img/ship-white-small.png" draggable="false" alt="ship image" />
-                <img id="ship3" src="/assets/img/ship-white-small.png" draggable="false" alt="ship image" />
+                <img id="ship1" src="/assets/img/ship-white-small.png" draggable="false" alt="ship image"
+                    loading="lazy" />
+                <img id="ship2" src="/assets/img/ship-white-small.png" draggable="false" alt="ship image"
+                    loading="lazy" />
+                <img id="ship3" src="/assets/img/ship-white-small.png" draggable="false" alt="ship image"
+                    loading="lazy" />
             </div>
             <div class="container-1180px">
                 <div id="download" class="basic-grid grid-hero">
@@ -323,21 +328,22 @@
                     <div class="grid-hero-right-block">
                         <div class="hero-img-stack">
                             <img src="/assets/img/hero-img.svg" class="hero-image-bg" draggable="false"
-                                alt="background shadow" />
+                                alt="background shadow" loading="lazy" />
 
                             <div class="hero-parallax hero-image">
                                 <img data-depth="0.05" src="/assets/img/screenshots/phone-bg.png" draggable="false"
-                                    class="hero-image-bg-offset hidden-till-loaded" alt="phone with app running" />
-                                <img data-depth="0.05" class="main-hero-img" draggable="false"
+                                    class="hero-image-bg-offset hidden-till-loaded" alt="phone with app running"
+                                    loading="lazy" />
+                                <img data-depth="0.05" class="main-hero-img" draggable="false" loading="lazy"
                                     src="/assets/img/screenshots/phoneWithApp.png" alt="phone with app running" />
                             </div>
                             <div class="hero-parallax hero-image-cm">
                                 <img data-depth="0.25" src="/assets/img/screenshots/cooking.png" draggable="false"
-                                    alt="community mission panel" />
+                                    alt="community mission panel" loading="lazy" />
                             </div>
                             <div class="hero-parallax hero-image-qs">
                                 <img data-depth="0.5" src="/assets/img/screenshots/quicksilverReward.png"
-                                    draggable="false" alt="community mission panel" />
+                                    draggable="false" alt="community mission panel" loading="lazy" />
                             </div>
                         </div>
                     </div>
@@ -350,27 +356,27 @@
                 <div class="basic-grid grid-logos mt-2">
                     <a href="https://twitter.com/AssistantNMS?ref&#x3D;assistantNMS" title="Twitter" class="badge-wrapper" target="_blank"
                         draggable="false" rel="noopener noreferrer" title="Twitter">
-                        <img src="/assets/img/companies/twitter.png" draggable="false" alt="Twitter" />
+                        <img src="/assets/img/companies/twitter.png" draggable="false" alt="Twitter" loading="lazy" />
                     </a>
                     <a href="https://assistantapps.com/discord?ref&#x3D;assistantNMS" title="Discord Server" class="badge-wrapper" target="_blank"
                         draggable="false" rel="noopener noreferrer" title="Discord Server">
-                        <img src="/assets/img/companies/discord.svg" draggable="false" alt="Discord Server" />
+                        <img src="/assets/img/companies/discord.svg" draggable="false" alt="Discord Server" loading="lazy" />
                     </a>
                     <a href="https://github.com/AssistantNMS?ref&#x3D;assistantNMS" title="Github organisation" class="badge-wrapper" target="_blank"
                         draggable="false" rel="noopener noreferrer" title="Github organisation">
-                        <img src="/assets/img/companies/github.png" draggable="false" alt="Github organisation" />
+                        <img src="/assets/img/companies/github.png" draggable="false" alt="Github organisation" loading="lazy" />
                     </a>
                     <a href="https://www.facebook.com/AssistantNMS?ref&#x3D;assistantNMS" title="Facebook page" class="badge-wrapper" target="_blank"
                         draggable="false" rel="noopener noreferrer" title="Facebook page">
-                        <img src="/assets/img/companies/facebook.svg" draggable="false" alt="Facebook page" />
+                        <img src="/assets/img/companies/facebook.svg" draggable="false" alt="Facebook page" loading="lazy" />
                     </a>
                     <a href="https://steamcommunity.com/groups/AssistantNMS?ref&#x3D;assistantNMS" title="Steam Community group" class="badge-wrapper" target="_blank"
                         draggable="false" rel="noopener noreferrer" title="Steam Community group">
-                        <img src="/assets/img/companies/steam.png" draggable="false" alt="Steam Community group" />
+                        <img src="/assets/img/companies/steam.png" draggable="false" alt="Steam Community group" loading="lazy" />
                     </a>
                     <a href="mailto:support@nmsassistant.com?ref&#x3D;assistantNMS" title="Send an email" class="badge-wrapper" target="_blank"
                         draggable="false" rel="noopener noreferrer" title="Send an email">
-                        <img src="/assets/img/companies/email.png" draggable="false" alt="Send an email" />
+                        <img src="/assets/img/companies/email.png" draggable="false" alt="Send an email" loading="lazy" />
                     </a>
                 </div>
             </div>
@@ -387,19 +393,20 @@
                         <div class="right-block-card-feature">
                             <div class="feature-img-stack">
                                 <div class="feature-image alt">
-                                    <img src="/assets/img/screenshots/phone-bg.png" draggable="false"
+                                    <img src="/assets/img/screenshots/phone-bg.png" draggable="false" loading="lazy"
                                         class="feature-image-bg-offset hidden-in-mobile" alt="phone with app running" />
                                     <img src="/assets/img/screenshots/phoneWithStasis.png" draggable="false"
-                                        alt="phone with app running" />
+                                        alt="phone with app running" loading="lazy" />
                                 </div>
                                 <div class="feature-image-1 alt hidden-in-mobile">
                                     <img src="/assets/img/screenshots/phoneWithStasisOverlay.png" draggable="false"
-                                        alt="app overlay" />
+                                        alt="app overlay" loading="lazy" />
                                 </div>
                             </div>
                         </div>
                         <div class="left-block-card-feature">
-                            <img src="/assets/img/interconnected.png" draggable="false" alt="interconnected icon">
+                            <img src="/assets/img/interconnected.png" draggable="false" alt="interconnected icon"
+                                loading="lazy">
                             <div class="margin-bottom-6px">
                                 <h3>Packed with data</h3>
                             </div>
@@ -414,7 +421,8 @@
                 <div class="card-feature bottom">
                     <div class="basic-grid feature-grid bottom">
                         <div class="left-block-card-feature bottom">
-                            <img src="/assets/img/translate.png" draggable="false" alt="connected icon" />
+                            <img src="/assets/img/translate.png" draggable="false" alt="connected icon"
+                                loading="lazy" />
                             <div class="margin-bottom-6px">
                                 <h3>Multiple Language support</h3>
                             </div>
@@ -430,14 +438,14 @@
                         <div class="right-block-card-feature bottom">
                             <div class="feature-img-stack">
                                 <div class="feature-image">
-                                    <img src="/assets/img/screenshots/phone-bg.png" draggable="false"
+                                    <img src="/assets/img/screenshots/phone-bg.png" draggable="false" loading="lazy"
                                         class="feature-image-bg-offset hidden-in-mobile" alt="phone with app running" />
                                     <img src="/assets/img/screenshots/phoneWithLanguages.png" draggable="false"
-                                        alt="phone with app running" />
+                                        alt="phone with app running" loading="lazy" />
                                 </div>
                                 <div class="feature-image-1 hidden-in-mobile">
                                     <img src="/assets/img/screenshots/phoneWithLanguagesOverlay.png" draggable="false"
-                                        alt="community mission panel" />
+                                        alt="community mission panel" loading="lazy" />
                                 </div>
                             </div>
                         </div>
@@ -448,19 +456,19 @@
                         <div class="right-block-card-feature">
                             <div class="feature-img-stack">
                                 <div class="feature-image alt">
-                                    <img src="/assets/img/screenshots/phone-bg.png" draggable="false"
+                                    <img src="/assets/img/screenshots/phone-bg.png" draggable="false" loading="lazy"
                                         class="feature-image-bg-offset hidden-in-mobile" alt="phone with app running" />
                                     <img src="/assets/img/screenshots/phoneWithCommunity.png" draggable="false"
-                                        alt="phone with app running" />
+                                        alt="phone with app running" loading="lazy" />
                                 </div>
                                 <div class="feature-image-1 alt hidden-in-mobile">
                                     <img src="/assets/img/screenshots/phoneWithCommunityOverlay.png" draggable="false"
-                                        alt="app overlay" />
+                                        alt="app overlay" loading="lazy" />
                                 </div>
                             </div>
                         </div>
                         <div class="left-block-card-feature">
-                            <img src="/assets/img/community.png" draggable="false" alt="community icon">
+                            <img src="/assets/img/community.png" draggable="false" alt="community icon" loading="lazy">
                             <div class="margin-bottom-6px">
                                 <h3>Connect with the community</h3>
                             </div>
@@ -474,7 +482,7 @@
                 <div class="card-feature bottom">
                     <div class="basic-grid feature-grid bottom">
                         <div class="left-block-card-feature bottom">
-                            <img src="/assets/img/live.png" draggable="false" alt="connected icon" />
+                            <img src="/assets/img/live.png" draggable="false" alt="connected icon" loading="lazy" />
                             <div class="margin-bottom-6px">
                                 <h3>View live event statuses</h3>
                             </div>
@@ -486,14 +494,14 @@
                         <div class="right-block-card-feature bottom">
                             <div class="feature-img-stack">
                                 <div class="feature-image">
-                                    <img src="/assets/img/screenshots/phone-bg.png" draggable="false"
+                                    <img src="/assets/img/screenshots/phone-bg.png" draggable="false" loading="lazy"
                                         class="feature-image-bg-offset hidden-in-mobile" alt="phone with app running" />
                                     <img src="/assets/img/screenshots/phoneWithExp.png" draggable="false"
-                                        alt="phone with app running" />
+                                        alt="phone with app running" loading="lazy" />
                                 </div>
                                 <div class="feature-image-1 hidden-in-mobile">
                                     <img src="/assets/img/screenshots/phoneWithExpOverlay.png" draggable="false"
-                                        alt="community mission panel" />
+                                        alt="community mission panel" loading="lazy" />
                                 </div>
                             </div>
                         </div>
@@ -516,7 +524,8 @@
                         <a href="https://play.google.com/store/apps/details?id&#x3D;com.kurtlourens.no_mans_sky_recipes&amp;ref&#x3D;assistantNMS" class="app-store noselect" target="_blank" draggable="false"
                             rel="noopener noreferrer" title="Google Play Store">
                             <div class="app-store-img">
-                                <img src="/assets/img/GooglePlayRating.png" draggable="false" alt="GooglePlayStore" />
+                                <img src="/assets/img/GooglePlayRating.png" draggable="false" alt="GooglePlayStore"
+                                    loading="lazy" />
                             </div>
                             <div class="app-store-content">
                                 <h4>Google Play Store</h4>
@@ -529,7 +538,8 @@
                         <a href="https://apps.apple.com/us/app/id1480287625?ref&#x3D;assistantNMS" class="app-store noselect" target="_blank" draggable="false"
                             rel="noopener noreferrer" title="Apple App Store">
                             <div class="app-store-img">
-                                <img src="/assets/img/AppStoreRating.png" draggable="false" alt="AppStoreRating" />
+                                <img src="/assets/img/AppStoreRating.png" draggable="false" alt="AppStoreRating"
+                                    loading="lazy" />
                             </div>
                             <div class="app-store-content">
                                 <h4>Apple App Store</h4>
@@ -546,7 +556,8 @@
                                 <div class="testimonial-top">
                                     <div class="testimonial-details">
                                         <img src="https://kurtlourens.com/assets/images/KurtAvatar.svg"
-                                            draggable="false" alt="Kurt Lourens" class="testimonial-avatar" />
+                                            draggable="false" alt="Kurt Lourens" class="testimonial-avatar"
+                                            loading="lazy" />
                                         <div class="testimonial-author">
                                             <h3 class="testimonial-name">Kurt Lourens</h3>
                                             <small class="testimonial-source">Google Play</small>
@@ -557,12 +568,12 @@
                                 <div class="arrow-container noselect">
                                     <div class="left-arrow" onclick="prevTestimonial()">
                                         <img src="/assets/img/arrow-slider-left.svg" draggable="false" alt="left arrow"
-                                            class="arrow-image" />
+                                            class="arrow-image" loading="lazy" />
                                     </div>
                                     &nbsp;
                                     <div class="right-arrow" onclick="nextTestimonial()">
                                         <img src="/assets/img/arrow-slider-right.svg" draggable="false"
-                                            alt="right arrow" class="arrow-image" />
+                                            alt="right arrow" class="arrow-image" loading="lazy" />
                                     </div>
                                 </div>
                             </div>
@@ -591,7 +602,7 @@
                         <a href="https://www.buymeacoffee.com/kurt?ref&#x3D;assistantNMS" target="_blank" rel="noopener noreferrer"
                             draggable="false" class="card extraMargin" title="Buy me a Coffee">
                             <img src="/assets/img/donation/BuyMeACoffee.png" alt="Buy me a Coffee" draggable="false"
-                                class="card-header-image" />
+                                class="card-header-image" loading="lazy" />
                             <div class="card-social">Buy me a Coffee</div>
                         </a>
                     </div>
@@ -599,7 +610,7 @@
                         <a href="https://www.patreon.com/AssistantApps?ref&#x3D;assistantNMS" target="_blank" rel="noopener noreferrer"
                             draggable="false" class="card extraMargin" title="Patreon">
                             <img src="/assets/img/donation/Patreon.png" alt="Patreon" draggable="false"
-                                class="card-header-image" />
+                                class="card-header-image" loading="lazy" />
                             <div class="card-social">Patreon</div>
                         </a>
                     </div>
@@ -607,7 +618,7 @@
                         <a href="https://paypal.me/KurtLourens?ref&#x3D;assistantNMS" target="_blank" rel="noopener noreferrer"
                             draggable="false" class="card extraMargin" title="PayPal">
                             <img src="/assets/img/donation/Paypal.png" alt="PayPal" draggable="false"
-                                class="card-header-image" />
+                                class="card-header-image" loading="lazy" />
                             <div class="card-social">PayPal</div>
                         </a>
                     </div>
@@ -615,7 +626,7 @@
                         <a href="https://ko-fi.com/AssistantNMS?ref&#x3D;assistantNMS" target="_blank" rel="noopener noreferrer"
                             draggable="false" class="card extraMargin" title="Ko-fi">
                             <img src="/assets/img/donation/KoFi.png" alt="Ko-fi" draggable="false"
-                                class="card-header-image" />
+                                class="card-header-image" loading="lazy" />
                             <div class="card-social">Ko-fi</div>
                         </a>
                     </div>
@@ -623,7 +634,7 @@
                         <a href="https://brave.com/nms136?ref&#x3D;assistantNMS" target="_blank" rel="noopener noreferrer"
                             draggable="false" class="card extraMargin" title="Brave">
                             <img src="/assets/img/donation/BraveRewards.png" alt="Brave" draggable="false"
-                                class="card-header-image" />
+                                class="card-header-image" loading="lazy" />
                             <div class="card-social">Brave</div>
                         </a>
                     </div>
@@ -631,7 +642,7 @@
                         <a href="https://opencollective.com/assistantnms?ref&#x3D;assistantNMS" target="_blank" rel="noopener noreferrer"
                             draggable="false" class="card extraMargin" title="Open Collective">
                             <img src="/assets/img/donation/OpenCollective.png" alt="Open Collective" draggable="false"
-                                class="card-header-image" />
+                                class="card-header-image" loading="lazy" />
                             <div class="card-social">Open Collective</div>
                         </a>
                     </div>
@@ -734,25 +745,24 @@
                 <span>©AssistantNMS - </span>
                 <a href="https://assistantapps.com" target="_blank" rel="noopener noreferrer"
                     title="AssistantApps">AssistantApps</a>
-                <span> - 4.0.17</span>
+                <span> - 4.0.18</span>
             </div>
         </div>
         <br />
     </div>
     <img data-0="transform:rotate(0deg);left:100vw;" data-500="transform:rotate(-10deg);left:90vw;"
         data-2000="transform:rotate(-10deg);left:90vw;" data-2500="transform:rotate(0deg);left:100vw;"
-        src="./assets/img/sentinalBlue.png" class="parallax-sentinalBlue hidden-in-mobile" draggable="false"
+        src="./assets/img/parallax/sentinalBlue.png" class="parallax-sentinalBlue hidden-in-mobile" draggable="false"
         alt="image with parallax" />
 </body>
 
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script async src="./assets/js/skrollr.min.js"></script>
 
-<script async src="https://assistantapps.github.io/WebComponents/build/bundle.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TSB514DX5T"></script>
 
 <script defer src="./assets/js/testimonials.js"></script>
 
 <script defer src="./assets/js/analytics.js"></script>
-<script defer src="./assets/js/custom.js?v=4.0.17"></script>
+<script defer src="./assets/js/custom.js?v=4.0.18"></script>
 </html>
