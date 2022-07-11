@@ -987,12 +987,6 @@ figcaption {
   padding-left: 24px;
 }
 
-.dropdown-icon {
-  margin-top: 1px;
-  font-family: 'Dropdown icon', sans-serif;
-  font-size: 7px;
-}
-
 .dropdown-text {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2031,13 +2025,4 @@ figcaption {
     padding-right: 18px;
     padding-left: 18px;
   }
-}
-
-
-@font-face {
-  font-family: 'Dropdown icon';
-  src: url('https://assets.website-files.com/5e77af6be7efaf1373a0a3cb/5e9a3f651b847f0fb64848bc_icon-fonts.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: auto;
 }
