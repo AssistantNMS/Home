@@ -172,8 +172,8 @@
                 "path": "assets/favicon/apple-touch-icon-76x76.png"
             }
         ],
-        "twitter": "https://staging.nmsassistant.com/assets/img/twitterCard.png",
-        "facebook": "https://staging.nmsassistant.com/assets/img/twitterCard.png"
+        "twitter": "https://nmsassistant.com/assets/img/twitterCard.png",
+        "facebook": "https://nmsassistant.com/assets/img/twitterCard.png"
     },
     "headers": [
         {
