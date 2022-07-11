@@ -112,8 +112,8 @@
         }
     },
     "assistantNms": {
-        "webApp": "https://app.assistantapps.com",
-        "webApi": "https://api.assistantapps.com",
+        "webApp": "https://app.nmsassistant.com",
+        "webApi": "https://api.nmsassistant.com",
         "githubOrg": "https://github.com/AssistantNMS",
         "githubApp": "https://github.com/AssistantNMS/App",
         "githubAppReleases": "https://github.com/AssistantNMS/App/releases",
