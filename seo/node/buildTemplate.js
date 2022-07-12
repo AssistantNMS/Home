@@ -28,6 +28,7 @@ async function buildTemplates() {
         { template: './seo/handlebar/friendCodeSuccess.html.hbs', dest: './FriendCodeSuccess.html' },
 
         { template: './seo/handlebar/testimonials.js.hbs', dest: './assets/js/testimonials.js' },
+        { template: './seo/handlebar/htaccess.hbs', dest: './.htaccess' },
         { template: './seo/handlebar/humans.txt.hbs', dest: './humans.txt' },
         { template: './seo/handlebar/opensearch.xml.hbs', dest: './opensearch.xml' },
         { template: './seo/handlebar/manifest.json.hbs', dest: './manifest.json' },

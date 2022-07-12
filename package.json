@@ -1,16 +1,16 @@
 {
   "name": "assistantnms.web",
-  "version": "4.0.21",
+  "version": "4.0.22",
   "scripts": {
-    "build": "npm-run-all --sequential data:* template:* sass:*",
+    "build": "npm-run-all --sequential data:* sass:* template:*",
     "dev": "live-server",
     "data": "npm-run-all --sequential data:*",
     "data:generateLiveJson": "node seo/node/generateLiveJson.js",
     "data:generateProjectData": "node seo/node/getGeneratedProjectJson.js",
-    "data:minifyGeneratedFiles": "node seo/node/minifyPublicFiles.js",
-    "template:main": "node seo/node/buildTemplate.js",
     "sass": "npm-run-all --sequential sass:*",
     "sass:main": "sass seo/scss/main.scss ./assets/css/main.css",
+    "template:main": "node seo/node/buildTemplate.js",
+    "template:minifyGeneratedFiles": "node seo/node/minifyPublicFiles.js",
     "watch:template": "nodemon -e hbs -x \"npm run template:main\"",
     "watch:sass": "nodemon -e scss -x \"npm run sass\""
   },
