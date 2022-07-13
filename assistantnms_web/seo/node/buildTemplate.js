@@ -37,7 +37,7 @@ async function buildTemplates() {
         { template: './seo/handlebar/sitemap.xml.hbs', dest: './sitemap.xml' },
         { template: './seo/handlebar/serviceWorker.js.hbs', dest: './serviceWorker.js' },
         { template: './seo/handlebar/web.config.hbs', dest: './web.config' },
-    ]
+    ];
 
     for (const fileObj of files) {
         const template = await readFile(fileObj.template, 'utf8');
@@ -48,6 +48,22 @@ async function buildTemplates() {
         };
         const compiledTemplate = templateFunc(templateData);
         fs.writeFile(fileObj.dest, compiledTemplate, ['utf8'], () => { });
+    }
+
+    for (const redirect of projectData.redirects) {
+        if (!fs.existsSync(redirect.pattern)) {
+            fs.mkdirSync(redirect.pattern);
+        }
+
+        const template = await readFile('./seo/handlebar/redirect.hbs', 'utf8');
+        const templateFunc = Handlebars.compile(template);
+        const templateData = {
+            title: redirect.pattern,
+            url: redirect.url
+        };
+
+        const compiledTemplate = templateFunc(templateData);
+        fs.writeFile(`./${redirect.pattern}/index.html`, compiledTemplate, ['utf8'], () => { });
     }
 }
 

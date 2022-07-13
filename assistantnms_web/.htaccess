@@ -9,7 +9,7 @@ Header add Clacks-Overhead: "GNU Eddison the Magic Doggo"
 Header add X-Powered-by: "Magic &amp; the Distraction Squad"
 
 
-RewriteRule ^Discord/(.*)$ https://discord.gg/q3aFBQM?ref=assistantNMS [R=301,NC,L]
-RewriteRule ^DiscordBot/(.*)$ https://discord.com/api/oauth2/authorize?client_id=640818571164778496&permissions=2147762240&scope=bot%20applications.commands&ref=assistantNMS [R=301,NC,L]
-RewriteRule ^Github/(.*)$ https://github.com/AssistantNms?ref=assistantNMS [R=301,NC,L]
-RewriteRule ^Kurt/(.*)$ https://kurtlourens.com?ref=assistantNMS [R=301,NC,L]
+RewriteRule ^discord/(.*)$ https://discord.gg/q3aFBQM?ref=assistantNMS [R=301,NC,L]
+RewriteRule ^discordbot/(.*)$ https://discord.com/api/oauth2/authorize?client_id=640818571164778496&permissions=2147762240&scope=bot%20applications.commands&ref=assistantNMS [R=301,NC,L]
+RewriteRule ^github/(.*)$ https://github.com/AssistantNms?ref=assistantNMS [R=301,NC,L]
+RewriteRule ^kurt/(.*)$ https://kurtlourens.com?ref=assistantNMS [R=301,NC,L]
