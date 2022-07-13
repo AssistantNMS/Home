@@ -178,19 +178,19 @@
     },
     "redirects": [
         {
-            "pattern": "Discord",
+            "pattern": "discord",
             "url": "https://discord.gg/q3aFBQM"
         },
         {
-            "pattern": "DiscordBot",
+            "pattern": "discordbot",
             "url": "https://discord.com/api/oauth2/authorize?client_id=640818571164778496&permissions=2147762240&scope=bot%20applications.commands"
         },
         {
-            "pattern": "Github",
+            "pattern": "github",
             "url": "https://github.com/AssistantNms"
         },
         {
-            "pattern": "Kurt",
+            "pattern": "kurt",
             "url": "https://kurtlourens.com"
         }
     ],
