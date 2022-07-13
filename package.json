@@ -1,6 +1,6 @@
 {
   "name": "assistantnms.web",
-  "version": "4.0.22",
+  "version": "4.0.24",
   "scripts": {
     "build": "npm-run-all --sequential data:* sass:* template:*",
     "dev": "live-server",
@@ -14,6 +14,14 @@
     "watch:template": "nodemon -e hbs -x \"npm run template:main\"",
     "watch:sass": "nodemon -e scss -x \"npm run sass\""
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AssistantNMS/Home.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AssistantNMS/Home/issues"
+  },
+  "homepage": "https://nmsassistant.com",
   "author": "Kurt Lourens",
   "license": "ISC",
   "devDependencies": {

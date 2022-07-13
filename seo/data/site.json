@@ -26,7 +26,8 @@
         "ios": "https://apps.apple.com/us/app/id1480287625",
         "android": "https://play.google.com/store/apps/details?id=com.kurtlourens.no_mans_sky_recipes",
         "webApp": "https://app.nmsassistant.com/",
-        "windows": "https://apps.microsoft.com/store/detail/assistant-for-no-mans-sky/9NQLF7XD0LF3"
+        "windows": "https://apps.microsoft.com/store/detail/assistant-for-no-mans-sky/9NQLF7XD0LF3",
+        "discord": "https://discord.com/api/oauth2/authorize?client_id=640818571164778496&permissions=2147762240&scope=bot%20applications.commands"
     },
     "socials": [
         {
@@ -175,6 +176,24 @@
         "twitter": "https://nmsassistant.com/assets/img/twitterCard.png",
         "facebook": "https://nmsassistant.com/assets/img/twitterCard.png"
     },
+    "redirects": [
+        {
+            "pattern": "Discord",
+            "url": "https://discord.gg/q3aFBQM"
+        },
+        {
+            "pattern": "DiscordBot",
+            "url": "https://discord.com/api/oauth2/authorize?client_id=640818571164778496&permissions=2147762240&scope=bot%20applications.commands"
+        },
+        {
+            "pattern": "Github",
+            "url": "https://github.com/AssistantNms"
+        },
+        {
+            "pattern": "Kurt",
+            "url": "https://kurtlourens.com"
+        }
+    ],
     "headers": [
         {
             "name": "Set-Cookie",

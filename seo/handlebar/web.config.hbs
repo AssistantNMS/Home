@@ -18,6 +18,14 @@
                     </conditions>
                     <action type="Redirect" url="https://nmsassistant.com/{R:1}" redirectType="Found" />
                 </rule>
+
+                {{#each redirects}}
+                <rule name="RedirectTo{{pattern}}" stopProcessing="true">
+                    <match url="^(.*){{pattern}}(.*)" ignoreCase="true" />
+                    <action type="Redirect" url="{{{urlrefescaped url}}}" appendQueryString="false"
+                        redirectType="Permanent" />
+                </rule>
+                {{/each}}
             </rules>
         </rewrite>
         <httpErrors>

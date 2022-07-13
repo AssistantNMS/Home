@@ -9,6 +9,7 @@ async function buildTemplates() {
     Handlebars.registerHelper('loud', require('../handlebar/helpers/loud.helper.js'));
     Handlebars.registerHelper('urlref', require('../handlebar/helpers/urlref.helper.js'));
     Handlebars.registerHelper('version', require('../handlebar/helpers/version.helper.js'));
+    Handlebars.registerHelper('urlrefescaped', require('../handlebar/helpers/urlrefescaped.helper.js'));
 
     Handlebars.registerPartial('components/documentHead', require('../handlebar/components/documentHead.hbs'));
     Handlebars.registerPartial('components/header', require('../handlebar/components/header.hbs'));
