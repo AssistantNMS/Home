@@ -31,10 +31,11 @@ jobs:
         npm ci
         npm run build
 
-    - name: Remove node_modules
+    - name: Remove extra files
       run: |
         cd assistantnms_web
-        rm -d -r node_modules
+        echo "/node_modules" > .gitignore
+        echo "/seo" >> .gitignore
     
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4.3.4
