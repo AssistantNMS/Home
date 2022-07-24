@@ -48,6 +48,14 @@ br,
     max-width: 500px;
 }
 
+.drop-shadow {
+    filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.5));
+}
+
+.drop-shadow-inv {
+    filter: drop-shadow(-4px 4px 4px rgba(0,0,0,0.5));
+}
+
 ::selection {
     background: darken($primary, 33%);
     color: white;
