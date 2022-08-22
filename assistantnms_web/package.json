@@ -1,6 +1,6 @@
 {
   "name": "assistantnms.web",
-  "version": "4.0.32",
+  "version": "4.0.33",
   "scripts": {
     "build": "npm-run-all --sequential data:* sass:* template:*",
     "dev": "live-server",
