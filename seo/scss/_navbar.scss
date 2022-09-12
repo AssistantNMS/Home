@@ -114,11 +114,12 @@
         top: 0;
         left: 100vw;
         width: calc(100vw - 4em);
-        height: 100vh;
+        height: calc(100vh - 4em);
         padding: 2em;
         border-radius: 1em;
         background-color: lighten($background, 5%);
         transition: transform 0.3s linear;
+        overflow-y: scroll;
     }
 }
 
