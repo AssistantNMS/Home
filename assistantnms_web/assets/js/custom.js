@@ -53,3 +53,14 @@ setTimeout(() => {
 }, 1000);
 
 registerServiceWorker();
+
+
+function mobileNavbarOnTap(checkboxNode, event) {
+    const bodyElem = document.getElementById('app-body');
+    console.log(bodyElem);
+    if (checkboxNode.checked) {
+        bodyElem.classList.add('mobile-open');
+    } else {
+        bodyElem.classList.remove('mobile-open');
+    }
+}
