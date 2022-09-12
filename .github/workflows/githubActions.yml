@@ -5,9 +5,9 @@ permissions:
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ['main']
   pull_request:
-    branches: [ "main" ]
+    branches: ['main']
 
 jobs:
   build:
@@ -16,32 +16,30 @@ jobs:
     strategy:
       matrix:
         node-version: [16.x]
-    
+
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
 
-    - name: Build
-      run: |
-        cd assistantnms_web
-        npm ci
-        npm run build
+      - name: Build
+        run: |
+          cd assistantnms_web
+          npm ci
+          npm run build
 
-    - name: Remove extra files
-      run: |
-        cd assistantnms_web
-        echo "/node_modules" > .gitignore
-        echo "/seo" >> .gitignore
-    
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4.3.4
-      with:
-        folder: assistantnms_web # The folder the action should deploy.
+      - name: Remove extra files
+        run: |
+          cd assistantnms_web
+          echo "/node_modules" > .gitignore
+          echo "/seo" >> .gitignore
 
-    
-      
-    
+      - uses: JamesIves/github-pages-deploy-action@v4.3.4
+        name: Deploy to GitHub Pages
+        if: github.event_name != 'pull_request'
+        with:
+          folder: assistantnms_web # The folder the action should deploy.
+
