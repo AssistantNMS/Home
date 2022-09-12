@@ -33,6 +33,10 @@ body {
     color: $text-color;
     scroll-behavior: smooth;
 
+    &.mobile-open {
+        overflow: hidden !important;
+    }
+
     .header {
         background-color: darken($background, 5%);
         z-index: 2;
