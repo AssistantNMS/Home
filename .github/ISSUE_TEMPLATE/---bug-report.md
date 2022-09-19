@@ -48,18 +48,3 @@ body:
         - Windows
         - WebApp
 
----
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Logs**
-Please recreate the issue and attach/paste the logs from the app onto this issue. You can find the logs on the settings page, there is a "Logs" option.
-
-**Please complete the following information:**
- - AppVersion [e.g. 1.99.1]
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
-
-**Additional context**
-Add any other context about the problem here.
