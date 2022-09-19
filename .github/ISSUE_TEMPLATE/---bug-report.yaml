@@ -33,16 +33,3 @@ body:
       label: Expected behavior
       description: |
         A clear and concise description of what you expected to happen.
-  - type: dropdown
-    id: device
-    validations:
-      required: true
-    attributes:
-      label: Where did you find this problem?
-      multiple: false
-      options:
-        - Android
-        - iOS
-        - Windows
-        - WebApp
-

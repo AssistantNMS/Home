@@ -1,9 +1,7 @@
----
 name: "\U0001F680 Feature request"
-about: Suggest an idea for this project
-title: ''
+title: '[Feature]: '
+description: Suggest an idea for this project
 labels: idea
-assignees: ''
 body:
   - type: markdown
     attributes:
@@ -31,9 +29,9 @@ body:
       label: Describe alternatives you've considered
       description: |
         A clear and concise description of any alternative solutions or features you've considered.
-
----
-
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: |
+        Add any other context or screenshots about the feature request here.
