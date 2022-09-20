@@ -50,7 +50,7 @@ function customOnLoad() {
 
 setTimeout(() => {
     customOnLoad?.();
-}, 1000);
+}, 250);
 
 registerServiceWorker();
 
