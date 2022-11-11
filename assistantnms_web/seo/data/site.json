@@ -109,6 +109,7 @@
         "twitter": "@AssistantNMS",
         "tools": "https://tools.assistantapps.com",
         "discord": "https://assistantapps.com/discord",
+        "mastodon": "https://nomanssky.social/@assistantnms",
         "support": "https://nmsassistant.freshdesk.com",
         "favicon": {
             "x192": "assets/favicon/android-icon-192x192.png"
