@@ -24,7 +24,7 @@ async function buildTemplates() {
         { template: './seo/handlebar/thankYou.html.hbs', dest: './ThankYou.html' },
         { template: './seo/handlebar/contributors.html.hbs', dest: './Contributors.html' },
         { template: './seo/handlebar/downloads.html.hbs', dest: './Downloads.html' },
-        { template: './seo/handlebar/notFound.html.hbs', dest: './NotFound.html' },
+        { template: './seo/handlebar/404.html.hbs', dest: './404.html' },
         { template: './seo/handlebar/friendCodeError.html.hbs', dest: './FriendCodeError.html' },
         { template: './seo/handlebar/friendCodeSuccess.html.hbs', dest: './FriendCodeSuccess.html' },
 
