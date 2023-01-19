@@ -193,6 +193,10 @@
         {
             "pattern": "kurt",
             "url": "https://kurtlourens.com"
+        },
+        {
+            "pattern": "patreon",
+            "url": "https://www.patreon.com/AssistantApps"
         }
     ],
     "headers": [
